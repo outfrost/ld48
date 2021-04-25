@@ -3,6 +3,8 @@ extends KinematicBody2D
 export var run_speed: float = 50.0
 export var attack_range: float = 32.0
 
+onready var sprite: AnimatedSprite = $AnimatedSprite
+
 var inventory: Dictionary = {}
 
 var game_controller: Game = null
@@ -19,10 +21,38 @@ func _physics_process(delta: float) -> void:
 		Input.get_action_strength("move_right") - Input.get_action_strength("move_left"),
 		Input.get_action_strength("move_down") - Input.get_action_strength("move_up")
 	).clamped(1.0)
-	if !direction.is_equal_approx(Vector2.ZERO):
+	var moving: bool = !direction.is_equal_approx(Vector2.ZERO)
+
+	if moving:
 		last_movement_dir = direction.normalized()
 	move_and_slide(direction * run_speed)
 #	game_controller.camera_offset = direction * run_speed * 0.5
+
+	var angle = direction.angle() if moving else last_movement_dir.angle()
+	# right
+	if angle > -0.1875 * TAU && angle < 0.1875 * TAU:
+		if moving:
+			sprite.play("run_right")
+		else:
+			sprite.play("idle_right")
+	# left
+	elif angle < -0.3125 * TAU || angle > 0.3125 * TAU:
+		if moving:
+			sprite.play("run_left")
+		else:
+			sprite.play("idle_left")
+	# down
+	elif angle > 0.0:
+		if moving:
+			sprite.play("run_down")
+		else:
+			sprite.play("idle_down")
+	# up
+	else:
+		if moving:
+			sprite.play("run_up")
+		else:
+			sprite.play("idle_up")
 
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("use"):
