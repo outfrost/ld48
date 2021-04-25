@@ -1024,14 +1024,8 @@ position = Vector2( 80, -1616 )
 [node name="StaticBody2D194" parent="YSort" instance=ExtResource( 4 )]
 position = Vector2( 176, -1616 )
 
-[node name="StaticBody2D215" parent="YSort" instance=ExtResource( 4 )]
-position = Vector2( -112, -1296 )
-
 [node name="StaticBody2D216" parent="YSort" instance=ExtResource( 4 )]
 position = Vector2( -80, -1296 )
-
-[node name="StaticBody2D217" parent="YSort" instance=ExtResource( 4 )]
-position = Vector2( -48, -1296 )
 
 [node name="StaticBody2D218" parent="YSort" instance=ExtResource( 4 )]
 position = Vector2( -16, -1264 )
@@ -1039,29 +1033,14 @@ position = Vector2( -16, -1264 )
 [node name="StaticBody2D219" parent="YSort" instance=ExtResource( 4 )]
 position = Vector2( -48, -1232 )
 
-[node name="StaticBody2D220" parent="YSort" instance=ExtResource( 4 )]
-position = Vector2( -80, -1232 )
-
-[node name="StaticBody2D221" parent="YSort" instance=ExtResource( 4 )]
-position = Vector2( -112, -1232 )
-
 [node name="StaticBody2D222" parent="YSort" instance=ExtResource( 4 )]
 position = Vector2( -112, -1264 )
-
-[node name="StaticBody2D223" parent="YSort" instance=ExtResource( 4 )]
-position = Vector2( -48, -1264 )
-
-[node name="StaticBody2D224" parent="YSort" instance=ExtResource( 4 )]
-position = Vector2( -80, -1264 )
 
 [node name="StaticBody2D225" parent="YSort" instance=ExtResource( 4 )]
 position = Vector2( 112, -1232 )
 
 [node name="StaticBody2D226" parent="YSort" instance=ExtResource( 4 )]
 position = Vector2( 80, -1200 )
-
-[node name="StaticBody2D227" parent="YSort" instance=ExtResource( 4 )]
-position = Vector2( 80, -1232 )
 
 [node name="StaticBody2D228" parent="YSort" instance=ExtResource( 4 )]
 position = Vector2( 208, -1264 )
@@ -1072,17 +1051,8 @@ position = Vector2( 304, -1296 )
 [node name="StaticBody2D230" parent="YSort" instance=ExtResource( 4 )]
 position = Vector2( 336, -1328 )
 
-[node name="StaticBody2D231" parent="YSort" instance=ExtResource( 4 )]
-position = Vector2( 368, -1360 )
-
 [node name="StaticBody2D232" parent="YSort" instance=ExtResource( 4 )]
 position = Vector2( 368, -1392 )
-
-[node name="StaticBody2D233" parent="YSort" instance=ExtResource( 4 )]
-position = Vector2( 336, -1392 )
-
-[node name="StaticBody2D234" parent="YSort" instance=ExtResource( 4 )]
-position = Vector2( 336, -1360 )
 
 [node name="StaticBody2D235" parent="YSort" instance=ExtResource( 4 )]
 position = Vector2( 368, -1424 )
@@ -1090,44 +1060,20 @@ position = Vector2( 368, -1424 )
 [node name="StaticBody2D236" parent="YSort" instance=ExtResource( 4 )]
 position = Vector2( 368, -1456 )
 
-[node name="StaticBody2D237" parent="YSort" instance=ExtResource( 4 )]
-position = Vector2( 400, -1456 )
-
 [node name="StaticBody2D238" parent="YSort" instance=ExtResource( 4 )]
 position = Vector2( 432, -1488 )
-
-[node name="StaticBody2D239" parent="YSort" instance=ExtResource( 4 )]
-position = Vector2( 464, -1488 )
-
-[node name="StaticBody2D240" parent="YSort" instance=ExtResource( 4 )]
-position = Vector2( 464, -1456 )
 
 [node name="StaticBody2D241" parent="YSort" instance=ExtResource( 4 )]
 position = Vector2( 464, -1424 )
 
-[node name="StaticBody2D242" parent="YSort" instance=ExtResource( 4 )]
-position = Vector2( 432, -1200 )
-
 [node name="StaticBody2D243" parent="YSort" instance=ExtResource( 4 )]
 position = Vector2( 464, -1168 )
-
-[node name="StaticBody2D244" parent="YSort" instance=ExtResource( 4 )]
-position = Vector2( 432, -1168 )
-
-[node name="StaticBody2D245" parent="YSort" instance=ExtResource( 4 )]
-position = Vector2( 496, -1168 )
 
 [node name="StaticBody2D246" parent="YSort" instance=ExtResource( 4 )]
 position = Vector2( 400, -1200 )
 
 [node name="StaticBody2D247" parent="YSort" instance=ExtResource( 4 )]
 position = Vector2( 528, -1200 )
-
-[node name="StaticBody2D248" parent="YSort" instance=ExtResource( 4 )]
-position = Vector2( 560, -1232 )
-
-[node name="StaticBody2D249" parent="YSort" instance=ExtResource( 4 )]
-position = Vector2( 560, -1200 )
 
 [node name="StaticBody2D250" parent="YSort" instance=ExtResource( 4 )]
 position = Vector2( 592, -1200 )
@@ -1429,8 +1375,8 @@ position = Vector2( 176, -2160 )
 [node name="StaticBody2D65" parent="YSort" instance=ExtResource( 10 )]
 position = Vector2( 368, -2256 )
 
-[node name="StaticBody2D" parent="." instance=ExtResource( 13 )]
+[node name="StaticBody2D5" parent="YSort" instance=ExtResource( 13 )]
 position = Vector2( 144, -1648 )
 
-[node name="StaticBody2D2" parent="." instance=ExtResource( 13 )]
+[node name="StaticBody2D13" parent="YSort" instance=ExtResource( 13 )]
 position = Vector2( 240, -1648 )
