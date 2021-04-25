@@ -68,6 +68,9 @@ position = Vector2( -112, -1712 )
 [node name="StaticBody2D73" parent="YSort" instance=ExtResource( 2 )]
 position = Vector2( 48, -1584 )
 
+[node name="StaticBody2D168" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -16, -1584 )
+
 [node name="StaticBody2D74" parent="YSort" instance=ExtResource( 2 )]
 position = Vector2( 304, -1552 )
 
@@ -106,6 +109,33 @@ position = Vector2( 528, -1328 )
 
 [node name="StaticBody2D90" parent="YSort" instance=ExtResource( 2 )]
 position = Vector2( 496, -1200 )
+
+[node name="StaticBody2D94" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 560, -1104 )
+
+[node name="StaticBody2D96" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 464, -912 )
+
+[node name="StaticBody2D99" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 528, -944 )
+
+[node name="StaticBody2D100" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 592, -880 )
+
+[node name="StaticBody2D138" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 656, -944 )
+
+[node name="StaticBody2D139" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 720, -912 )
+
+[node name="StaticBody2D141" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 816, -912 )
+
+[node name="StaticBody2D157" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 912, -976 )
+
+[node name="StaticBody2D144" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 784, -976 )
 
 [node name="StaticBody2D91" parent="YSort" instance=ExtResource( 2 )]
 position = Vector2( 592, -1232 )
@@ -230,6 +260,36 @@ position = Vector2( 3184, -1648 )
 [node name="StaticBody2D283" parent="YSort" instance=ExtResource( 2 )]
 position = Vector2( 3120, -1616 )
 
+[node name="StaticBody2D926" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 2800, -1584 )
+
+[node name="StaticBody2D927" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 2416, -1648 )
+
+[node name="StaticBody2D928" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 2352, -1488 )
+
+[node name="StaticBody2D929" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 2384, -1360 )
+
+[node name="StaticBody2D930" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 2544, -1232 )
+
+[node name="StaticBody2D931" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 2800, -1360 )
+
+[node name="StaticBody2D932" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 2736, -1264 )
+
+[node name="StaticBody2D933" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 2800, -1680 )
+
+[node name="StaticBody2D934" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 2832, -1776 )
+
+[node name="StaticBody2D935" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 2704, -1744 )
+
 [node name="StaticBody2D284" parent="YSort" instance=ExtResource( 2 )]
 position = Vector2( 3184, -1552 )
 
@@ -277,6 +337,141 @@ position = Vector2( 2800, -944 )
 
 [node name="StaticBody2D300" parent="YSort" instance=ExtResource( 2 )]
 position = Vector2( 2864, -880 )
+
+[node name="StaticBody2D793" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 2736, -912 )
+
+[node name="StaticBody2D794" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 2704, -976 )
+
+[node name="StaticBody2D795" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 2672, -848 )
+
+[node name="StaticBody2D796" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 2576, -880 )
+
+[node name="StaticBody2D797" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 2640, -912 )
+
+[node name="StaticBody2D798" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 2512, -944 )
+
+[node name="StaticBody2D799" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 2480, -1008 )
+
+[node name="StaticBody2D800" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 2544, -1040 )
+
+[node name="StaticBody2D801" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 2480, -880 )
+
+[node name="StaticBody2D802" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 2352, -874.005 )
+
+[node name="StaticBody2D836" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 1872, -1232 )
+
+[node name="StaticBody2D837" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 2160, -1136 )
+
+[node name="StaticBody2D838" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 2320, -1072 )
+
+[node name="StaticBody2D839" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 2416, -1072 )
+
+[node name="StaticBody2D840" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 2416, -1072 )
+
+[node name="StaticBody2D810" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 2096, -880 )
+
+[node name="StaticBody2D811" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 2000, -912 )
+
+[node name="StaticBody2D812" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 1872, -880 )
+
+[node name="StaticBody2D813" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 1744, -880 )
+
+[node name="StaticBody2D814" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 1578, -829.005 )
+
+[node name="StaticBody2D815" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 1648, -848 )
+
+[node name="StaticBody2D816" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 1680, -944 )
+
+[node name="StaticBody2D817" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 1552, -944 )
+
+[node name="StaticBody2D818" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 1616, -976 )
+
+[node name="StaticBody2D819" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 1680, -1040 )
+
+[node name="StaticBody2D820" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 1520, -1040 )
+
+[node name="StaticBody2D821" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 1648, -1136 )
+
+[node name="StaticBody2D822" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 1738, -1124.01 )
+
+[node name="StaticBody2D823" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 1744, -1200 )
+
+[node name="StaticBody2D824" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 1552, -1136 )
+
+[node name="StaticBody2D825" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 1456, -1072 )
+
+[node name="StaticBody2D826" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 1776, -976 )
+
+[node name="StaticBody2D827" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 1808, -944 )
+
+[node name="StaticBody2D828" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 1872, -1008 )
+
+[node name="StaticBody2D829" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 1968, -976 )
+
+[node name="StaticBody2D830" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 1936, -1040 )
+
+[node name="StaticBody2D831" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 2000, -1136 )
+
+[node name="StaticBody2D835" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 2064, -1136 )
+
+[node name="StaticBody2D833" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 1840, -1104 )
+
+[node name="StaticBody2D834" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 1840, -1104 )
+
+[node name="StaticBody2D803" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 2288, -912 )
+
+[node name="StaticBody2D804" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 2352, -976 )
+
+[node name="StaticBody2D805" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 2256, -1008 )
+
+[node name="StaticBody2D806" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 2192, -1008 )
+
+[node name="StaticBody2D807" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 2192, -1008 )
 
 [node name="StaticBody2D301" parent="YSort" instance=ExtResource( 2 )]
 position = Vector2( 2960, -912 )
@@ -653,6 +848,450 @@ position = Vector2( -432, -816 )
 [node name="StaticBody2D450" parent="YSort" instance=ExtResource( 2 )]
 position = Vector2( -592, -752 )
 
+[node name="StaticBody2D451" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -752, -656 )
+
+[node name="StaticBody2D572" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -656, -720 )
+
+[node name="StaticBody2D576" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -1008, -496 )
+
+[node name="StaticBody2D578" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -1008, -560 )
+
+[node name="StaticBody2D579" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -976, -400 )
+
+[node name="StaticBody2D580" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -912, -304 )
+
+[node name="StaticBody2D581" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -816, -272 )
+
+[node name="StaticBody2D599" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -752, -208 )
+
+[node name="StaticBody2D600" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -1136, -336 )
+
+[node name="StaticBody2D601" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -1040, -304 )
+
+[node name="StaticBody2D602" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -976, -240 )
+
+[node name="StaticBody2D603" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -848, -176 )
+
+[node name="StaticBody2D604" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -912, -176 )
+
+[node name="StaticBody2D605" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -656, -208 )
+
+[node name="StaticBody2D606" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -560, -208 )
+
+[node name="StaticBody2D607" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -624, -144 )
+
+[node name="StaticBody2D608" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -624, -144 )
+
+[node name="StaticBody2D609" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -720, -112 )
+
+[node name="StaticBody2D610" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -592, 48 )
+
+[node name="StaticBody2D611" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -560, -48 )
+
+[node name="StaticBody2D612" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -528, -112 )
+
+[node name="StaticBody2D613" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -368, -16 )
+
+[node name="StaticBody2D621" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -400, -240 )
+
+[node name="StaticBody2D622" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -560, 176 )
+
+[node name="StaticBody2D623" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -528, 112 )
+
+[node name="StaticBody2D624" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -400, 144 )
+
+[node name="StaticBody2D625" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -464, 240 )
+
+[node name="StaticBody2D626" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -400, 304 )
+
+[node name="StaticBody2D627" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -304, 272 )
+
+[node name="StaticBody2D628" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -272, 176 )
+
+[node name="StaticBody2D629" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -304, 112 )
+
+[node name="StaticBody2D630" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -240, 240 )
+
+[node name="StaticBody2D631" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -528, 304 )
+
+[node name="StaticBody2D632" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -528, 304 )
+
+[node name="StaticBody2D638" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -464, 336 )
+
+[node name="StaticBody2D639" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -528, 432 )
+
+[node name="StaticBody2D640" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -592, 496 )
+
+[node name="StaticBody2D641" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -688, 528 )
+
+[node name="StaticBody2D642" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -656, 432 )
+
+[node name="StaticBody2D643" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -592, 368 )
+
+[node name="StaticBody2D644" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -592, 272 )
+
+[node name="StaticBody2D645" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -752, 592 )
+
+[node name="StaticBody2D633" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -656, 176 )
+
+[node name="StaticBody2D634" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -720, 112 )
+
+[node name="StaticBody2D635" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -784, 16 )
+
+[node name="StaticBody2D636" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -752, -48 )
+
+[node name="StaticBody2D637" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -816, -112 )
+
+[node name="StaticBody2D614" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -464, -368 )
+
+[node name="StaticBody2D729" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -560, -464 )
+
+[node name="StaticBody2D731" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -592, -528 )
+
+[node name="StaticBody2D732" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -592, -528 )
+
+[node name="StaticBody2D730" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -560, -624 )
+
+[node name="StaticBody2D615" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -208, -336 )
+
+[node name="StaticBody2D616" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -144, -240 )
+
+[node name="StaticBody2D617" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 48, -176 )
+
+[node name="StaticBody2D646" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 48, -176 )
+
+[node name="StaticBody2D647" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 48, -528 )
+
+[node name="StaticBody2D737" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -112, -880 )
+
+[node name="StaticBody2D738" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -176, -976 )
+
+[node name="StaticBody2D739" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -176, -976 )
+
+[node name="StaticBody2D740" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -272, -1008 )
+
+[node name="StaticBody2D648" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 144, -496 )
+
+[node name="StaticBody2D741" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 240, -784 )
+
+[node name="StaticBody2D742" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 272, -688 )
+
+[node name="StaticBody2D743" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 304, -848 )
+
+[node name="StaticBody2D649" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 400, -496 )
+
+[node name="StaticBody2D672" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 368, -400 )
+
+[node name="StaticBody2D673" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 304, -272 )
+
+[node name="StaticBody2D674" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 976, -816 )
+
+[node name="StaticBody2D675" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 1008, -880 )
+
+[node name="StaticBody2D676" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 1008, -880 )
+
+[node name="StaticBody2D670" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 400, -656 )
+
+[node name="StaticBody2D671" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 400, -656 )
+
+[node name="StaticBody2D650" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 560, -496 )
+
+[node name="StaticBody2D652" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 496, -464 )
+
+[node name="StaticBody2D653" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 464, -400 )
+
+[node name="StaticBody2D654" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 432, -304 )
+
+[node name="StaticBody2D655" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 368, -208 )
+
+[node name="StaticBody2D656" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 368, -208 )
+
+[node name="StaticBody2D657" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 464, -208 )
+
+[node name="StaticBody2D658" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 528, -304 )
+
+[node name="StaticBody2D659" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 592, -368 )
+
+[node name="StaticBody2D697" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 624, -304 )
+
+[node name="StaticBody2D711" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 432, -80 )
+
+[node name="StaticBody2D712" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 336, -48 )
+
+[node name="StaticBody2D713" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 272, -112 )
+
+[node name="StaticBody2D714" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 272, -16 )
+
+[node name="StaticBody2D715" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 368, 80 )
+
+[node name="StaticBody2D716" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 464, 80 )
+
+[node name="StaticBody2D717" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 592, -112 )
+
+[node name="StaticBody2D718" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 656, -176 )
+
+[node name="StaticBody2D719" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 592, -208 )
+
+[node name="StaticBody2D728" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 528, -48 )
+
+[node name="StaticBody2D720" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 560, 48 )
+
+[node name="StaticBody2D721" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 688, -80 )
+
+[node name="StaticBody2D727" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 688, -80 )
+
+[node name="StaticBody2D722" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 624, -16 )
+
+[node name="StaticBody2D698" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 688, -656 )
+
+[node name="StaticBody2D699" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 752, -720 )
+
+[node name="StaticBody2D700" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 848, -752 )
+
+[node name="StaticBody2D701" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 944, -752 )
+
+[node name="StaticBody2D702" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 1264, -848 )
+
+[node name="StaticBody2D703" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 1360, -848 )
+
+[node name="StaticBody2D704" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 1488, -944 )
+
+[node name="StaticBody2D705" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 1488, -848 )
+
+[node name="StaticBody2D706" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 1424, -816 )
+
+[node name="StaticBody2D707" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 1264, -752 )
+
+[node name="StaticBody2D708" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 1168, -688 )
+
+[node name="StaticBody2D709" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 1168, -752 )
+
+[node name="StaticBody2D961" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 944, -1168 )
+
+[node name="StaticBody2D962" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 1392, -1232 )
+
+[node name="StaticBody2D963" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 1648, -1296 )
+
+[node name="StaticBody2D710" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 1072, -752 )
+
+[node name="StaticBody2D660" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 592, -432 )
+
+[node name="StaticBody2D661" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 496, -688 )
+
+[node name="StaticBody2D662" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 560, -784 )
+
+[node name="StaticBody2D663" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 560, -688 )
+
+[node name="StaticBody2D664" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 656, -816 )
+
+[node name="StaticBody2D665" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 752, -848 )
+
+[node name="StaticBody2D666" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 848, -848 )
+
+[node name="StaticBody2D667" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 1040, -944 )
+
+[node name="StaticBody2D677" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 1104, -912 )
+
+[node name="StaticBody2D678" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 1173, -970.005 )
+
+[node name="StaticBody2D679" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 1232, -912 )
+
+[node name="StaticBody2D680" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 1296, -976 )
+
+[node name="StaticBody2D681" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 1392, -976 )
+
+[node name="StaticBody2D668" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 464, -784 )
+
+[node name="StaticBody2D669" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 400, -848 )
+
+[node name="StaticBody2D651" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 560, -592 )
+
+[node name="StaticBody2D618" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -112, -112 )
+
+[node name="StaticBody2D619" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -208, -144 )
+
+[node name="StaticBody2D582" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -720, -304 )
+
+[node name="StaticBody2D583" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -1072, -368 )
+
+[node name="StaticBody2D584" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -976, -336 )
+
+[node name="StaticBody2D585" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -1072, -496 )
+
+[node name="StaticBody2D586" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -1040, -624 )
+
+[node name="StaticBody2D587" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -1008, -688 )
+
+[node name="StaticBody2D588" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -880, -784 )
+
+[node name="StaticBody2D589" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -656, -816 )
+
+[node name="StaticBody2D590" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -720, -720 )
+
+[node name="StaticBody2D592" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -720, -912 )
+
+[node name="StaticBody2D593" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -656, -976 )
+
+[node name="StaticBody2D594" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -624, -1104 )
+
+[node name="StaticBody2D595" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -560, -1200 )
+
+[node name="StaticBody2D577" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -1136, -464 )
+
+[node name="StaticBody2D573" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -880, -688 )
+
+[node name="StaticBody2D575" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -880, -688 )
+
+[node name="StaticBody2D574" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -816, -784 )
+
 [node name="StaticBody2D452" parent="YSort" instance=ExtResource( 2 )]
 position = Vector2( -368, -912 )
 
@@ -667,6 +1306,441 @@ position = Vector2( 944, -1456 )
 
 [node name="StaticBody2D483" parent="YSort" instance=ExtResource( 12 )]
 position = Vector2( 816, -1424 )
+
+[node name="StaticBody2D535" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 720, -976 )
+
+[node name="StaticBody2D536" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 912, -912 )
+
+[node name="StaticBody2D682" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 1072, -816 )
+
+[node name="StaticBody2D683" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 880, -816 )
+
+[node name="StaticBody2D684" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 1008, -976 )
+
+[node name="StaticBody2D685" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 1072, -976 )
+
+[node name="StaticBody2D686" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 1200, -976 )
+
+[node name="StaticBody2D687" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 1168, -848 )
+
+[node name="StaticBody2D688" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 1296, -912 )
+
+[node name="StaticBody2D689" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 1392, -912 )
+
+[node name="StaticBody2D690" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 1456, -1008 )
+
+[node name="StaticBody2D776" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 1584, -1072 )
+
+[node name="StaticBody2D777" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 1648, -1232 )
+
+[node name="StaticBody2D778" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 1968, -1296 )
+
+[node name="StaticBody2D779" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 1808, -1200 )
+
+[node name="StaticBody2D780" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 1392, -1168 )
+
+[node name="StaticBody2D875" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 624, -1168 )
+
+[node name="StaticBody2D876" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 1072, -1360 )
+
+[node name="StaticBody2D877" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 1040, -1136 )
+
+[node name="StaticBody2D878" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 848, -1200 )
+
+[node name="StaticBody2D879" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 1328, -1296 )
+
+[node name="StaticBody2D880" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 1456, -1424 )
+
+[node name="StaticBody2D881" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 1584, -1328 )
+
+[node name="StaticBody2D882" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 1808, -1328 )
+
+[node name="StaticBody2D15" parent="YSort" instance=ExtResource( 13 )]
+position = Vector2( 1808, -1584 )
+
+[node name="StaticBody2D23" parent="YSort" instance=ExtResource( 13 )]
+position = Vector2( 1808, -1552 )
+
+[node name="StaticBody2D30" parent="YSort" instance=ExtResource( 13 )]
+position = Vector2( 1808, -1520 )
+
+[node name="StaticBody2D39" parent="YSort" instance=ExtResource( 13 )]
+position = Vector2( 1840, -1488 )
+
+[node name="StaticBody2D66" parent="YSort" instance=ExtResource( 13 )]
+position = Vector2( 1872, -1456 )
+
+[node name="StaticBody2D67" parent="YSort" instance=ExtResource( 13 )]
+position = Vector2( 1904, -1424 )
+
+[node name="StaticBody2D160" parent="YSort" instance=ExtResource( 13 )]
+position = Vector2( 1808, -1616 )
+
+[node name="StaticBody2D163" parent="YSort" instance=ExtResource( 13 )]
+position = Vector2( 1904, -1456 )
+
+[node name="StaticBody2D166" parent="YSort" instance=ExtResource( 13 )]
+position = Vector2( 1872, -1488 )
+
+[node name="StaticBody2D167" parent="YSort" instance=ExtResource( 13 )]
+position = Vector2( 1840, -1520 )
+
+[node name="StaticBody2D883" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 1872, -1520 )
+
+[node name="StaticBody2D781" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 1776, -1040 )
+
+[node name="StaticBody2D782" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 1616, -912 )
+
+[node name="StaticBody2D783" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 1904, -944 )
+
+[node name="StaticBody2D784" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 1904, -1136 )
+
+[node name="StaticBody2D832" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 1968, -1232 )
+
+[node name="StaticBody2D785" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 2032, -1040 )
+
+[node name="StaticBody2D786" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 2192, -912 )
+
+[node name="StaticBody2D787" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 2192, -1104 )
+
+[node name="StaticBody2D808" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 2096, -976 )
+
+[node name="StaticBody2D809" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 2128, -1072 )
+
+[node name="StaticBody2D788" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 2064, -1200 )
+
+[node name="StaticBody2D789" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 2416, -944 )
+
+[node name="StaticBody2D790" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 2608, -976 )
+
+[node name="StaticBody2D791" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 2384, -1040 )
+
+[node name="StaticBody2D841" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 2800, -1040 )
+
+[node name="StaticBody2D842" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 2896, -1072 )
+
+[node name="StaticBody2D843" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 2992, -1136 )
+
+[node name="StaticBody2D960" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 3152, -1168 )
+
+[node name="StaticBody2D844" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 2512, -1072 )
+
+[node name="StaticBody2D921" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 2448, -1296 )
+
+[node name="StaticBody2D922" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 2736, -1424 )
+
+[node name="StaticBody2D923" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 2736, -1648 )
+
+[node name="StaticBody2D924" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 2320, -1584 )
+
+[node name="StaticBody2D925" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 2384, -1744 )
+
+[node name="StaticBody2D845" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 2832, -1296 )
+
+[node name="StaticBody2D846" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 3056, -1424 )
+
+[node name="StaticBody2D847" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 3088, -1552 )
+
+[node name="StaticBody2D848" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 3248, -1296 )
+
+[node name="StaticBody2D849" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 3280, -1456 )
+
+[node name="StaticBody2D850" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 3120, -1296 )
+
+[node name="StaticBody2D851" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 3184, -1328 )
+
+[node name="StaticBody2D852" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 3344, -1392 )
+
+[node name="StaticBody2D853" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 3408, -1456 )
+
+[node name="StaticBody2D854" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 3408, -1552 )
+
+[node name="StaticBody2D855" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 3248, -1616 )
+
+[node name="StaticBody2D856" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 3312, -1744 )
+
+[node name="StaticBody2D857" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 3440, -1776 )
+
+[node name="StaticBody2D858" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 3472, -1683 )
+
+[node name="StaticBody2D859" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 3472, -1616 )
+
+[node name="StaticBody2D860" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 3248, -2000 )
+
+[node name="StaticBody2D861" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 3344, -1936 )
+
+[node name="StaticBody2D862" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 2864, -2032 )
+
+[node name="StaticBody2D863" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 2704, -2096 )
+
+[node name="StaticBody2D864" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 2864, -2160 )
+
+[node name="StaticBody2D865" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 2890, -2109 )
+
+[node name="StaticBody2D866" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 2832, -2256 )
+
+[node name="StaticBody2D867" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 2704, -2256 )
+
+[node name="StaticBody2D868" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 2288, -2224 )
+
+[node name="StaticBody2D869" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 2736, -2256 )
+
+[node name="StaticBody2D870" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 2762, -2205 )
+
+[node name="StaticBody2D871" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 2480, -2224 )
+
+[node name="StaticBody2D872" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 3018, -2160 )
+
+[node name="StaticBody2D873" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 3125, -2032 )
+
+[node name="StaticBody2D874" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 3184, -2160 )
+
+[node name="StaticBody2D792" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 2800, -912 )
+
+[node name="StaticBody2D691" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 656, -752 )
+
+[node name="StaticBody2D692" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 752, -816 )
+
+[node name="StaticBody2D693" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 592, -656 )
+
+[node name="StaticBody2D694" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 592, -528 )
+
+[node name="StaticBody2D695" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 528, -240 )
+
+[node name="StaticBody2D696" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 624, -400 )
+
+[node name="StaticBody2D537" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 496, -848 )
+
+[node name="StaticBody2D538" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 368, -752 )
+
+[node name="StaticBody2D539" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 496, -624 )
+
+[node name="StaticBody2D540" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 400, -592 )
+
+[node name="StaticBody2D541" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 496, -528 )
+
+[node name="StaticBody2D542" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 368, -336 )
+
+[node name="StaticBody2D543" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 272, -208 )
+
+[node name="StaticBody2D544" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 368, -144 )
+
+[node name="StaticBody2D545" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 304, 16 )
+
+[node name="StaticBody2D546" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 400, 16 )
+
+[node name="StaticBody2D723" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 656, 16 )
+
+[node name="StaticBody2D724" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 720, -144 )
+
+[node name="StaticBody2D725" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 496, -16 )
+
+[node name="StaticBody2D726" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 496, -144 )
+
+[node name="StaticBody2D547" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 80, -464 )
+
+[node name="StaticBody2D744" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 336, -624 )
+
+[node name="StaticBody2D745" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 304, -784 )
+
+[node name="StaticBody2D553" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 16, -272 )
+
+[node name="StaticBody2D554" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -432, -304 )
+
+[node name="StaticBody2D733" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -464, -624 )
+
+[node name="StaticBody2D734" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -400, -560 )
+
+[node name="StaticBody2D555" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -400, -48 )
+
+[node name="StaticBody2D556" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -624, 112 )
+
+[node name="StaticBody2D557" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -688, 48 )
+
+[node name="StaticBody2D558" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -656, -48 )
+
+[node name="StaticBody2D559" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -368, 208 )
+
+[node name="StaticBody2D560" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -496, 144 )
+
+[node name="StaticBody2D561" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -816, -336 )
+
+[node name="StaticBody2D598" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -912, -272 )
+
+[node name="StaticBody2D562" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -1040, -432 )
+
+[node name="StaticBody2D563" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -976, -624 )
+
+[node name="StaticBody2D564" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -816, -720 )
+
+[node name="StaticBody2D565" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -720, -816 )
+
+[node name="StaticBody2D591" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -624, -880 )
+
+[node name="StaticBody2D566" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -784, -848 )
+
+[node name="StaticBody2D567" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -944, -720 )
+
+[node name="StaticBody2D568" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -1104, -560 )
+
+[node name="StaticBody2D569" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -880, -592 )
+
+[node name="StaticBody2D596" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -1168, -400 )
+
+[node name="StaticBody2D597" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -720, -240 )
+
+[node name="StaticBody2D570" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -912, -400 )
+
+[node name="StaticBody2D571" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -592, -272 )
+
+[node name="StaticBody2D548" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -112, -336 )
+
+[node name="StaticBody2D549" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -144, -176 )
+
+[node name="StaticBody2D550" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -176, -80 )
+
+[node name="StaticBody2D551" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -176, -400 )
+
+[node name="StaticBody2D552" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -176, -400 )
+
+[node name="StaticBody2D735" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -144, -784 )
+
+[node name="StaticBody2D736" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -16, -816 )
 
 [node name="StaticBody2D484" parent="YSort" instance=ExtResource( 12 )]
 position = Vector2( 1200, -1584 )
@@ -1051,6 +2125,198 @@ position = Vector2( 112, -1648 )
 [node name="StaticBody2D193" parent="YSort" instance=ExtResource( 4 )]
 position = Vector2( 80, -1616 )
 
+[node name="StaticBody2D971" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 16, -1616 )
+
+[node name="StaticBody2D972" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -16, -1584 )
+
+[node name="StaticBody2D973" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -48, -1552 )
+
+[node name="StaticBody2D974" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -80, -1520 )
+
+[node name="StaticBody2D975" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -80, -1488 )
+
+[node name="StaticBody2D976" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -80, -1465.27 )
+
+[node name="StaticBody2D977" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -112, -1424 )
+
+[node name="StaticBody2D978" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -144, -1392 )
+
+[node name="StaticBody2D979" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -176, -1360 )
+
+[node name="StaticBody2D980" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -208, -1328 )
+
+[node name="StaticBody2D981" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -240, -1296 )
+
+[node name="StaticBody2D982" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -208, -1296 )
+
+[node name="StaticBody2D983" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -208, -1264 )
+
+[node name="StaticBody2D984" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -208, -1232 )
+
+[node name="StaticBody2D985" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -208, -1200 )
+
+[node name="StaticBody2D986" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -208, -1168 )
+
+[node name="StaticBody2D987" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -240, -1168 )
+
+[node name="StaticBody2D988" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -272, -1168 )
+
+[node name="StaticBody2D989" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -304, -1168 )
+
+[node name="StaticBody2D990" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -304, -1136 )
+
+[node name="StaticBody2D991" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -272, -1104 )
+
+[node name="StaticBody2D992" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -240, -1104 )
+
+[node name="StaticBody2D993" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -203, -1085 )
+
+[node name="StaticBody2D994" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -164, -1061 )
+
+[node name="StaticBody2D995" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -144, -1040 )
+
+[node name="StaticBody2D996" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -240, -1040 )
+
+[node name="StaticBody2D997" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -208, -1008 )
+
+[node name="StaticBody2D998" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -304, -1040 )
+
+[node name="StaticBody2D999" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -336, -1008 )
+
+[node name="StaticBody2D1000" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -336, -976 )
+
+[node name="StaticBody2D1001" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -368, -944 )
+
+[node name="StaticBody2D1002" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -400, -880 )
+
+[node name="StaticBody2D1003" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -432, -848 )
+
+[node name="StaticBody2D1004" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -464, -816 )
+
+[node name="StaticBody2D1005" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -528, -816 )
+
+[node name="StaticBody2D1006" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -528, -784 )
+
+[node name="StaticBody2D1007" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -560, -752 )
+
+[node name="StaticBody2D1008" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -592, -752 )
+
+[node name="StaticBody2D1009" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -528, -752 )
+
+[node name="StaticBody2D1010" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -496, -752 )
+
+[node name="StaticBody2D1011" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -464, -784 )
+
+[node name="StaticBody2D1012" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -624, -720 )
+
+[node name="StaticBody2D1013" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -624, -752 )
+
+[node name="StaticBody2D1014" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -688, -752 )
+
+[node name="StaticBody2D1015" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -688, -720 )
+
+[node name="StaticBody2D1016" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -720, -688 )
+
+[node name="StaticBody2D1017" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -784, -688 )
+
+[node name="StaticBody2D1018" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -816, -688 )
+
+[node name="StaticBody2D1019" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -816, -720 )
+
+[node name="StaticBody2D1020" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -816, -752 )
+
+[node name="StaticBody2D1021" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -688, -688 )
+
+[node name="StaticBody2D1022" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -656, -688 )
+
+[node name="StaticBody2D1023" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -624, -688 )
+
+[node name="StaticBody2D1024" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -528, -656 )
+
+[node name="StaticBody2D1025" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -496, -656 )
+
+[node name="StaticBody2D1026" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -432, -592 )
+
+[node name="StaticBody2D1027" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -528, -624 )
+
+[node name="StaticBody2D1028" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -534, -584 )
+
+[node name="StaticBody2D1029" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -496, -528 )
+
+[node name="StaticBody2D1030" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -464, -496 )
+
+[node name="StaticBody2D1031" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -432, -464 )
+
+[node name="StaticBody2D1032" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -400, -432 )
+
+[node name="StaticBody2D1033" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -400, -400 )
+
+[node name="StaticBody2D1034" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -400, -368 )
+
 [node name="StaticBody2D194" parent="YSort" instance=ExtResource( 4 )]
 position = Vector2( 176, -1616 )
 
@@ -1071,6 +2337,387 @@ position = Vector2( 112, -1232 )
 
 [node name="StaticBody2D226" parent="YSort" instance=ExtResource( 4 )]
 position = Vector2( 80, -1200 )
+
+[node name="StaticBody2D227" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -112, -1168 )
+
+[node name="StaticBody2D231" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -48, -1072 )
+
+[node name="StaticBody2D233" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 80, -1008 )
+
+[node name="StaticBody2D234" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -272, -848 )
+
+[node name="StaticBody2D239" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -240, -912 )
+
+[node name="StaticBody2D240" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -368, -816 )
+
+[node name="StaticBody2D242" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -720, -592 )
+
+[node name="StaticBody2D244" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -784, -592 )
+
+[node name="StaticBody2D245" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -720, -528 )
+
+[node name="StaticBody2D248" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -656, -496 )
+
+[node name="StaticBody2D249" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -816, -528 )
+
+[node name="StaticBody2D269" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -336, -496 )
+
+[node name="StaticBody2D344" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -304, -560 )
+
+[node name="StaticBody2D357" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -144, -720 )
+
+[node name="StaticBody2D366" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -80, -624 )
+
+[node name="StaticBody2D368" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -80, -528 )
+
+[node name="StaticBody2D375" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 112, -816 )
+
+[node name="StaticBody2D376" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 240, -656 )
+
+[node name="StaticBody2D380" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 272, -592 )
+
+[node name="StaticBody2D381" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 240, -528 )
+
+[node name="StaticBody2D387" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 240, -464 )
+
+[node name="StaticBody2D389" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 304, -528 )
+
+[node name="StaticBody2D400" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 304, -496 )
+
+[node name="StaticBody2D406" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 304, -464 )
+
+[node name="StaticBody2D409" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 144, -272 )
+
+[node name="StaticBody2D410" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -48, -112 )
+
+[node name="StaticBody2D412" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -176, 16 )
+
+[node name="StaticBody2D416" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -176, 16 )
+
+[node name="StaticBody2D422" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -48, -48 )
+
+[node name="StaticBody2D426" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 80, -16 )
+
+[node name="StaticBody2D428" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 176, 48 )
+
+[node name="StaticBody2D430" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 112, 80 )
+
+[node name="StaticBody2D437" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 272, 80 )
+
+[node name="StaticBody2D438" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 208, -48 )
+
+[node name="StaticBody2D445" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 176, -176 )
+
+[node name="StaticBody2D746" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 208, -336 )
+
+[node name="StaticBody2D747" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -496, -48 )
+
+[node name="StaticBody2D748" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -464, -112 )
+
+[node name="StaticBody2D749" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -432, -16 )
+
+[node name="StaticBody2D750" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -656, -432 )
+
+[node name="StaticBody2D751" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -80, -720 )
+
+[node name="StaticBody2D752" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 112, -720 )
+
+[node name="StaticBody2D753" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 176, -752 )
+
+[node name="StaticBody2D754" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 176, -976 )
+
+[node name="StaticBody2D755" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 336, -1040 )
+
+[node name="StaticBody2D756" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 272, -1136 )
+
+[node name="StaticBody2D757" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 432, -1072 )
+
+[node name="StaticBody2D758" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 656, -1104 )
+
+[node name="StaticBody2D759" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 720, -1168 )
+
+[node name="StaticBody2D760" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 848, -1136 )
+
+[node name="StaticBody2D761" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 912, -1296 )
+
+[node name="StaticBody2D762" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 944, -1232 )
+
+[node name="StaticBody2D763" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 688, -1264 )
+
+[node name="StaticBody2D764" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 720, -1328 )
+
+[node name="StaticBody2D765" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 880, -1328 )
+
+[node name="StaticBody2D766" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 1136, -1168 )
+
+[node name="StaticBody2D767" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 1232, -1168 )
+
+[node name="StaticBody2D768" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 1072, -1136 )
+
+[node name="StaticBody2D769" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 1232, -1264 )
+
+[node name="StaticBody2D770" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 1232, -1328 )
+
+[node name="StaticBody2D771" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 1168, -1296 )
+
+[node name="StaticBody2D772" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 1360, -1360 )
+
+[node name="StaticBody2D773" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 1456, -1392 )
+
+[node name="StaticBody2D884" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 1776, -1552 )
+
+[node name="StaticBody2D885" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 1776, -1584 )
+
+[node name="StaticBody2D886" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 1904, -1392 )
+
+[node name="StaticBody2D887" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 1936, -1392 )
+
+[node name="StaticBody2D888" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 1968, -1360 )
+
+[node name="StaticBody2D889" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 1936, -1424 )
+
+[node name="StaticBody2D890" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 1968, -1424 )
+
+[node name="StaticBody2D891" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 1904, -1520 )
+
+[node name="StaticBody2D892" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 1968, -1488 )
+
+[node name="StaticBody2D893" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 2032, -1456 )
+
+[node name="StaticBody2D894" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 2128, -1520 )
+
+[node name="StaticBody2D944" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 2512, -1936 )
+
+[node name="StaticBody2D945" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 2736, -2000 )
+
+[node name="StaticBody2D953" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 2896, -2032 )
+
+[node name="StaticBody2D954" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 2928, -2032 )
+
+[node name="StaticBody2D955" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 2960, -2032 )
+
+[node name="StaticBody2D956" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 3088, -1936 )
+
+[node name="StaticBody2D957" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 3152, -1872 )
+
+[node name="StaticBody2D958" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 3184, -1808 )
+
+[node name="StaticBody2D959" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 3152, -1776 )
+
+[node name="StaticBody2D946" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 2608, -2000 )
+
+[node name="StaticBody2D947" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 2576, -2000 )
+
+[node name="StaticBody2D948" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 2512, -2000 )
+
+[node name="StaticBody2D949" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 2480, -2000 )
+
+[node name="StaticBody2D950" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 2448, -2000 )
+
+[node name="StaticBody2D951" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 2384, -2000 )
+
+[node name="StaticBody2D952" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 2384, -2000 )
+
+[node name="StaticBody2D895" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 2032, -1520 )
+
+[node name="StaticBody2D896" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 1968, -1584 )
+
+[node name="StaticBody2D897" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 2000, -1648 )
+
+[node name="StaticBody2D898" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 2000, -1744 )
+
+[node name="StaticBody2D899" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 2096, -1616 )
+
+[node name="StaticBody2D900" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 2032, -1680 )
+
+[node name="StaticBody2D901" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 2064, -1808 )
+
+[node name="StaticBody2D902" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 2128, -1840 )
+
+[node name="StaticBody2D903" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 2160, -1744 )
+
+[node name="StaticBody2D904" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 2416, -1616 )
+
+[node name="StaticBody2D905" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 2416, -1520 )
+
+[node name="StaticBody2D906" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 2455, -1450 )
+
+[node name="StaticBody2D907" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 2512, -1680 )
+
+[node name="StaticBody2D936" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 2640, -1424 )
+
+[node name="StaticBody2D937" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 2640, -1520 )
+
+[node name="StaticBody2D938" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 2640, -1264 )
+
+[node name="StaticBody2D939" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 2672, -1168 )
+
+[node name="StaticBody2D940" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 2352, -1264 )
+
+[node name="StaticBody2D941" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 2256, -1328 )
+
+[node name="StaticBody2D942" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 2448, -1232 )
+
+[node name="StaticBody2D943" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 2224, -1488 )
+
+[node name="StaticBody2D908" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 2608, -1712 )
+
+[node name="StaticBody2D909" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 2608, -1712 )
+
+[node name="StaticBody2D910" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 2448, -1776 )
+
+[node name="StaticBody2D911" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 2576, -1808 )
+
+[node name="StaticBody2D912" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 2512, -1808 )
+
+[node name="StaticBody2D913" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 2320, -1904 )
+
+[node name="StaticBody2D914" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 2192, -1904 )
+
+[node name="StaticBody2D915" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 2288, -1968 )
+
+[node name="StaticBody2D916" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 2320, -2000 )
+
+[node name="StaticBody2D917" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 2224, -1968 )
+
+[node name="StaticBody2D918" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 2128, -1936 )
+
+[node name="StaticBody2D919" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 2064, -1885 )
+
+[node name="StaticBody2D920" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 1968, -1776 )
+
+[node name="StaticBody2D774" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 1520, -1424 )
+
+[node name="StaticBody2D775" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 1520, -1424 )
+
+[node name="StaticBody2D237" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 48, -1072 )
 
 [node name="StaticBody2D228" parent="YSort" instance=ExtResource( 4 )]
 position = Vector2( 208, -1264 )
@@ -1242,6 +2889,90 @@ position = Vector2( 624, -2096 )
 
 [node name="StaticBody2D105" parent="YSort" instance=ExtResource( 4 )]
 position = Vector2( 624, -2128 )
+
+[node name="StaticBody2D169" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 656, -2160 )
+
+[node name="StaticBody2D171" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 656, -2192 )
+
+[node name="StaticBody2D172" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 656, -2224 )
+
+[node name="StaticBody2D174" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 624, -2256 )
+
+[node name="StaticBody2D177" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 624, -1936 )
+
+[node name="StaticBody2D178" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 624, -1904 )
+
+[node name="StaticBody2D180" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 592, -1872 )
+
+[node name="StaticBody2D181" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 560, -1840 )
+
+[node name="StaticBody2D182" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 528, -1808 )
+
+[node name="StaticBody2D187" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 496, -1776 )
+
+[node name="StaticBody2D189" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 496, -1744 )
+
+[node name="StaticBody2D190" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 336, -1744 )
+
+[node name="StaticBody2D212" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 336, -1712 )
+
+[node name="StaticBody2D213" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 304, -1680 )
+
+[node name="StaticBody2D214" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 272, -1648 )
+
+[node name="StaticBody2D215" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 80, -1648 )
+
+[node name="StaticBody2D217" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 80, -1680 )
+
+[node name="StaticBody2D220" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 53, -1706 )
+
+[node name="StaticBody2D221" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 16, -1744 )
+
+[node name="StaticBody2D223" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -16, -1776 )
+
+[node name="StaticBody2D224" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -48, -1776 )
+
+[node name="StaticBody2D964" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -80, -1808 )
+
+[node name="StaticBody2D965" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -112, -1840 )
+
+[node name="StaticBody2D966" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -208, -1936 )
+
+[node name="StaticBody2D967" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -208, -1968 )
+
+[node name="StaticBody2D968" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -240, -2032 )
+
+[node name="StaticBody2D969" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -272, -2128 )
+
+[node name="StaticBody2D970" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -208, -2192 )
 
 [node name="StaticBody2D106" parent="YSort" instance=ExtResource( 4 )]
 position = Vector2( 400, -2480 )
