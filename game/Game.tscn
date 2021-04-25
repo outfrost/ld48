@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://game/ui-theme/ui_theme.tres" type="Theme" id=1]
 [ext_resource path="res://game/DebugLabel.gd" type="Script" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://game/Game.gd" type="Script" id=5]
 [ext_resource path="res://level/Level0.tscn" type="PackedScene" id=6]
 [ext_resource path="res://character/PlayerCharacter.tscn" type="PackedScene" id=7]
+[ext_resource path="res://fx/menu_vignette.tres" type="Material" id=8]
 
 [node name="Game" type="Node"]
 script = ExtResource( 5 )
@@ -19,6 +20,14 @@ player_character = ExtResource( 7 )
 
 [node name="UILayer" type="CanvasLayer" parent="."]
 layer = 99
+
+[node name="Vignette" type="ColorRect" parent="UILayer"]
+material = ExtResource( 8 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="UI" type="Control" parent="UILayer"]
 anchor_right = 1.0
