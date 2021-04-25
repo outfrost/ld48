@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://level/Lootable.gd" type="Script" id=1]
 [ext_resource path="res://character/PlayerCharacter.gd" type="Script" id=2]
@@ -14,6 +14,9 @@ radius = 24.0
 
 [sub_resource type="QuadMesh" id=4]
 size = Vector2( 32, 32 )
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 120, 120 )
 
 [node name="TestSceneOutfrost" type="Node2D"]
 
@@ -33,7 +36,7 @@ mesh = SubResource( 1 )
 shape = SubResource( 2 )
 
 [node name="PlayerCharacter" type="KinematicBody2D" parent="."]
-position = Vector2( 576.945, 235.717 )
+position = Vector2( 576.945, 252.748 )
 script = ExtResource( 2 )
 __meta__ = {
 "_edit_group_": true
@@ -44,3 +47,15 @@ shape = SubResource( 3 )
 
 [node name="MeshInstance2D" type="MeshInstance2D" parent="PlayerCharacter"]
 mesh = SubResource( 4 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 278.37, 241.329 )
+shape = SubResource( 5 )
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+position = Vector2( 420.923, 431.025 )
+shape = SubResource( 5 )

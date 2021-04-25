@@ -1,13 +1,21 @@
 extends KinematicBody2D
 
+export var run_speed: float = 50.0
+
 var current_lootable: Lootable = null
 
 func _ready() -> void:
 	pass
 
+func _physics_process(delta: float) -> void:
+	var direction = Vector2(
+		Input.get_action_strength("move_right") - Input.get_action_strength("move_left"),
+		Input.get_action_strength("move_down") - Input.get_action_strength("move_up")
+	)
+	move_and_slide(direction * run_speed)
+
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("use"):
-		move_and_collide(Vector2.RIGHT * 24.0)
 		if current_lootable:
 			print("%s (%d)" % [Item.type_str(current_lootable.loot1), current_lootable.loot1_amount])
 			print("%s (%d)" % [Item.type_str(current_lootable.loot2), current_lootable.loot2_amount])
