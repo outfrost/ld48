@@ -1280,6 +1280,12 @@ position = Vector2( -624, -1104 )
 [node name="StaticBody2D595" parent="YSort" instance=ExtResource( 2 )]
 position = Vector2( -560, -1200 )
 
+[node name="StaticBody2D620" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -496, -1712 )
+
+[node name="StaticBody2D1035" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -528, -1776 )
+
 [node name="StaticBody2D577" parent="YSort" instance=ExtResource( 2 )]
 position = Vector2( -1136, -464 )
 
