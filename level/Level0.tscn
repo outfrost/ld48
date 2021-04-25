@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://level/Level0Floor.tscn" type="PackedScene" id=1]
 [ext_resource path="res://environment/Tree1.tscn" type="PackedScene" id=2]
@@ -15,7 +15,11 @@
 [ext_resource path="res://environment/Breakable_Bush1.tscn" type="PackedScene" id=13]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 146.046, 119.994 )
+extents = Vector2( 256, 104.5 )
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 192.0
+height = 256.0
 
 [node name="Level0" type="Node2D"]
 
@@ -2087,6 +2091,7 @@ position = Vector2( 496, -2224 )
 position = Vector2( 135.5, -1511.5 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/EnemyController"]
+position = Vector2( -23.5, -8.5 )
 shape = SubResource( 1 )
 
 [node name="Enemy2" parent="YSort/EnemyController" instance=ExtResource( 3 )]
@@ -3147,3 +3152,28 @@ position = Vector2( 144, -1648 )
 
 [node name="StaticBody2D13" parent="YSort" instance=ExtResource( 13 )]
 position = Vector2( 240, -1648 )
+
+[node name="EnemyController2" parent="YSort" instance=ExtResource( 11 )]
+position = Vector2( 2544, -1552 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/EnemyController2"]
+position = Vector2( 64, -64 )
+shape = SubResource( 2 )
+
+[node name="Enemy2" parent="YSort/EnemyController2" instance=ExtResource( 3 )]
+position = Vector2( -96, 0 )
+
+[node name="Enemy" parent="YSort/EnemyController2" instance=ExtResource( 3 )]
+position = Vector2( 192, -32 )
+
+[node name="Enemy3" parent="YSort/EnemyController2" instance=ExtResource( 3 )]
+position = Vector2( 64, -288 )
+
+[node name="Enemy4" parent="YSort/EnemyController2" instance=ExtResource( 3 )]
+position = Vector2( -32, -160 )
+
+[node name="Enemy5" parent="YSort/EnemyController2" instance=ExtResource( 3 )]
+position = Vector2( 64, 64 )
+
+[node name="Enemy6" parent="YSort/EnemyController2" instance=ExtResource( 3 )]
+position = Vector2( 96, 224 )
