@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/tree1.png-e8df7c276358b1e62d82f5aad3987b7f.stex"
+path="res://.import/sidewaystable.png-c6eb410d02b5482f9201f31f77034ab0.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://environment/tree1.png"
-dest_files=[ "res://.import/tree1.png-e8df7c276358b1e62d82f5aad3987b7f.stex" ]
+source_file="res://environment/props/sidewaystable.png"
+dest_files=[ "res://.import/sidewaystable.png-c6eb410d02b5482f9201f31f77034ab0.stex" ]
 
 [params]
 
