@@ -67,6 +67,7 @@ gdscript/warnings/integer_division=false
 
 window/size/width=1280
 window/size/height=720
+window/stretch/aspect="expand"
 
 [input]
 
@@ -117,4 +118,12 @@ common/physics_fps=160
 
 [rendering]
 
+quality/driver/driver_name="GLES2"
+quality/intended_usage/framebuffer_allocation=0
+quality/intended_usage/framebuffer_allocation.mobile=0
+quality/directional_shadow/size=2048
+quality/directional_shadow/size.mobile=1024
+quality/shadow_atlas/size=2048
+quality/shadow_atlas/size.mobile=1024
+quality/depth/hdr=false
 environment/default_environment="res://default_env.tres"
