@@ -26,6 +26,8 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_group_": true
 }
+loot1 = 1
+loot1_amount = 2
 
 [node name="MeshInstance2D" type="MeshInstance2D" parent="Lootable"]
 mesh = SubResource( 1 )
