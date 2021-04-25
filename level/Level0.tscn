@@ -12,6 +12,9 @@ position = Vector2( 165.668, -2051.97 )
 [node name="Level0Floor" parent="." instance=ExtResource( 1 )]
 
 [node name="YSort" type="YSort" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="StaticBody2D16" parent="YSort" instance=ExtResource( 2 )]
 position = Vector2( 13.0909, -2192.69 )
