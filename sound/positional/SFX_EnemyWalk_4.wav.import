@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/SFX_EnemyWalk_4.wav-e05038611f32f532e09236efae7515b9.sample"
+
+[deps]
+
+source_file="res://sound/positional/SFX_EnemyWalk_4.wav"
+dest_files=[ "res://.import/SFX_EnemyWalk_4.wav-e05038611f32f532e09236efae7515b9.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
