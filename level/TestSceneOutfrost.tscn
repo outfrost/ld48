@@ -1,0 +1,46 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://level/Lootable.gd" type="Script" id=1]
+[ext_resource path="res://character/PlayerCharacter.gd" type="Script" id=2]
+
+[sub_resource type="QuadMesh" id=1]
+size = Vector2( 32, 32 )
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 24.0
+
+[sub_resource type="CircleShape2D" id=3]
+radius = 24.0
+
+[sub_resource type="QuadMesh" id=4]
+size = Vector2( 32, 32 )
+
+[node name="TestSceneOutfrost" type="Node2D"]
+
+[node name="Lootable" type="Node2D" parent="."]
+position = Vector2( 630.824, 234.595 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Lootable"]
+mesh = SubResource( 1 )
+
+[node name="Area2D" type="Area2D" parent="Lootable"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Lootable/Area2D"]
+shape = SubResource( 2 )
+
+[node name="PlayerCharacter" type="KinematicBody2D" parent="."]
+position = Vector2( 576.945, 235.717 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerCharacter"]
+shape = SubResource( 3 )
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="PlayerCharacter"]
+mesh = SubResource( 4 )
