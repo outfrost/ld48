@@ -3,7 +3,7 @@
 [ext_resource path="res://environment/tree1.png" type="Texture" id=1]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 24, 24 )
+extents = Vector2( 22, 24 )
 
 [node name="StaticBody2D" type="StaticBody2D"]
 
