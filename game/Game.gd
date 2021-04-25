@@ -1,10 +1,14 @@
 class_name Game
 extends Node
 
+export var starting_level: PackedScene
+
 onready var main_menu: Control = $UI/MainMenu
 onready var transition_screen: TransitionScreen = $UI/TransitionScreen
+onready var level_container = $LevelContainer
 
 var debug: Reference
+var level: Node2D
 
 func _ready() -> void:
 	if OS.has_feature("debug"):
@@ -23,6 +27,11 @@ func _process(delta: float) -> void:
 
 func on_start_game() -> void:
 	main_menu.hide()
+	level = starting_level.instance()
+	level_container.add_child(level)
 
 func back_to_menu() -> void:
+	level_container.remove_child(level)
+	level.queue_free()
+	level = null
 	main_menu.show()
