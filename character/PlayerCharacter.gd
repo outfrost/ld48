@@ -4,6 +4,7 @@ export var run_speed: float = 50.0
 
 var inventory: Dictionary = {}
 
+var game_controller: Game = null
 var current_lootable: Lootable = null
 
 func _ready() -> void:
@@ -15,6 +16,7 @@ func _physics_process(delta: float) -> void:
 		Input.get_action_strength("move_down") - Input.get_action_strength("move_up")
 	)
 	move_and_slide(direction * run_speed)
+#	game_controller.camera_offset = direction * run_speed * 0.5
 
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("use"):
