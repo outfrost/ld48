@@ -10,6 +10,9 @@ var inventory: Dictionary = {}
 var game_controller: Game = null
 var current_lootable: Lootable = null
 var last_movement_dir: Vector2 = Vector2.DOWN
+onready var home = self.position	
+
+var health: float = 100.00
 
 var basic_attack_dmg: float = 40.0
 
@@ -82,6 +85,12 @@ func entered_lootable_range(lootable):
 	print_debug(lootable)
 	current_lootable = lootable
 
+func take_damage(dmg: float):
+	health -= dmg
+	if health <= 0.0:
+		self.position = home
+		self.health = 75
+
 func exited_lootable_range(lootable):
 	if lootable == current_lootable:
 		current_lootable = null
@@ -90,3 +99,6 @@ func print_inventory():
 	print("Inventory:")
 	for entry in inventory:
 		print("%s (%d)" % [Item.type_str(entry), inventory[entry]])
+		
+func _process(delta):
+	DebugLabel.display(self, self.health)
