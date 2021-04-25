@@ -6,10 +6,13 @@ export var player_character: PackedScene
 
 onready var main_menu: Control = $UILayer/UI/MainMenu
 onready var transition_screen: TransitionScreen = $UILayer/UI/TransitionScreen
+#onready var main_camera = $MainCamera
 onready var level_container = $LevelContainer
 
 var debug: Reference
 var level: Node2D
+var character: KinematicBody2D
+var camera_offset: Vector2 = Vector2.ZERO
 
 func _ready() -> void:
 	if OS.has_feature("debug"):
@@ -22,6 +25,9 @@ func _ready() -> void:
 
 func _process(delta: float) -> void:
 	DebugLabel.display(self, "fps %d" % Performance.get_monitor(Performance.TIME_FPS))
+
+#	if character:
+#		main_camera.position = character.position + camera_offset
 
 	if Input.is_action_just_pressed("menu"):
 		back_to_menu()
@@ -41,6 +47,7 @@ func back_to_menu() -> void:
 func spawn_player() -> void:
 	if !level:
 		return
-	var character: KinematicBody2D = player_character.instance()
+	character = player_character.instance()
+	character.game_controller = self
 	character.position = (level.get_node(@"SpawnPoint") as Node2D).position
-	level.add_child(character)
+	level.get_node(@"YSort").add_child(character)
