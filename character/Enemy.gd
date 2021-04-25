@@ -20,29 +20,29 @@ func take_damage(dmg: float):
 
 func set_target(player: KinematicBody2D):
 	nearest_player = player
-	
-func _physics_process(delta:float):		
-	
-	
+
+func _physics_process(delta:float):
+
+
 	if nearest_player:
-		
-		attack_timer += delta	
-		
+
+		attack_timer += delta
+
 		var towardsplayer = ((nearest_player.global_position - self.global_position).normalized() * self.run_speed)
 		move_and_slide(towardsplayer)
-		
+
 		var collision = move_and_collide((nearest_player.global_position - self.global_position).normalized() * self.attack_range,true,true,true)
-		
+
 		if collision && collision.collider.has_method("take_damage") && attack_timer >= basic_attack_cooldown :
 			collision.collider.take_damage(basic_attack_dmg * basic_attack_multiplier)
 			attack_timer = 0.00
-			
-		
+
+
 	else:
 		var towardshome = ((home - self.position).normalized() * self.run_speed)
 		move_and_slide(towardshome)
-		
-		
+
+
 func _process(delta:float):
 	if nearest_player:
 		DebugLabel.display(self, nearest_player.position)
