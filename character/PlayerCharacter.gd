@@ -12,7 +12,7 @@ var last_movement_dir: Vector2 = Vector2.DOWN
 var basic_attack_dmg: float = 40.0
 
 func _ready() -> void:
-	pass
+	$AnimatedSprite.playing = true
 
 func _physics_process(delta: float) -> void:
 	var direction = Vector2(

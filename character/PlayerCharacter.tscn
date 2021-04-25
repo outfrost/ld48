@@ -16,9 +16,7 @@ shape = SubResource( 1 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = ExtResource( 2 )
-animation = "run_down"
-frame = 6
-playing = true
+animation = "idle_down"
 offset = Vector2( 0, -16 )
 
 [node name="Camera2D" type="Camera2D" parent="."]

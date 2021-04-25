@@ -133,5 +133,6 @@ quality/directional_shadow/size=2048
 quality/directional_shadow/size.mobile=1024
 quality/shadow_atlas/size=2048
 quality/shadow_atlas/size.mobile=1024
+environment/default_clear_color=Color( 0.19, 0.19, 0.19, 1 )
 quality/depth/hdr=false
 environment/default_environment="res://default_env.tres"
