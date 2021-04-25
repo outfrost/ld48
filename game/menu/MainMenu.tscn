@@ -55,10 +55,12 @@ __meta__ = {
 }
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
-anchor_left = 0.4
+anchor_left = 0.5
 anchor_top = 0.5
-anchor_right = 0.6
+anchor_right = 0.5
 anchor_bottom = 0.9
+margin_left = -120.0
+margin_right = 120.0
 grow_horizontal = 2
 theme = ExtResource( 3 )
 custom_constants/separation = 10
@@ -67,27 +69,17 @@ __meta__ = {
 }
 
 [node name="PlayButton" type="Button" parent="VBoxContainer"]
-margin_right = 256.0
-margin_bottom = 22.0
+margin_right = 240.0
+margin_bottom = 34.0
 text = "Play"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="ChooseLevelButton" type="Button" parent="VBoxContainer"]
-margin_top = 32.0
-margin_right = 256.0
-margin_bottom = 54.0
-disabled = true
-text = "Choose level"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="OptionsButton" type="Button" parent="VBoxContainer"]
-margin_top = 64.0
-margin_right = 256.0
-margin_bottom = 86.0
+margin_top = 44.0
+margin_right = 240.0
+margin_bottom = 78.0
 disabled = true
 text = "Options"
 __meta__ = {
@@ -95,18 +87,18 @@ __meta__ = {
 }
 
 [node name="CreditsButton" type="Button" parent="VBoxContainer"]
-margin_top = 96.0
-margin_right = 256.0
-margin_bottom = 118.0
+margin_top = 88.0
+margin_right = 240.0
+margin_bottom = 122.0
 text = "Credits"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="QuitButton" type="Button" parent="VBoxContainer"]
-margin_top = 128.0
-margin_right = 256.0
-margin_bottom = 150.0
+margin_top = 132.0
+margin_right = 240.0
+margin_bottom = 166.0
 text = "Quit"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -144,7 +136,7 @@ anchor_bottom = 1.0
 margin_left = 16.0
 margin_top = 16.0
 margin_right = -8.0
-margin_bottom = -54.0
+margin_bottom = -66.0
 bbcode_enabled = true
 __meta__ = {
 "_edit_use_anchors_": false
@@ -157,7 +149,7 @@ anchor_bottom = 1.0
 margin_left = 8.0
 margin_top = 16.0
 margin_right = -16.0
-margin_bottom = -54.0
+margin_bottom = -66.0
 bbcode_enabled = true
 __meta__ = {
 "_edit_use_anchors_": false
@@ -169,7 +161,7 @@ anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = -176.0
-margin_top = -38.0
+margin_top = -50.0
 margin_right = -16.0
 margin_bottom = -16.0
 text = "Close"
