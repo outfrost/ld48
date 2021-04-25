@@ -5,7 +5,7 @@
 [ext_resource path="res://game/menu/MainMenu.tscn" type="PackedScene" id=3]
 [ext_resource path="res://game/loading/TransitionScreen.tscn" type="PackedScene" id=4]
 [ext_resource path="res://game/Game.gd" type="Script" id=5]
-[ext_resource path="res://level/TestSceneOutfrost.tscn" type="PackedScene" id=6]
+[ext_resource path="res://level/Level0.tscn" type="PackedScene" id=6]
 
 [node name="Game" type="Node"]
 script = ExtResource( 5 )
