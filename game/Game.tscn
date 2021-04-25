@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://game/ui-theme/ui_theme.tres" type="Theme" id=1]
 [ext_resource path="res://game/DebugLabel.gd" type="Script" id=2]
@@ -6,16 +6,27 @@
 [ext_resource path="res://game/loading/TransitionScreen.tscn" type="PackedScene" id=4]
 [ext_resource path="res://game/Game.gd" type="Script" id=5]
 [ext_resource path="res://level/Level0.tscn" type="PackedScene" id=6]
+[ext_resource path="res://character/PlayerCharacter.tscn" type="PackedScene" id=7]
+[ext_resource path="res://game/MainCamera.gd" type="Script" id=8]
 
 [node name="Game" type="Node"]
 script = ExtResource( 5 )
 starting_level = ExtResource( 6 )
+player_character = ExtResource( 7 )
+
+[node name="MainCamera" type="Camera2D" parent="."]
+position = Vector2( -59.7037, -2024.95 )
+current = true
+script = ExtResource( 8 )
 
 [node name="LevelContainer" type="Node" parent="."]
 
 [node name="MusicPlayer" type="AudioStreamPlayer" parent="."]
 
-[node name="UI" type="Control" parent="."]
+[node name="UILayer" type="CanvasLayer" parent="."]
+layer = 99
+
+[node name="UI" type="Control" parent="UILayer"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 mouse_filter = 1
@@ -24,12 +35,12 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="MainMenu" parent="UI" instance=ExtResource( 3 )]
+[node name="MainMenu" parent="UILayer/UI" instance=ExtResource( 3 )]
 
-[node name="TransitionScreen" parent="UI" instance=ExtResource( 4 )]
+[node name="TransitionScreen" parent="UILayer/UI" instance=ExtResource( 4 )]
 visible = false
 
-[node name="DebugLabel" type="Label" parent="."]
+[node name="DebugLabel" type="Label" parent="UILayer"]
 margin_right = 75.0
 margin_bottom = 14.0
 text = "DebugLabel"

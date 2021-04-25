@@ -5,6 +5,9 @@
 
 [node name="Level0" type="Node2D"]
 
+[node name="SpawnPoint" type="Position2D" parent="."]
+position = Vector2( 165.668, -2051.97 )
+
 [node name="Floor" type="TileMap" parent="."]
 tile_set = ExtResource( 1 )
 cell_size = Vector2( 32, 32 )
