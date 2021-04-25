@@ -5,7 +5,7 @@ var health = 100.0
 var attack_range: float = 30.0
 var basic_attack_dmg: float = 2.00
 var basic_attack_multiplier: float = 3.00
-var basic_attack_cooldown: float = 5.00
+var basic_attack_cooldown: float = 2.50
 var attack_timer: float = 0.00
 
 var run_speed: float = 50.0
