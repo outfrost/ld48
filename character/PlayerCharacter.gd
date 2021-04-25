@@ -10,7 +10,7 @@ var inventory: Dictionary = {}
 var game_controller: Game = null
 var current_lootable: Lootable = null
 var last_movement_dir: Vector2 = Vector2.DOWN
-onready var home = self.position	
+onready var home = self.position
 
 var health: float = 100.00
 
@@ -99,6 +99,6 @@ func print_inventory():
 	print("Inventory:")
 	for entry in inventory:
 		print("%s (%d)" % [Item.type_str(entry), inventory[entry]])
-		
+
 func _process(delta):
 	DebugLabel.display(self, self.health)
