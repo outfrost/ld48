@@ -1,6 +1,6 @@
 extends Camera2D
 
-const DEFAULT_HEIGHT: float = 360.0
+const DEFAULT_HEIGHT: float = 240.0
 
 func _ready() -> void:
 	on_viewport_resized()
