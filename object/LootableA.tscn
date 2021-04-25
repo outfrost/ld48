@@ -4,7 +4,7 @@
 [ext_resource path="res://environment/Bush.png" type="Texture" id=2]
 [ext_resource path="res://environment/breakablebush.png" type="Texture" id=3]
 
-[node name="Node2D" type="Node2D"]
+[node name="LootablePlantA" type="Node2D"]
 
 [node name="plant_base" type="Sprite" parent="."]
 position = Vector2( 8.69908, 1.54339 )
