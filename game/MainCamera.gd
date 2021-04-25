@@ -1,11 +1,10 @@
 extends Camera2D
 
-onready var default_height = get_viewport_rect().size.y
+const DEFAULT_HEIGHT: float = 360.0
 
 func _ready() -> void:
-	print(default_height)
+	on_viewport_resized()
 	get_viewport().connect("size_changed", self, "on_viewport_resized")
 
 func on_viewport_resized() -> void:
-	zoom = Vector2.ONE * (default_height / get_viewport_rect().size.y)
-	print(zoom)
+	zoom = Vector2.ONE * (DEFAULT_HEIGHT / get_viewport_rect().size.y)
