@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/enemywalkinandblinkingandidle-sheet.png-2d82205db511efbdc51a1c41c3017712.stex"
+path="res://.import/redenemy2.png-f93115186a46d9e087eaab0e2f7eab4e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://character/enemywalkinandblinkingandidle-sheet.png"
-dest_files=[ "res://.import/enemywalkinandblinkingandidle-sheet.png-2d82205db511efbdc51a1c41c3017712.stex" ]
+source_file="res://character/redenemy2.png"
+dest_files=[ "res://.import/redenemy2.png-f93115186a46d9e087eaab0e2f7eab4e.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/enemyattackanimation.png-c837b9afe32fd0d3c54798fee29446fc.stex"
+path="res://.import/redenemy1.png-d0b9de29c199bd5d28ed0c2e768a9bfb.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://character/enemyattackanimation.png"
-dest_files=[ "res://.import/enemyattackanimation.png-c837b9afe32fd0d3c54798fee29446fc.stex" ]
+source_file="res://character/redenemy1.png"
+dest_files=[ "res://.import/redenemy1.png-d0b9de29c199bd5d28ed0c2e768a9bfb.stex" ]
 
 [params]
 
