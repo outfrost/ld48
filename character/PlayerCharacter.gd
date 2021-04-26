@@ -2,6 +2,8 @@ extends KinematicBody2D
 
 export var run_speed: float = 50.0
 export var attack_range: float = 32.0
+export var walk_sounds: Array
+export var walk_sound_interval: float = 0.5
 
 onready var sprite: AnimatedSprite = $AnimatedSprite
 
@@ -16,10 +18,14 @@ var health: float = 100.00
 
 var basic_attack_dmg: float = 40.0
 
+var walk_sound_timer: float = 0.0
+
 func _ready() -> void:
 	$AnimatedSprite.playing = true
 
 func _physics_process(delta: float) -> void:
+	walk_sound_timer += delta
+
 	var direction = Vector2(
 		Input.get_action_strength("move_right") - Input.get_action_strength("move_left"),
 		Input.get_action_strength("move_down") - Input.get_action_strength("move_up")
@@ -28,6 +34,12 @@ func _physics_process(delta: float) -> void:
 
 	if moving:
 		last_movement_dir = direction.normalized()
+		if walk_sound_timer > walk_sound_interval:
+			walk_sound_timer = 0.0
+			if walk_sounds.size() > 0:
+				get_node(walk_sounds[randi() % walk_sounds.size()]).play()
+	else:
+		walk_sound_timer = 0.0
 	move_and_slide(direction * run_speed)
 #	game_controller.camera_offset = direction * run_speed * 0.5
 
