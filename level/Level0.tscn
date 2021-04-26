@@ -7857,6 +7857,27 @@ position = Vector2( -304, -272 )
 [node name="Node2D82" parent="YSort" instance=ExtResource( 23 )]
 position = Vector2( 144, -368 )
 
+[node name="Node2D84" parent="YSort" instance=ExtResource( 23 )]
+position = Vector2( 752, -1264 )
+
+[node name="Node2D85" parent="YSort" instance=ExtResource( 23 )]
+position = Vector2( 2064, -1552 )
+
+[node name="Node2D86" parent="YSort" instance=ExtResource( 23 )]
+position = Vector2( 2160, -1328 )
+
+[node name="Node2D87" parent="YSort" instance=ExtResource( 23 )]
+position = Vector2( 2512, -1488 )
+
+[node name="Node2D88" parent="YSort" instance=ExtResource( 23 )]
+position = Vector2( 2672, -1936 )
+
+[node name="Node2D89" parent="YSort" instance=ExtResource( 23 )]
+position = Vector2( 3024, -1872 )
+
+[node name="Node2D90" parent="YSort" instance=ExtResource( 23 )]
+position = Vector2( 2736, -1200 )
+
 [node name="Node2D83" parent="YSort" instance=ExtResource( 23 )]
 position = Vector2( -304, -624 )
 
