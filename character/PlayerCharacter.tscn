@@ -34,7 +34,7 @@ shape = SubResource( 1 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = ExtResource( 2 )
-animation = "idle_down"
+animation = "slash_down 1"
 offset = Vector2( 0, -16 )
 
 [node name="AudioStreamPlayerWalk1" type="AudioStreamPlayer" parent="."]
