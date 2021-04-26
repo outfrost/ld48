@@ -28,7 +28,10 @@ var resist_fire: float = 0.20
 var resist_ice: float = 0.20
 var resist_wind: float = 0.20
 
-var basic_attack_dmg: float = 40.0
+export var basic_attack_dmg: float = 40.00
+export var fire_attack_dmg: float = 0.00
+export var ice_attack_dmg: float = 0.00
+export var wind_attack_dmg: float = 0.00
 
 var walk_sound_timer: float = 0.0
 var playing_action: bool = false
@@ -127,7 +130,7 @@ func hit(other: CollisionObject2D):
 	yield(get_tree().create_timer(attack_hit_delay), "timeout")
 	if !is_instance_valid(other):
 		return
-	other.take_damage(basic_attack_dmg,0,0,0)
+	other.take_damage(basic_attack_dmg,fire_attack_dmg,ice_attack_dmg,wind_attack_dmg)
 	if hit_sounds.size() > 0:
 		get_node(hit_sounds[randi() % hit_sounds.size()]).play()
 

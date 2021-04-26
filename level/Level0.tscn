@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=2]
+[gd_scene load_steps=39 format=2]
 
 [ext_resource path="res://level/Level0Floor.tscn" type="PackedScene" id=1]
 [ext_resource path="res://environment/Tree1.tscn" type="PackedScene" id=2]
@@ -26,9 +26,11 @@
 [ext_resource path="res://environment/Breakable_FireBush.tscn" type="PackedScene" id=24]
 [ext_resource path="res://environment/Breakable_IceBush.tscn" type="PackedScene" id=25]
 [ext_resource path="res://environment/Breakable_WindBush.tscn" type="PackedScene" id=26]
+[ext_resource path="res://character/EnemyYellow.tscn" type="PackedScene" id=27]
+[ext_resource path="res://character/EnemyBlue.tscn" type="PackedScene" id=28]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 256, 104.5 )
+extents = Vector2( 288, 128 )
 
 [sub_resource type="CapsuleShape2D" id=2]
 radius = 192.0
@@ -53,6 +55,12 @@ height = 364.0
 [sub_resource type="CapsuleShape2D" id=8]
 radius = 288.0
 height = 64.0
+
+[sub_resource type="RectangleShape2D" id=9]
+extents = Vector2( 288, 160 )
+
+[sub_resource type="CircleShape2D" id=10]
+radius = 257.992
 
 [node name="Level0" type="Node2D"]
 
@@ -4092,20 +4100,23 @@ position = Vector2( 176, -2288 )
 position = Vector2( 496, -2224 )
 
 [node name="EnemyController" parent="YSort" instance=ExtResource( 11 )]
-position = Vector2( 48, -720 )
+position = Vector2( -592, -464 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/EnemyController"]
-position = Vector2( -23.5, -8.5 )
+position = Vector2( -64, -96 )
 shape = SubResource( 1 )
 __meta__ = {
 "_edit_lock_": true
 }
 
+[node name="EnemyRed" parent="YSort/EnemyController" instance=ExtResource( 3 )]
+position = Vector2( -160, -32 )
+
 [node name="Enemy2" parent="YSort/EnemyController" instance=ExtResource( 3 )]
-position = Vector2( -192, 64 )
+position = Vector2( -224, -128 )
 
 [node name="Enemy" parent="YSort/EnemyController" instance=ExtResource( 3 )]
-position = Vector2( 128, 32 )
+position = Vector2( 128, -32 )
 
 [node name="StaticBody2D35" parent="YSort" instance=ExtResource( 4 )]
 position = Vector2( 112, -1808 )
@@ -4481,9 +4492,6 @@ position = Vector2( -176, -1104 )
 
 [node name="StaticBody2D242" parent="YSort" instance=ExtResource( 4 )]
 position = Vector2( -720, -592 )
-
-[node name="StaticBody2D244" parent="YSort" instance=ExtResource( 4 )]
-position = Vector2( -784, -592 )
 
 [node name="StaticBody2D245" parent="YSort" instance=ExtResource( 4 )]
 position = Vector2( -720, -528 )
@@ -7151,8 +7159,11 @@ position = Vector2( 96, 64 )
 [node name="Enemy2" parent="YSort/EnemyController3" instance=ExtResource( 3 )]
 position = Vector2( -96, 64 )
 
-[node name="Enemy3" parent="YSort/EnemyController3" instance=ExtResource( 3 )]
-position = Vector2( 0, -64 )
+[node name="EnemyBlue" parent="YSort/EnemyController3" instance=ExtResource( 28 )]
+position = Vector2( -64, -32 )
+
+[node name="EnemyBlue2" parent="YSort/EnemyController3" instance=ExtResource( 28 )]
+position = Vector2( 32, 0 )
 
 [node name="EnemyController4" parent="YSort" instance=ExtResource( 11 )]
 position = Vector2( -16, 176 )
@@ -7171,6 +7182,9 @@ position = Vector2( 0, -64 )
 
 [node name="Enemy" parent="YSort/EnemyController4" instance=ExtResource( 3 )]
 position = Vector2( 96, 96 )
+
+[node name="EnemyBlue" parent="YSort/EnemyController4" instance=ExtResource( 28 )]
+position = Vector2( 0, 32 )
 
 [node name="StaticBody2D233" parent="YSort" instance=ExtResource( 13 )]
 position = Vector2( -752, 2448 )
@@ -7844,11 +7858,32 @@ position = Vector2( -304, -272 )
 [node name="Node2D82" parent="YSort" instance=ExtResource( 23 )]
 position = Vector2( 144, -368 )
 
+[node name="Node2D84" parent="YSort" instance=ExtResource( 23 )]
+position = Vector2( 752, -1264 )
+
+[node name="Node2D85" parent="YSort" instance=ExtResource( 23 )]
+position = Vector2( 2064, -1552 )
+
+[node name="Node2D86" parent="YSort" instance=ExtResource( 23 )]
+position = Vector2( 2160, -1328 )
+
+[node name="Node2D87" parent="YSort" instance=ExtResource( 23 )]
+position = Vector2( 2512, -1488 )
+
+[node name="Node2D88" parent="YSort" instance=ExtResource( 23 )]
+position = Vector2( 2672, -1936 )
+
+[node name="Node2D89" parent="YSort" instance=ExtResource( 23 )]
+position = Vector2( 3024, -1872 )
+
+[node name="Node2D90" parent="YSort" instance=ExtResource( 23 )]
+position = Vector2( 2736, -1200 )
+
 [node name="Node2D83" parent="YSort" instance=ExtResource( 23 )]
 position = Vector2( -304, -624 )
 
 [node name="EnemyController6" parent="YSort" instance=ExtResource( 11 )]
-position = Vector2( -1488, 1008 )
+position = Vector2( -1488, 976 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/EnemyController6"]
 position = Vector2( -128, -64 )
@@ -7857,32 +7892,44 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Enemy" parent="YSort/EnemyController6" instance=ExtResource( 3 )]
-position = Vector2( -64, 64 )
+[node name="EnemyBlue" parent="YSort/EnemyController6" instance=ExtResource( 28 )]
+position = Vector2( -352, -96 )
 
-[node name="Enemy2" parent="YSort/EnemyController6" instance=ExtResource( 3 )]
-position = Vector2( 96, -128 )
+[node name="EnemyBlue2" parent="YSort/EnemyController6" instance=ExtResource( 28 )]
+position = Vector2( 96, -192 )
 
-[node name="Enemy3" parent="YSort/EnemyController6" instance=ExtResource( 3 )]
-position = Vector2( -320, -192 )
+[node name="EnemyBlue3" parent="YSort/EnemyController6" instance=ExtResource( 28 )]
+position = Vector2( 64, -32 )
+
+[node name="EnemyBlue4" parent="YSort/EnemyController6" instance=ExtResource( 28 )]
+position = Vector2( -192, -160 )
 
 [node name="EnemyController5" parent="YSort" instance=ExtResource( 11 )]
 position = Vector2( -1584, 1680 )
-
-[node name="Enemy3" parent="YSort/EnemyController5" instance=ExtResource( 3 )]
-position = Vector2( 0, 128 )
-
-[node name="Enemy" parent="YSort/EnemyController5" instance=ExtResource( 3 )]
-position = Vector2( 160, -64 )
-
-[node name="Enemy2" parent="YSort/EnemyController5" instance=ExtResource( 3 )]
-position = Vector2( -256, -64 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/EnemyController5"]
 shape = SubResource( 6 )
 __meta__ = {
 "_edit_lock_": true
 }
+
+[node name="EnemyBlue" parent="YSort/EnemyController5" instance=ExtResource( 28 )]
+position = Vector2( -96, -32 )
+
+[node name="EnemyBlue2" parent="YSort/EnemyController5" instance=ExtResource( 28 )]
+position = Vector2( -224, -192 )
+
+[node name="EnemyBlue3" parent="YSort/EnemyController5" instance=ExtResource( 28 )]
+position = Vector2( 160, -160 )
+
+[node name="EnemyBlue4" parent="YSort/EnemyController5" instance=ExtResource( 28 )]
+position = Vector2( 128, -32 )
+
+[node name="EnemyBlue5" parent="YSort/EnemyController5" instance=ExtResource( 28 )]
+position = Vector2( -32, 160 )
+
+[node name="EnemyBlue6" parent="YSort/EnemyController5" instance=ExtResource( 28 )]
+position = Vector2( -288, 192 )
 
 [node name="EnemyController8" parent="YSort" instance=ExtResource( 11 )]
 position = Vector2( -112, 1232 )
@@ -7898,13 +7945,22 @@ __meta__ = {
 position = Vector2( -32, 128 )
 
 [node name="Enemy7" parent="YSort/EnemyController8" instance=ExtResource( 3 )]
-position = Vector2( 64, -320 )
+position = Vector2( 128, -320 )
 
 [node name="Enemy8" parent="YSort/EnemyController8" instance=ExtResource( 3 )]
 position = Vector2( 96, -96 )
 
 [node name="Enemy9" parent="YSort/EnemyController8" instance=ExtResource( 3 )]
 position = Vector2( -96, -160 )
+
+[node name="EnemyBlue" parent="YSort/EnemyController8" instance=ExtResource( 28 )]
+position = Vector2( 32, -224 )
+
+[node name="EnemyBlue2" parent="YSort/EnemyController8" instance=ExtResource( 28 )]
+position = Vector2( -32, 32 )
+
+[node name="EnemyBlue3" parent="YSort/EnemyController8" instance=ExtResource( 28 )]
+position = Vector2( -32, -384 )
 
 [node name="LootablePlantB" parent="YSort" instance=ExtResource( 15 )]
 position = Vector2( 2896, -1456 )
@@ -8015,6 +8071,12 @@ __meta__ = {
 "_edit_lock_": true
 }
 
+[node name="EnemyBlue" parent="YSort/EnemyController7" instance=ExtResource( 28 )]
+position = Vector2( 64, -128 )
+
+[node name="EnemyBlue2" parent="YSort/EnemyController7" instance=ExtResource( 28 )]
+position = Vector2( 64, -384 )
+
 [node name="Enemy" parent="YSort/EnemyController7" instance=ExtResource( 3 )]
 position = Vector2( -32, 32 )
 
@@ -8022,10 +8084,65 @@ position = Vector2( -32, 32 )
 position = Vector2( 192, -160 )
 
 [node name="Enemy3" parent="YSort/EnemyController7" instance=ExtResource( 3 )]
-position = Vector2( 32, -160 )
+position = Vector2( 0, -192 )
 
 [node name="Enemy4" parent="YSort/EnemyController7" instance=ExtResource( 3 )]
-position = Vector2( 128, -288 )
+position = Vector2( 128, -320 )
 
 [node name="Enemy5" parent="YSort/EnemyController7" instance=ExtResource( 3 )]
 position = Vector2( -32, -320 )
+
+[node name="EnemyYellow" parent="YSort/EnemyController7" instance=ExtResource( 27 )]
+position = Vector2( -32, -64 )
+
+[node name="EnemyYellow2" parent="YSort/EnemyController7" instance=ExtResource( 27 )]
+position = Vector2( 160, -64 )
+
+[node name="EnemyYellow3" parent="YSort/EnemyController7" instance=ExtResource( 27 )]
+position = Vector2( 64, -256 )
+
+[node name="EnemyYellow4" parent="YSort/EnemyController7" instance=ExtResource( 27 )]
+position = Vector2( 128, -192 )
+
+[node name="EnemyYellow5" parent="YSort/EnemyController7" instance=ExtResource( 27 )]
+position = Vector2( 32, 0 )
+
+[node name="EnemyController9" parent="YSort" instance=ExtResource( 11 )]
+position = Vector2( 1136, -1264 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/EnemyController9"]
+position = Vector2( -32, 0 )
+shape = SubResource( 9 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="EnemyRed" parent="YSort/EnemyController9" instance=ExtResource( 3 )]
+position = Vector2( 64, -32 )
+
+[node name="EnemyRed2" parent="YSort/EnemyController9" instance=ExtResource( 3 )]
+position = Vector2( -128, -64 )
+
+[node name="EnemyRed3" parent="YSort/EnemyController9" instance=ExtResource( 3 )]
+position = Vector2( 32, 128 )
+
+[node name="EnemyController10" parent="YSort" instance=ExtResource( 11 )]
+position = Vector2( -560, 624 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/EnemyController10"]
+shape = SubResource( 10 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="EnemyBlue" parent="YSort/EnemyController10" instance=ExtResource( 28 )]
+position = Vector2( -128, 128 )
+
+[node name="EnemyBlue2" parent="YSort/EnemyController10" instance=ExtResource( 28 )]
+position = Vector2( -96, 0 )
+
+[node name="EnemyBlue3" parent="YSort/EnemyController10" instance=ExtResource( 28 )]
+position = Vector2( 0, 32 )
+
+[node name="EnemyBlue4" parent="YSort/EnemyController10" instance=ExtResource( 28 )]
+position = Vector2( 32, -96 )

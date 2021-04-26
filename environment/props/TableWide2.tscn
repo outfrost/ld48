@@ -8,8 +8,8 @@
 [ext_resource path="res://game/ui-theme/font_large.tres" type="DynamicFont" id=6]
 [ext_resource path="res://game/ui-theme/oinventoryitembackground.png" type="Texture" id=7]
 
-[sub_resource type="CircleShape2D" id=1]
-radius = 40.0
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 30, 5 )
 
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 30, 5 )
