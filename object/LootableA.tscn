@@ -1,17 +1,17 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://object/Lootable.tscn" type="PackedScene" id=1]
-[ext_resource path="res://environment/Bush.png" type="Texture" id=2]
-[ext_resource path="res://environment/breakablebush.png" type="Texture" id=3]
+[ext_resource path="res://environment/orbflower_base.png" type="Texture" id=2]
+[ext_resource path="res://environment/orbflower_Top.png" type="Texture" id=3]
 
 [node name="LootablePlantA" type="Node2D"]
 
 [node name="plant_base" type="Sprite" parent="."]
-position = Vector2( 8.69908, 1.54339 )
 texture = ExtResource( 2 )
 
 [node name="Lootable" parent="." instance=ExtResource( 1 )]
+position = Vector2( -0.0556793, -0.195992 )
 
 [node name="plant_head" type="Sprite" parent="Lootable"]
-position = Vector2( 0.416, -14.5969 )
+position = Vector2( 0, -14.75 )
 texture = ExtResource( 3 )
