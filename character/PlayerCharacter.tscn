@@ -132,46 +132,51 @@ bus = "Effects"
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
-margin_left = 16.0
-margin_top = 16.0
-margin_right = 48.0
-margin_bottom = 48.0
+margin_left = 80.0
+margin_top = 592.0
+margin_right = 144.0
+margin_bottom = 656.0
+expand = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="TextureRect2" type="TextureRect" parent="CanvasLayer"]
-margin_left = 48.0
-margin_top = 16.0
-margin_right = 80.0
-margin_bottom = 48.0
+margin_left = 144.0
+margin_top = 592.0
+margin_right = 208.0
+margin_bottom = 656.0
+expand = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="TextureRect3" type="TextureRect" parent="CanvasLayer"]
-margin_left = 80.0
-margin_top = 16.0
-margin_right = 112.0
-margin_bottom = 48.0
+margin_left = 208.0
+margin_top = 592.0
+margin_right = 272.0
+margin_bottom = 656.0
+expand = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="TextureRect4" type="TextureRect" parent="CanvasLayer"]
-margin_left = 112.0
-margin_top = 16.0
-margin_right = 144.0
-margin_bottom = 48.0
+margin_left = 272.0
+margin_top = 592.0
+margin_right = 336.0
+margin_bottom = 656.0
+expand = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="TextureRect5" type="TextureRect" parent="CanvasLayer"]
-margin_left = 144.0
-margin_top = 16.0
-margin_right = 176.0
-margin_bottom = 48.0
+margin_left = 336.0
+margin_top = 592.0
+margin_right = 400.0
+margin_bottom = 656.0
+expand = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
