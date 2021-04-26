@@ -128,3 +128,50 @@ stream = ExtResource( 12 )
 volume_db = 3.0
 max_distance = 200.0
 bus = "Effects"
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
+margin_left = 48.0
+margin_top = 16.0
+margin_right = 80.0
+margin_bottom = 48.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer"]
+margin_left = 80.0
+margin_top = 16.0
+margin_right = 112.0
+margin_bottom = 48.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect3" type="TextureRect" parent="CanvasLayer"]
+margin_left = 112.0
+margin_top = 16.0
+margin_right = 144.0
+margin_bottom = 48.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect4" type="TextureRect" parent="CanvasLayer"]
+margin_left = 144.0
+margin_top = 16.0
+margin_right = 176.0
+margin_bottom = 48.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect5" type="TextureRect" parent="CanvasLayer"]
+margin_left = 176.0
+margin_top = 16.0
+margin_right = 208.0
+margin_bottom = 48.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
