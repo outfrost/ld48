@@ -53,7 +53,7 @@
 2/shapes = [  ]
 2/z_index = 0
 
-[node name="Node2D" type="Node2D"]
+[node name="MenuBackground" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource( 1 )

@@ -45,7 +45,6 @@ func _physics_process(delta: float) -> void:
 	else:
 		walk_sound_timer = 0.0
 	move_and_slide(direction * run_speed)
-#	game_controller.camera_offset = direction * run_speed * 0.5
 
 	var angle = direction.angle() if moving else last_movement_dir.angle()
 	# right
@@ -113,7 +112,7 @@ func take_damage(dmg: float, fire_dmg: float, ice_dmg: float, wind_dmg: float):
 
 	if health <= 0.0:
 		self.position = home
-		self.health = 75
+		self.health = 75.0
 
 func exited_lootable_range(lootable):
 	if lootable == current_lootable:

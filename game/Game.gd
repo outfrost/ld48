@@ -6,13 +6,13 @@ export var player_character: PackedScene
 
 onready var main_menu: Control = $UILayer/UI/MainMenu
 onready var transition_screen: TransitionScreen = $UILayer/UI/TransitionScreen
-#onready var main_camera = $MainCamera
+onready var main_camera = $MainCamera
 onready var level_container = $LevelContainer
 
 var debug: Reference
 var level: Node2D
 var character: KinematicBody2D
-var camera_offset: Vector2 = Vector2.ZERO
+#var camera_offset: Vector2 = Vector2.ZERO
 
 func _ready() -> void:
 	if OS.has_feature("debug"):
@@ -26,8 +26,11 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	DebugLabel.display(self, "fps %d" % Performance.get_monitor(Performance.TIME_FPS))
 
-#	if character:
-#		main_camera.position = character.position + camera_offset
+	if character:
+		main_camera.position = character.position #+ camera_offset
+
+	else:
+		main_camera.position = Vector2(640.0, 360.0)
 
 	if Input.is_action_just_pressed("menu"):
 		back_to_menu()

@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://game/ui-theme/ui_theme.tres" type="Theme" id=1]
 [ext_resource path="res://game/DebugLabel.gd" type="Script" id=2]
@@ -8,13 +8,22 @@
 [ext_resource path="res://level/Level0.tscn" type="PackedScene" id=6]
 [ext_resource path="res://character/PlayerCharacter.tscn" type="PackedScene" id=7]
 [ext_resource path="res://fx/menu_vignette.tres" type="Material" id=8]
+[ext_resource path="res://game/menu/MenuBackground.tscn" type="PackedScene" id=9]
+[ext_resource path="res://game/MainCamera.gd" type="Script" id=10]
 
 [node name="Game" type="Node"]
 script = ExtResource( 5 )
 starting_level = ExtResource( 6 )
 player_character = ExtResource( 7 )
 
+[node name="MenuBackground" parent="." instance=ExtResource( 9 )]
+
 [node name="LevelContainer" type="Node" parent="."]
+
+[node name="MainCamera" type="Camera2D" parent="."]
+position = Vector2( 640, 360 )
+current = true
+script = ExtResource( 10 )
 
 [node name="MusicPlayer" type="AudioStreamPlayer" parent="."]
 
