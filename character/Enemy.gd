@@ -23,7 +23,12 @@ var run_speed: float = 50.0
 var nearest_player = null
 onready var home = self.position
 
+onready var sprite = $AnimatedSprite
+
 var walk_sound_timer: float = 0.0
+
+func _ready() -> void:
+	sprite.playing = true
 
 func take_damage(dmg: float, fire_dmg: float, ice_dmg: float, wind_dmg: float):
 
