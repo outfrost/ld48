@@ -59,8 +59,8 @@ func _physics_process(delta:float):
 
 	else:
 		var towardshome = ((home - self.position).normalized() * self.run_speed)
-		move_and_slide(towardshome)
-		if (home - self.position).length_squared() > 4.0:
+		if (home - self.position).length_squared() > 8.0:
+			move_and_slide(towardshome)
 			try_play_walk_sound()
 		else:
 			walk_sound_timer = 0.0
