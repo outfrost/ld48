@@ -55,7 +55,7 @@ func _physics_process(delta: float) -> void:
 		walk_sound_timer = 0.0
 	move_and_slide(direction * run_speed)
 	
-	#_update_health_display()
+	_update_health_display()
 	
 	if playing_action:
 		return
@@ -188,13 +188,9 @@ func print_inventory():
 
 func _process(delta):
 	DebugLabel.display(self, self.health)
-	_update_health_display()
 	
 func _update_health_display():
 	for heart in range($CanvasLayer.get_child_count()):
-		DebugLabel.display(self, "Heart #" + str(heart))
-		DebugLabel.display(self, heart * 20.0)
-		DebugLabel.display(self, heart * 20.0 + 10)
 		if health > heart * 20.0 + 10:
 			$CanvasLayer.get_child(heart).texture = heart_full
 		elif health > heart * 20.0:
