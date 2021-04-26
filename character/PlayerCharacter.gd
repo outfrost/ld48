@@ -12,7 +12,6 @@ var heart_full = preload("res://character/Heart_Full.tres")
 var heart_half = preload("res://character/Heart_Half.tres")
 var heart_empty = preload("res://character/Heart_Empty.tres")
 
-
 onready var sprite: AnimatedSprite = $AnimatedSprite
 
 var inventory: Dictionary = {}
@@ -45,7 +44,7 @@ func _physics_process(delta: float) -> void:
 		Input.get_action_strength("move_down") - Input.get_action_strength("move_up")
 	).clamped(1.0)
 	var moving: bool = !direction.is_equal_approx(Vector2.ZERO)
-
+	
 	if moving:
 		last_movement_dir = direction.normalized()
 		if walk_sound_timer > walk_sound_interval:
@@ -55,7 +54,9 @@ func _physics_process(delta: float) -> void:
 	else:
 		walk_sound_timer = 0.0
 	move_and_slide(direction * run_speed)
-
+	
+	#_update_health_display()
+	
 	if playing_action:
 		return
 	var angle = direction.angle() if moving else last_movement_dir.angle()
@@ -187,3 +188,17 @@ func print_inventory():
 
 func _process(delta):
 	DebugLabel.display(self, self.health)
+	_update_health_display()
+	
+func _update_health_display():
+	for heart in range($CanvasLayer.get_child_count()):
+		DebugLabel.display(self, "Heart #" + str(heart))
+		DebugLabel.display(self, heart * 20.0)
+		DebugLabel.display(self, heart * 20.0 + 10)
+		if health > heart * 20.0 + 10:
+			$CanvasLayer.get_child(heart).texture = heart_full
+		elif health > heart * 20.0:
+			
+			$CanvasLayer.get_child(heart).texture = heart_half
+		else:
+			$CanvasLayer.get_child(heart).texture = heart_empty

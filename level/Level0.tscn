@@ -41,10 +41,10 @@ extents = Vector2( 160, 96 )
 extents = Vector2( 128, 128 )
 
 [sub_resource type="RectangleShape2D" id=5]
-extents = Vector2( 320, 224 )
+extents = Vector2( 288, 160 )
 
 [sub_resource type="RectangleShape2D" id=6]
-extents = Vector2( 288, 160 )
+extents = Vector2( 320, 224 )
 
 [sub_resource type="CapsuleShape2D" id=7]
 radius = 192.0
@@ -121,7 +121,7 @@ position = Vector2( 336, -1424 )
 position = Vector2( 272, -1296 )
 
 [node name="StaticBody2D82" parent="YSort" instance=ExtResource( 2 )]
-position = Vector2( 112, -1296 )
+position = Vector2( 80, -1296 )
 
 [node name="StaticBody2D83" parent="YSort" instance=ExtResource( 2 )]
 position = Vector2( -80, -1392 )
