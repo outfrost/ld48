@@ -37,10 +37,10 @@ extents = Vector2( 160, 96 )
 [sub_resource type="RectangleShape2D" id=4]
 extents = Vector2( 128, 128 )
 
-[sub_resource type="RectangleShape2D" id=6]
+[sub_resource type="RectangleShape2D" id=5]
 extents = Vector2( 320, 224 )
 
-[sub_resource type="RectangleShape2D" id=5]
+[sub_resource type="RectangleShape2D" id=6]
 extents = Vector2( 288, 160 )
 
 [sub_resource type="CapsuleShape2D" id=7]
@@ -7881,7 +7881,7 @@ position = Vector2( -1488, 1008 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/EnemyController6"]
 position = Vector2( -128, -64 )
-shape = SubResource( 6 )
+shape = SubResource( 5 )
 
 [node name="Enemy" parent="YSort/EnemyController6" instance=ExtResource( 3 )]
 position = Vector2( -64, 64 )
@@ -7905,7 +7905,7 @@ position = Vector2( 160, -64 )
 position = Vector2( -256, -64 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/EnemyController5"]
-shape = SubResource( 5 )
+shape = SubResource( 6 )
 __meta__ = {
 "_edit_lock_": true
 }
