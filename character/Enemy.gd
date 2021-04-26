@@ -2,6 +2,7 @@ extends KinematicBody2D
 
 export var walk_sounds: Array
 export var walk_sound_interval: float = 0.5
+export var swing_sounds: Array
 
 var health = 100.0
 export var resist_base: float = 0.00
@@ -49,6 +50,8 @@ func _physics_process(delta:float):
 		var collision = move_and_collide((nearest_player.global_position - self.global_position).normalized() * self.attack_range,true,true,true)
 
 		if collision && collision.collider.has_method("take_damage") && attack_timer >= basic_attack_cooldown :
+			if swing_sounds.size() > 0:
+					get_node(swing_sounds[randi() % swing_sounds.size()]).play()
 			collision.collider.take_damage(basic_attack_dmg * basic_attack_multiplier,0,0,0)
 			attack_timer = 0.00
 
