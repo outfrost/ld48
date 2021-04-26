@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://environment/props/table.png" type="Texture" id=1]
 [ext_resource path="res://environment/props/ResearchTable.gd" type="Script" id=2]
 [ext_resource path="res://game/ui-theme/ui_theme.tres" type="Theme" id=3]
 [ext_resource path="res://game/menu/InventoryButton.tscn" type="PackedScene" id=4]
 [ext_resource path="res://game/ui-theme/panel_style_transparent.tres" type="StyleBox" id=5]
+[ext_resource path="res://game/ui-theme/font_large.tres" type="DynamicFont" id=6]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 40.0
@@ -150,6 +151,18 @@ margin_top = 350.0
 margin_right = 360.0
 margin_bottom = 384.0
 text = "Done"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TitleLabel" type="Label" parent="CanvasLayer/ResearchPanel"]
+anchor_right = 1.0
+margin_bottom = 80.0
+custom_fonts/font = ExtResource( 6 )
+text = "Choose an item to research"
+align = 1
+valign = 1
+autowrap = true
 __meta__ = {
 "_edit_use_anchors_": false
 }

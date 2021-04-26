@@ -29,6 +29,7 @@ func interact():
 	character.set_process_input(false)
 	character.set_physics_process(false)
 	panel.show()
+	update_inventory_view()
 
 func done_interacting():
 	panel.hide()
@@ -43,6 +44,7 @@ func update_inventory_view():
 		character = null
 		return
 	var inventory_buttons = $CanvasLayer/ResearchPanel/InventoryButtons.get_children()
+	print_debug(inventory_buttons)
 	var button_idx = 0
 	for item_type in character.inventory:
 		if button_idx >= inventory_buttons.size():

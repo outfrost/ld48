@@ -16,17 +16,17 @@ enum ItemType {
 }
 
 const ICONS: Dictionary = {
-	NONE = preload("res://item/None.tres"),
-	ORB_RED = preload("res://item/OrbRed.tres"),
-	ORB_BLUE = preload("res://item/OrbBlue.tres"),
-	ORB_YELLOW = preload("res://item/OrbYellow.tres"),
-	ORB_GREEN = preload("res://item/OrbGreen.tres"),
-	LEAVES = preload("res://item/Leaves.tres"),
-	TWIG = preload("res://item/Twig.tres"),
-	BOTTLE_RED = preload("res://item/BottleRed.tres"),
-	BOTTLE_BLUE = preload("res://item/BottleBlue.tres"),
-	BOTTLE_YELLOW = preload("res://item/BottleYellow.tres"),
-	BOTTLE_GREEN = preload("res://item/BottleGreen.tres"),
+	ItemType.NONE: preload("res://item/None.tres"),
+	ItemType.ORB_RED: preload("res://item/OrbRed.tres"),
+	ItemType.ORB_BLUE: preload("res://item/OrbBlue.tres"),
+	ItemType.ORB_YELLOW: preload("res://item/OrbYellow.tres"),
+	ItemType.ORB_GREEN: preload("res://item/OrbGreen.tres"),
+	ItemType.LEAVES: preload("res://item/Leaves.tres"),
+	ItemType.TWIG: preload("res://item/Twig.tres"),
+	ItemType.BOTTLE_RED: preload("res://item/BottleRed.tres"),
+	ItemType.BOTTLE_BLUE: preload("res://item/BottleBlue.tres"),
+	ItemType.BOTTLE_YELLOW: preload("res://item/BottleYellow.tres"),
+	ItemType.BOTTLE_GREEN: preload("res://item/BottleGreen.tres"),
 }
 
 static func type_str(item_type):
