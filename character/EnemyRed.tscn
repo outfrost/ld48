@@ -28,6 +28,9 @@ walk_sounds = [ NodePath("AudioStreamPlayer2DWalk1"), NodePath("AudioStreamPlaye
 walk_sound_interval = 0.32
 swing_sounds = [ NodePath("AudioStreamPlayer2DSwing1"), NodePath("AudioStreamPlayer2DSwing2"), NodePath("AudioStreamPlayer2DSwing3"), NodePath("AudioStreamPlayer2DSwing4") ]
 hit_sounds = [ NodePath("AudioStreamPlayer2DHit1"), NodePath("AudioStreamPlayer2DHit2"), NodePath("AudioStreamPlayer2DHit3"), NodePath("AudioStreamPlayer2DHit4"), NodePath("AudioStreamPlayer2DHit5"), NodePath("AudioStreamPlayer2DHit6"), NodePath("AudioStreamPlayer2DHit7") ]
+resist_base = 1.0
+resist_ice = 1.0
+resist_wind = 1.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )
