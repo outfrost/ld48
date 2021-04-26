@@ -1,13 +1,19 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://character/Enemy_SpriteFrames.tres" type="SpriteFrames" id=1]
 [ext_resource path="res://character/Enemy.gd" type="Script" id=2]
+[ext_resource path="res://sound/positional/SFX_EnemyWalk_4.wav" type="AudioStream" id=3]
+[ext_resource path="res://sound/positional/SFX_EnemyWalk_1.wav" type="AudioStream" id=4]
+[ext_resource path="res://sound/positional/SFX_EnemyWalk_3.wav" type="AudioStream" id=5]
+[ext_resource path="res://sound/positional/SFX_EnemyWalk_2.wav" type="AudioStream" id=6]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 16.0
 
 [node name="Enemy" type="KinematicBody2D"]
 script = ExtResource( 2 )
+walk_sounds = [ NodePath("AudioStreamPlayer2DWalk1"), NodePath("AudioStreamPlayer2DWalk2"), NodePath("AudioStreamPlayer2DWalk3"), NodePath("AudioStreamPlayer2DWalk4") ]
+walk_sound_interval = 0.32
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )
@@ -16,3 +22,27 @@ shape = SubResource( 1 )
 frames = ExtResource( 1 )
 playing = true
 offset = Vector2( 0, -16 )
+
+[node name="AudioStreamPlayer2DWalk1" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 4 )
+volume_db = -6.0
+max_distance = 250.0
+bus = "Effects"
+
+[node name="AudioStreamPlayer2DWalk2" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 6 )
+volume_db = -6.0
+max_distance = 250.0
+bus = "Effects"
+
+[node name="AudioStreamPlayer2DWalk3" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 5 )
+volume_db = -6.0
+max_distance = 250.0
+bus = "Effects"
+
+[node name="AudioStreamPlayer2DWalk4" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 3 )
+volume_db = -6.0
+max_distance = 250.0
+bus = "Effects"
