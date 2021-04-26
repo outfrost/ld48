@@ -42,6 +42,7 @@ func on_start_game() -> void:
 	spawn_player()
 
 func back_to_menu() -> void:
+	character = null
 	level_container.remove_child(level)
 	level.queue_free()
 	level = null
