@@ -2,7 +2,7 @@
 
 [ext_resource path="res://level/Level0Floor.tscn" type="PackedScene" id=1]
 [ext_resource path="res://environment/Tree1.tscn" type="PackedScene" id=2]
-[ext_resource path="res://character/Enemy.tscn" type="PackedScene" id=3]
+[ext_resource path="res://character/EnemyRed.tscn" type="PackedScene" id=3]
 [ext_resource path="res://environment/bush1.tscn" type="PackedScene" id=4]
 [ext_resource path="res://environment/props/TableWide1.tscn" type="PackedScene" id=5]
 [ext_resource path="res://environment/props/Stool1.tscn" type="PackedScene" id=6]
