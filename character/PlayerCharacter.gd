@@ -4,6 +4,7 @@ export var run_speed: float = 50.0
 export var attack_range: float = 32.0
 export var walk_sounds: Array
 export var walk_sound_interval: float = 0.5
+export var swing_sounds: Array
 
 onready var sprite: AnimatedSprite = $AnimatedSprite
 
@@ -90,6 +91,8 @@ func _input(event: InputEvent) -> void:
 			print_inventory()
 		get_tree().set_input_as_handled()
 	elif event.is_action_pressed("attack"):
+		if swing_sounds.size() > 0:
+				get_node(swing_sounds[randi() % swing_sounds.size()]).play()
 		var collision = move_and_collide(
 			last_movement_dir * attack_range,
 			true,
