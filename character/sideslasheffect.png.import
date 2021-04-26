@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/backwardsattackeffect-export.png-fa97fbbe935d3f2cf0ed00f9e7f19086.stex"
+path="res://.import/sideslasheffect.png-dc1954bc128bb992b837fcdea4da8409.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://character/backwardsattackeffect-export.png"
-dest_files=[ "res://.import/backwardsattackeffect-export.png-fa97fbbe935d3f2cf0ed00f9e7f19086.stex" ]
+source_file="res://character/sideslasheffect.png"
+dest_files=[ "res://.import/sideslasheffect.png-dc1954bc128bb992b837fcdea4da8409.stex" ]
 
 [params]
 

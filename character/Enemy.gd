@@ -76,10 +76,10 @@ func hit(other: CollisionObject2D):
 
 
 func _process(delta:float):
-	if nearest_player:
-		DebugLabel.display(self, nearest_player.position)
-		DebugLabel.display(self, ((nearest_player.position - self.position).normalized() * self.run_speed))
-	else:
+#	if nearest_player:
+#		DebugLabel.display(self, nearest_player.position)
+#		DebugLabel.display(self, ((nearest_player.position - self.position).normalized() * self.run_speed))
+#	else:
 		pass
 
 func try_play_walk_sound():

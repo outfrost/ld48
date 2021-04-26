@@ -26,6 +26,7 @@ var resist_wind: float = 0.20
 var basic_attack_dmg: float = 40.0
 
 var walk_sound_timer: float = 0.0
+var playing_action: bool = false
 
 func _ready() -> void:
 	$AnimatedSprite.playing = true
@@ -49,6 +50,8 @@ func _physics_process(delta: float) -> void:
 		walk_sound_timer = 0.0
 	move_and_slide(direction * run_speed)
 
+	if playing_action:
+		return
 	var angle = direction.angle() if moving else last_movement_dir.angle()
 	# right
 	if angle > -0.1875 * TAU && angle < 0.1875 * TAU:
@@ -94,6 +97,8 @@ func _input(event: InputEvent) -> void:
 			print_inventory()
 	elif event.is_action_pressed("attack"):
 		get_tree().set_input_as_handled()
+		play_attack_anim(last_movement_dir)
+
 		if swing_sounds.size() > 0:
 			get_node(swing_sounds[randi() % swing_sounds.size()]).play()
 		var collision = move_and_collide(
@@ -111,6 +116,29 @@ func hit(other: CollisionObject2D):
 	other.take_damage(basic_attack_dmg,0,0,0)
 	if hit_sounds.size() > 0:
 		get_node(hit_sounds[randi() % hit_sounds.size()]).play()
+
+func play_attack_anim(direction: Vector2):
+	playing_action = true
+	var angle = last_movement_dir.angle()
+	var anim: String
+	# right
+	if angle > -0.1875 * TAU && angle < 0.1875 * TAU:
+		anim = "slash_right"
+	# left
+	elif angle < -0.3125 * TAU || angle > 0.3125 * TAU:
+		anim = "slash_left"
+	# down
+	elif angle > 0.0:
+		anim = "slash_down"
+	# up
+	else:
+		anim = "slash_up"
+
+	sprite.play(anim)
+	$FxSprite.play(anim + "_red")
+	yield(sprite, "animation_finished")
+	playing_action = false
+	$FxSprite.play("idle")
 
 func entered_lootable_range(lootable):
 	print_debug(lootable)

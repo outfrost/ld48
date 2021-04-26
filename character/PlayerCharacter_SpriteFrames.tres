@@ -311,12 +311,12 @@ animations = [ {
 "speed": 12.5
 }, {
 "frames": [ SubResource( 65 ), SubResource( 66 ), SubResource( 67 ), SubResource( 68 ), SubResource( 69 ), SubResource( 70 ), SubResource( 71 ), SubResource( 72 ), SubResource( 73 ) ],
-"loop": true,
+"loop": false,
 "name": "slash_right",
 "speed": 12.5
 }, {
 "frames": [ SubResource( 56 ), SubResource( 57 ), SubResource( 58 ), SubResource( 59 ), SubResource( 60 ), SubResource( 61 ), SubResource( 62 ), SubResource( 63 ), SubResource( 64 ) ],
-"loop": true,
+"loop": false,
 "name": "slash_left",
 "speed": 12.5
 }, {
@@ -351,12 +351,12 @@ animations = [ {
 "speed": 12.5
 }, {
 "frames": [ SubResource( 82 ), SubResource( 83 ), SubResource( 84 ), SubResource( 85 ), SubResource( 86 ), SubResource( 87 ), SubResource( 88 ), SubResource( 89 ), SubResource( 90 ) ],
-"loop": true,
+"loop": false,
 "name": "slash_up",
 "speed": 12.5
 }, {
 "frames": [ SubResource( 74 ), SubResource( 75 ), SubResource( 76 ), SubResource( 77 ), SubResource( 78 ), SubResource( 79 ), SubResource( 80 ), SubResource( 81 ) ],
-"loop": true,
+"loop": false,
 "name": "slash_down",
 "speed": 12.5
 } ]
