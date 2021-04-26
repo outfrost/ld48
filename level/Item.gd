@@ -13,9 +13,6 @@ enum ItemType {
 	BOTTLE_BLUE,
 	BOTTLE_YELLOW,
 	BOTTLE_GREEN,
-	FLOWER1,
-	FLOWER2,
-	FLOWER3,
 }
 
 static func type_str(item_type):
