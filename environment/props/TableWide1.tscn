@@ -1,15 +1,238 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://environment/props/desk.png" type="Texture" id=1]
+[ext_resource path="res://game/menu/InventoryButton.tscn" type="PackedScene" id=2]
+[ext_resource path="res://game/ui-theme/ui_theme.tres" type="Theme" id=3]
+[ext_resource path="res://game/ui-theme/font_large.tres" type="DynamicFont" id=4]
+[ext_resource path="res://game/ui-theme/panel_style_transparent.tres" type="StyleBox" id=5]
+[ext_resource path="res://game/ui-theme/oinventoryitembackground.png" type="Texture" id=6]
+[ext_resource path="res://environment/props/CraftingTable.gd" type="Script" id=7]
 
-[sub_resource type="RectangleShape2D" id=1]
+[sub_resource type="CircleShape2D" id=1]
+radius = 40.0
+
+[sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 24, 5 )
 
-[node name="StaticBody2D" type="StaticBody2D"]
-
-[node name="Sprite" type="Sprite" parent="."]
-texture = ExtResource( 1 )
+[node name="CraftingTable" type="Area2D"]
+script = ExtResource( 7 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 0, 4.83117 )
+position = Vector2( 0, 8 )
 shape = SubResource( 1 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="StaticBody2D"]
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 0, 4.83117 )
+shape = SubResource( 2 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 2
+
+[node name="CraftingPanel" type="Panel" parent="CanvasLayer"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -280.0
+margin_top = -200.0
+margin_right = 280.0
+margin_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource( 3 )
+custom_styles/panel = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RecipeButtons" type="Control" parent="CanvasLayer/CraftingPanel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RecipeButton1" parent="CanvasLayer/CraftingPanel/RecipeButtons" instance=ExtResource( 2 )]
+margin_left = 60.0
+margin_top = 150.0
+margin_right = 100.0
+margin_bottom = 190.0
+
+[node name="RecipeButton2" parent="CanvasLayer/CraftingPanel/RecipeButtons" instance=ExtResource( 2 )]
+margin_left = 110.0
+margin_top = 150.0
+margin_right = 150.0
+margin_bottom = 190.0
+
+[node name="RecipeButton3" parent="CanvasLayer/CraftingPanel/RecipeButtons" instance=ExtResource( 2 )]
+margin_left = 160.0
+margin_top = 150.0
+margin_right = 200.0
+margin_bottom = 190.0
+
+[node name="RecipeButton4" parent="CanvasLayer/CraftingPanel/RecipeButtons" instance=ExtResource( 2 )]
+margin_left = 210.0
+margin_top = 150.0
+margin_right = 250.0
+margin_bottom = 190.0
+
+[node name="NinePatchRect" type="NinePatchRect" parent="CanvasLayer/CraftingPanel"]
+margin_left = 380.0
+margin_top = 90.0
+margin_right = 432.0
+margin_bottom = 142.0
+texture = ExtResource( 6 )
+patch_margin_left = 12
+patch_margin_top = 12
+patch_margin_right = 12
+patch_margin_bottom = 12
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NinePatchRect2" type="NinePatchRect" parent="CanvasLayer/CraftingPanel"]
+margin_left = 335.0
+margin_top = 190.0
+margin_right = 375.0
+margin_bottom = 230.0
+texture = ExtResource( 6 )
+patch_margin_left = 12
+patch_margin_top = 12
+patch_margin_right = 12
+patch_margin_bottom = 12
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NinePatchRect3" type="NinePatchRect" parent="CanvasLayer/CraftingPanel"]
+margin_left = 385.0
+margin_top = 190.0
+margin_right = 425.0
+margin_bottom = 230.0
+texture = ExtResource( 6 )
+patch_margin_left = 12
+patch_margin_top = 12
+patch_margin_right = 12
+patch_margin_bottom = 12
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NinePatchRect4" type="NinePatchRect" parent="CanvasLayer/CraftingPanel"]
+margin_left = 435.0
+margin_top = 190.0
+margin_right = 475.0
+margin_bottom = 230.0
+texture = ExtResource( 6 )
+patch_margin_left = 12
+patch_margin_top = 12
+patch_margin_right = 12
+patch_margin_bottom = 12
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ChosenRecipeIconRect" type="TextureRect" parent="CanvasLayer/CraftingPanel"]
+margin_left = 390.0
+margin_top = 100.0
+margin_right = 422.0
+margin_bottom = 132.0
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RecipeIngrIcons" type="Control" parent="CanvasLayer/CraftingPanel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RecipeIngrIconRect1" type="TextureRect" parent="CanvasLayer/CraftingPanel/RecipeIngrIcons"]
+margin_left = 347.0
+margin_top = 202.0
+margin_right = 363.0
+margin_bottom = 218.0
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RecipeIngrIconRect2" type="TextureRect" parent="CanvasLayer/CraftingPanel/RecipeIngrIcons"]
+margin_left = 397.0
+margin_top = 202.0
+margin_right = 413.0
+margin_bottom = 218.0
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RecipeIngrIconRect3" type="TextureRect" parent="CanvasLayer/CraftingPanel/RecipeIngrIcons"]
+margin_left = 447.0
+margin_top = 202.0
+margin_right = 463.0
+margin_bottom = 218.0
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/CraftingPanel"]
+margin_left = 320.0
+margin_top = 260.0
+margin_right = 490.0
+margin_bottom = 272.0
+percent_visible = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ConfirmButton" type="Button" parent="CanvasLayer/CraftingPanel"]
+margin_left = 200.0
+margin_top = 300.0
+margin_right = 360.0
+margin_bottom = 334.0
+text = "Craft"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DoneButton" type="Button" parent="CanvasLayer/CraftingPanel"]
+margin_left = 200.0
+margin_top = 350.0
+margin_right = 360.0
+margin_bottom = 384.0
+text = "Done"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TitleLabel" type="Label" parent="CanvasLayer/CraftingPanel"]
+anchor_right = 1.0
+margin_bottom = 80.0
+custom_fonts/font = ExtResource( 4 )
+text = "Choose a recipe to craft"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RecipeLabel" type="Label" parent="CanvasLayer/CraftingPanel"]
+margin_left = 300.0
+margin_top = 150.0
+margin_right = 510.0
+margin_bottom = 180.0
+text = "Test"
+align = 1
+valign = 1

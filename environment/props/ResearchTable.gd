@@ -1,6 +1,6 @@
 extends Area2D
 
-const PROGRESS_TIME: float = 4.0
+const PROGRESS_TIME: float = 3.0
 
 onready var panel: Panel = $CanvasLayer/ResearchPanel
 onready var confirm_button: Button = $CanvasLayer/ResearchPanel/ConfirmButton

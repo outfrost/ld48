@@ -7052,6 +7052,7 @@ position = Vector2( 464, -2160 )
 
 [node name="StaticBody2D54" parent="YSort" instance=ExtResource( 5 )]
 position = Vector2( 144, -2160 )
+research_table_path = NodePath("../StaticBody2D53")
 
 [node name="StaticBody2D55" parent="YSort" instance=ExtResource( 7 )]
 position = Vector2( 304, -2128 )
