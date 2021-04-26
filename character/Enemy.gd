@@ -23,12 +23,12 @@ onready var home = self.position
 var walk_sound_timer: float = 0.0
 
 func take_damage(dmg: float, fire_dmg: float, ice_dmg: float, wind_dmg: float):
-	
+
 	health -= (1.0 - resist_base) * dmg
 	health -= (1.0 - resist_fire) * fire_dmg
 	health -= (1.0 - resist_ice) * ice_dmg
-	health -= (1.0 - resist_wind) * wind_dmg	
-	
+	health -= (1.0 - resist_wind) * wind_dmg
+
 	if health <= 0.0:
 		queue_free()
 
