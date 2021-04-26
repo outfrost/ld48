@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/enemyyelloworb.png-c39ae2419418f823e6791bce181285e8.stex"
+path="res://.import/yellowenemy2.png-621dc34f8362f2f42ffc46f43024e6be.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://character/enemyyelloworb.png"
-dest_files=[ "res://.import/enemyyelloworb.png-c39ae2419418f823e6791bce181285e8.stex" ]
+source_file="res://character/yellowenemy2.png"
+dest_files=[ "res://.import/yellowenemy2.png-621dc34f8362f2f42ffc46f43024e6be.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/enemyblueorb-export.png-9008bfb8c82d8b1df22c768cb8ac3866.stex"
+path="res://.import/blueenemy1.png-234468873fd9edbcae5376580cb93fae.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://character/enemyblueorb-export.png"
-dest_files=[ "res://.import/enemyblueorb-export.png-9008bfb8c82d8b1df22c768cb8ac3866.stex" ]
+source_file="res://character/blueenemy1.png"
+dest_files=[ "res://.import/blueenemy1.png-234468873fd9edbcae5376580cb93fae.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
