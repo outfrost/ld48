@@ -70,16 +70,16 @@ __meta__ = {
 
 [node name="PlayButton" type="Button" parent="VBoxContainer"]
 margin_right = 240.0
-margin_bottom = 34.0
+margin_bottom = 35.0
 text = "Play"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="OptionsButton" type="Button" parent="VBoxContainer"]
-margin_top = 44.0
+margin_top = 45.0
 margin_right = 240.0
-margin_bottom = 78.0
+margin_bottom = 80.0
 disabled = true
 text = "Options"
 __meta__ = {
@@ -87,18 +87,18 @@ __meta__ = {
 }
 
 [node name="CreditsButton" type="Button" parent="VBoxContainer"]
-margin_top = 88.0
+margin_top = 90.0
 margin_right = 240.0
-margin_bottom = 122.0
+margin_bottom = 125.0
 text = "Credits"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="QuitButton" type="Button" parent="VBoxContainer"]
-margin_top = 132.0
+margin_top = 135.0
 margin_right = 240.0
-margin_bottom = 166.0
+margin_bottom = 170.0
 text = "Quit"
 __meta__ = {
 "_edit_use_anchors_": false
