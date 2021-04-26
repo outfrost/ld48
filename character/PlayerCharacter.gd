@@ -28,8 +28,8 @@ var resist_fire: float = 0.20
 var resist_ice: float = 0.20
 var resist_wind: float = 0.20
 
-export var basic_attack_dmg: float = 0.0
-export var fire_attack_dmg: float = 20.00
+export var basic_attack_dmg: float = 40.00
+export var fire_attack_dmg: float = 0.00
 export var ice_attack_dmg: float = 0.00
 export var wind_attack_dmg: float = 0.00
 
