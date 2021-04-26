@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/rightslashanimation.png-608a7b4dc3d8bf8a8a20e7ef82d45a70.stex"
+path="res://.import/enemywalkinandblinkingandidle-sheet.png-2d82205db511efbdc51a1c41c3017712.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://character/rightslashanimation.png"
-dest_files=[ "res://.import/rightslashanimation.png-608a7b4dc3d8bf8a8a20e7ef82d45a70.stex" ]
+source_file="res://character/enemywalkinandblinkingandidle-sheet.png"
+dest_files=[ "res://.import/enemywalkinandblinkingandidle-sheet.png-2d82205db511efbdc51a1c41c3017712.stex" ]
 
 [params]
 

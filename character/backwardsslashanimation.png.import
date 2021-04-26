@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/rightslashanimation.png-608a7b4dc3d8bf8a8a20e7ef82d45a70.stex"
+path="res://.import/backwardsslashanimation.png-1ee5cb597b8e6575f3a03449edc76f4c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://character/rightslashanimation.png"
-dest_files=[ "res://.import/rightslashanimation.png-608a7b4dc3d8bf8a8a20e7ef82d45a70.stex" ]
+source_file="res://character/backwardsslashanimation.png"
+dest_files=[ "res://.import/backwardsslashanimation.png-1ee5cb597b8e6575f3a03449edc76f4c.stex" ]
 
 [params]
 
