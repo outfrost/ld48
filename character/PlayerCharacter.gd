@@ -2,9 +2,11 @@ extends KinematicBody2D
 
 export var run_speed: float = 50.0
 export var attack_range: float = 32.0
+export var attack_hit_delay: float = 0.16
 export var walk_sounds: Array
 export var walk_sound_interval: float = 0.5
 export var swing_sounds: Array
+export var hit_sounds: Array
 
 onready var sprite: AnimatedSprite = $AnimatedSprite
 
@@ -75,6 +77,7 @@ func _physics_process(delta: float) -> void:
 
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("use"):
+		get_tree().set_input_as_handled()
 		if current_lootable:
 			if !inventory.has(current_lootable.loot1):
 				inventory[current_lootable.loot1] = 0
@@ -89,18 +92,25 @@ func _input(event: InputEvent) -> void:
 #			print("%s (%d)" % [Item.type_str(current_lootable.loot2), current_lootable.loot2_amount])
 			current_lootable.queue_free()
 			print_inventory()
-		get_tree().set_input_as_handled()
 	elif event.is_action_pressed("attack"):
+		get_tree().set_input_as_handled()
 		if swing_sounds.size() > 0:
-				get_node(swing_sounds[randi() % swing_sounds.size()]).play()
+			get_node(swing_sounds[randi() % swing_sounds.size()]).play()
 		var collision = move_and_collide(
 			last_movement_dir * attack_range,
 			true,
 			true,
 			true)
 		if collision && collision.collider.has_method("take_damage"):
-			collision.collider.take_damage(basic_attack_dmg,0,0,0)
-		get_tree().set_input_as_handled()
+			hit(collision.collider)
+
+func hit(other: CollisionObject2D):
+	yield(get_tree().create_timer(attack_hit_delay), "timeout")
+	if !is_instance_valid(other):
+		return
+	other.take_damage(basic_attack_dmg,0,0,0)
+	if hit_sounds.size() > 0:
+		get_node(hit_sounds[randi() % hit_sounds.size()]).play()
 
 func entered_lootable_range(lootable):
 	print_debug(lootable)

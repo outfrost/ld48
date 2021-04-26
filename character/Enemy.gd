@@ -1,8 +1,10 @@
 extends KinematicBody2D
 
+export var attack_hit_delay: float = 0.16
 export var walk_sounds: Array
 export var walk_sound_interval: float = 0.5
 export var swing_sounds: Array
+export var hit_sounds: Array
 
 var health = 100.0
 export var resist_base: float = 0.00
@@ -50,11 +52,10 @@ func _physics_process(delta:float):
 		var collision = move_and_collide((nearest_player.global_position - self.global_position).normalized() * self.attack_range,true,true,true)
 
 		if collision && collision.collider.has_method("take_damage") && attack_timer >= basic_attack_cooldown :
+			attack_timer = 0.0
 			if swing_sounds.size() > 0:
-					get_node(swing_sounds[randi() % swing_sounds.size()]).play()
-			collision.collider.take_damage(basic_attack_dmg * basic_attack_multiplier,0,0,0)
-			attack_timer = 0.00
-
+				get_node(swing_sounds[randi() % swing_sounds.size()]).play()
+			hit(collision.collider)
 
 	else:
 		var towardshome = ((home - self.position).normalized() * self.run_speed)
@@ -63,6 +64,16 @@ func _physics_process(delta:float):
 			try_play_walk_sound()
 		else:
 			walk_sound_timer = 0.0
+
+func hit(other: CollisionObject2D):
+	yield(get_tree().create_timer(attack_hit_delay), "timeout")
+	if !is_instance_valid(other):
+		return
+	if hit_sounds.size() > 0:
+		get_node(hit_sounds[randi() % hit_sounds.size()]).play()
+
+	other.take_damage(basic_attack_dmg * basic_attack_multiplier,0,0,0)
+
 
 func _process(delta:float):
 	if nearest_player:
