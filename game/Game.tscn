@@ -19,6 +19,7 @@ player_character = ExtResource( 7 )
 [node name="MenuBackground" parent="." instance=ExtResource( 9 )]
 
 [node name="LevelContainer" type="Node" parent="."]
+pause_mode = 1
 
 [node name="MainCamera" type="Camera2D" parent="."]
 position = Vector2( 640, 360 )

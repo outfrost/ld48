@@ -14,6 +14,7 @@ var inventory: Dictionary = {}
 
 var game_controller: Game = null
 var current_lootable: Lootable = null
+var current_interactive: Node2D = null
 var last_movement_dir: Vector2 = Vector2.DOWN
 onready var home = self.position
 
@@ -82,6 +83,8 @@ func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("use"):
 		get_tree().set_input_as_handled()
 		if current_lootable:
+			if !is_instance_valid(current_lootable):
+				return
 			if !inventory.has(current_lootable.loot1):
 				inventory[current_lootable.loot1] = 0
 			inventory[current_lootable.loot1] += current_lootable.loot1_amount
@@ -95,6 +98,11 @@ func _input(event: InputEvent) -> void:
 #			print("%s (%d)" % [Item.type_str(current_lootable.loot2), current_lootable.loot2_amount])
 			current_lootable.queue_free()
 			print_inventory()
+		elif current_interactive:
+			if !is_instance_valid(current_interactive):
+				return
+			if current_interactive.has_method("interact"):
+				current_interactive.interact()
 	elif event.is_action_pressed("attack"):
 		get_tree().set_input_as_handled()
 		play_attack_anim(last_movement_dir)
@@ -140,10 +148,6 @@ func play_attack_anim(direction: Vector2):
 	playing_action = false
 	$FxSprite.play("idle")
 
-func entered_lootable_range(lootable):
-	print_debug(lootable)
-	current_lootable = lootable
-
 func take_damage(dmg: float, fire_dmg: float, ice_dmg: float, wind_dmg: float):
 
 	health -= (1.0 - resist_base) * dmg
@@ -155,9 +159,21 @@ func take_damage(dmg: float, fire_dmg: float, ice_dmg: float, wind_dmg: float):
 		self.position = home
 		self.health = 75.0
 
+func entered_lootable_range(lootable):
+	print_debug(lootable)
+	current_lootable = lootable
+
 func exited_lootable_range(lootable):
 	if lootable == current_lootable:
 		current_lootable = null
+
+func entered_interactive_range(interactive):
+	print_debug(interactive)
+	current_interactive = interactive
+
+func exited_interactive_range(interactive):
+	if interactive == current_interactive:
+		current_interactive = null
 
 func print_inventory():
 	print("Inventory:")
