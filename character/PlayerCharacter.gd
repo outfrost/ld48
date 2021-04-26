@@ -8,6 +8,11 @@ export var walk_sound_interval: float = 0.5
 export var swing_sounds: Array
 export var hit_sounds: Array
 
+var heart_full = preload("res://character/Heart_Full.tres")
+var heart_half = preload("res://character/Heart_Half.tres")
+var heart_empty = preload("res://character/Heart_Empty.tres")
+
+
 onready var sprite: AnimatedSprite = $AnimatedSprite
 
 var inventory: Dictionary = {}
