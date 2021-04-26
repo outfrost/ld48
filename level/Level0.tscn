@@ -1711,7 +1711,7 @@ position = Vector2( -752, 2416 )
 position = Vector2( -1040, 2640 )
 
 [node name="StaticBody2D2045" parent="YSort" instance=ExtResource( 2 )]
-position = Vector2( -976, 2704 )
+position = Vector2( -1008, 2672 )
 
 [node name="StaticBody2D2046" parent="YSort" instance=ExtResource( 2 )]
 position = Vector2( -1104, 2736 )
@@ -4005,7 +4005,7 @@ position = Vector2( 176, -2288 )
 position = Vector2( 496, -2224 )
 
 [node name="EnemyController" parent="YSort" instance=ExtResource( 11 )]
-position = Vector2( 135.5, -1511.5 )
+position = Vector2( 48, -720 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/EnemyController"]
 position = Vector2( -23.5, -8.5 )
@@ -4015,10 +4015,10 @@ __meta__ = {
 }
 
 [node name="Enemy2" parent="YSort/EnemyController" instance=ExtResource( 3 )]
-position = Vector2( 51.12, 27.6801 )
+position = Vector2( -192, 64 )
 
 [node name="Enemy" parent="YSort/EnemyController" instance=ExtResource( 3 )]
-position = Vector2( -48.1886, 3.46997 )
+position = Vector2( 128, 32 )
 
 [node name="StaticBody2D35" parent="YSort" instance=ExtResource( 4 )]
 position = Vector2( 112, -1808 )
