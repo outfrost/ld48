@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://environment/props/table.png" type="Texture" id=1]
 [ext_resource path="res://environment/props/ResearchTable.gd" type="Script" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://game/menu/InventoryButton.tscn" type="PackedScene" id=4]
 [ext_resource path="res://game/ui-theme/panel_style_transparent.tres" type="StyleBox" id=5]
 [ext_resource path="res://game/ui-theme/font_large.tres" type="DynamicFont" id=6]
+[ext_resource path="res://game/ui-theme/oinventoryitembackground.png" type="Texture" id=7]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 40.0
@@ -128,12 +129,39 @@ margin_top = 200.0
 margin_right = 250.0
 margin_bottom = 240.0
 
+[node name="NinePatchRect" type="NinePatchRect" parent="CanvasLayer/ResearchPanel"]
+margin_left = 380.0
+margin_top = 80.0
+margin_right = 432.0
+margin_bottom = 132.0
+texture = ExtResource( 7 )
+patch_margin_left = 12
+patch_margin_top = 12
+patch_margin_right = 12
+patch_margin_bottom = 12
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="ChosenItemIconRect" type="TextureRect" parent="CanvasLayer/ResearchPanel"]
 margin_left = 390.0
 margin_top = 90.0
 margin_right = 422.0
 margin_bottom = 122.0
 expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/ResearchPanel"]
+margin_left = 320.0
+margin_top = 260.0
+margin_right = 490.0
+margin_bottom = 272.0
+percent_visible = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="ConfirmButton" type="Button" parent="CanvasLayer/ResearchPanel"]
 margin_left = 200.0
