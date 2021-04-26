@@ -5,6 +5,8 @@ export(Item.ItemType) var loot1
 export var loot1_amount: int
 export(Item.ItemType) var loot2
 export var loot2_amount: int
+export(Item.ItemType) var loot3
+export var loot3_amount: int
 
 var character
 

@@ -2,7 +2,7 @@
 
 [ext_resource path="res://level/Lootable.gd" type="Script" id=1]
 
-[sub_resource type="CircleShape2D" id=2]
+[sub_resource type="CircleShape2D" id=1]
 radius = 24.0
 
 [node name="Lootable" type="Area2D"]
@@ -11,4 +11,4 @@ loot1 = 1
 loot1_amount = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource( 2 )
+shape = SubResource( 1 )

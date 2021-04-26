@@ -78,6 +78,9 @@ func _input(event: InputEvent) -> void:
 			if !inventory.has(current_lootable.loot2):
 				inventory[current_lootable.loot2] = 0
 			inventory[current_lootable.loot2] += current_lootable.loot2_amount
+			if !inventory.has(current_lootable.loot3):
+				inventory[current_lootable.loot3] = 0
+			inventory[current_lootable.loot3] += current_lootable.loot3_amount
 #			print("%s (%d)" % [Item.type_str(current_lootable.loot1), current_lootable.loot1_amount])
 #			print("%s (%d)" % [Item.type_str(current_lootable.loot2), current_lootable.loot2_amount])
 			current_lootable.queue_free()

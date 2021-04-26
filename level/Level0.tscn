@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://level/Level0Floor.tscn" type="PackedScene" id=1]
 [ext_resource path="res://environment/Tree1.tscn" type="PackedScene" id=2]
@@ -14,6 +14,8 @@
 [ext_resource path="res://environment/Tree2.tscn" type="PackedScene" id=12]
 [ext_resource path="res://environment/Breakable_Bush1.tscn" type="PackedScene" id=13]
 [ext_resource path="res://object/LootableA.tscn" type="PackedScene" id=14]
+[ext_resource path="res://object/LootableB.tscn" type="PackedScene" id=15]
+[ext_resource path="res://object/LootableC.tscn" type="PackedScene" id=16]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 256, 104.5 )
@@ -21,6 +23,12 @@ extents = Vector2( 256, 104.5 )
 [sub_resource type="CapsuleShape2D" id=2]
 radius = 192.0
 height = 256.0
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 160, 96 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 128, 128 )
 
 [node name="Level0" type="Node2D"]
 
@@ -115,8 +123,11 @@ position = Vector2( 528, -1328 )
 [node name="StaticBody2D90" parent="YSort" instance=ExtResource( 2 )]
 position = Vector2( 496, -1200 )
 
+[node name="LootablePlantC" parent="YSort" instance=ExtResource( 16 )]
+position = Vector2( -16, -1392 )
+
 [node name="StaticBody2D94" parent="YSort" instance=ExtResource( 2 )]
-position = Vector2( 560, -1104 )
+position = Vector2( 560, -1168 )
 
 [node name="StaticBody2D96" parent="YSort" instance=ExtResource( 2 )]
 position = Vector2( 464, -912 )
@@ -1216,9 +1227,6 @@ position = Vector2( -752, -48 )
 [node name="StaticBody2D637" parent="YSort" instance=ExtResource( 2 )]
 position = Vector2( -816, -112 )
 
-[node name="StaticBody2D614" parent="YSort" instance=ExtResource( 2 )]
-position = Vector2( -464, -368 )
-
 [node name="StaticBody2D729" parent="YSort" instance=ExtResource( 2 )]
 position = Vector2( -560, -464 )
 
@@ -1909,6 +1917,132 @@ position = Vector2( -656, -48 )
 [node name="StaticBody2D559" parent="YSort" instance=ExtResource( 12 )]
 position = Vector2( -368, 208 )
 
+[node name="StaticBody2D614" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -720, 432 )
+
+[node name="StaticBody2D1224" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -848, 528 )
+
+[node name="StaticBody2D1352" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -944, 624 )
+
+[node name="StaticBody2D1353" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -1072, 656 )
+
+[node name="StaticBody2D1354" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -1136, 656 )
+
+[node name="StaticBody2D1355" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -1232, 688 )
+
+[node name="StaticBody2D1356" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -1392, 688 )
+
+[node name="StaticBody2D1357" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -1520, 688 )
+
+[node name="StaticBody2D1358" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -1552, 624 )
+
+[node name="StaticBody2D1359" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -1488, 624 )
+
+[node name="StaticBody2D1360" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -1360, 592 )
+
+[node name="StaticBody2D1361" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -1424, 528 )
+
+[node name="StaticBody2D1362" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -1264, 528 )
+
+[node name="StaticBody2D1363" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -1104, 496 )
+
+[node name="StaticBody2D1364" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -976, 496 )
+
+[node name="StaticBody2D1365" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -912, 432 )
+
+[node name="StaticBody2D1366" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -1040, 400 )
+
+[node name="StaticBody2D1367" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -816, 368 )
+
+[node name="StaticBody2D1368" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -656, 240 )
+
+[node name="StaticBody2D1369" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -688, 560 )
+
+[node name="StaticBody2D1370" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -1264, 720 )
+
+[node name="StaticBody2D1371" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -1616, 752 )
+
+[node name="StaticBody2D1372" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -1776, 752 )
+
+[node name="StaticBody2D1373" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -1872, 816 )
+
+[node name="StaticBody2D1374" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -2000, 912 )
+
+[node name="StaticBody2D1375" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -2064, 1008 )
+
+[node name="StaticBody2D1376" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -2160, 912 )
+
+[node name="StaticBody2D1377" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -2096, 816 )
+
+[node name="StaticBody2D1378" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -2000, 816 )
+
+[node name="StaticBody2D1379" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -1904, 752 )
+
+[node name="StaticBody2D1380" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -1808, 688 )
+
+[node name="StaticBody2D1381" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -1680, 656 )
+
+[node name="StaticBody2D1382" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -1648, 560 )
+
+[node name="StaticBody2D1383" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -1808, 560 )
+
+[node name="StaticBody2D1384" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -2032, 688 )
+
+[node name="StaticBody2D1385" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -2192, 848 )
+
+[node name="StaticBody2D1386" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -2256, 976 )
+
+[node name="StaticBody2D1387" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -2160, 1104 )
+
+[node name="StaticBody2D1388" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -1968, 1136 )
+
+[node name="StaticBody2D1389" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -2000, 1264 )
+
+[node name="StaticBody2D1390" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -2032, 1456 )
+
+[node name="StaticBody2D1391" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( -2064, 1392 )
+
 [node name="StaticBody2D560" parent="YSort" instance=ExtResource( 12 )]
 position = Vector2( -496, 144 )
 
@@ -2316,12 +2450,18 @@ position = Vector2( 135.5, -1511.5 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/EnemyController"]
 position = Vector2( -23.5, -8.5 )
 shape = SubResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="Enemy2" parent="YSort/EnemyController" instance=ExtResource( 3 )]
 position = Vector2( 51.12, 27.6801 )
 
 [node name="Enemy" parent="YSort/EnemyController" instance=ExtResource( 3 )]
 position = Vector2( -48.1886, 3.46997 )
+
+[node name="LootablePlantB" parent="YSort" instance=ExtResource( 15 )]
+position = Vector2( 2672, -1424 )
 
 [node name="StaticBody2D35" parent="YSort" instance=ExtResource( 4 )]
 position = Vector2( 112, -1808 )
@@ -2537,10 +2677,10 @@ position = Vector2( -534, -584 )
 position = Vector2( -496, -528 )
 
 [node name="StaticBody2D1030" parent="YSort" instance=ExtResource( 4 )]
-position = Vector2( -464, -496 )
+position = Vector2( -528, -496 )
 
 [node name="StaticBody2D1031" parent="YSort" instance=ExtResource( 4 )]
-position = Vector2( -432, -464 )
+position = Vector2( -464, -400 )
 
 [node name="StaticBody2D1032" parent="YSort" instance=ExtResource( 4 )]
 position = Vector2( -400, -432 )
@@ -3199,11 +3339,8 @@ position = Vector2( -528, -336 )
 [node name="StaticBody2D1223" parent="YSort" instance=ExtResource( 4 )]
 position = Vector2( -528, -368 )
 
-[node name="StaticBody2D1224" parent="YSort" instance=ExtResource( 4 )]
-position = Vector2( -528, -400 )
-
 [node name="StaticBody2D1225" parent="YSort" instance=ExtResource( 4 )]
-position = Vector2( -560, -400 )
+position = Vector2( -560, -368 )
 
 [node name="StaticBody2D1226" parent="YSort" instance=ExtResource( 4 )]
 position = Vector2( -624, -400 )
@@ -4096,12 +4233,30 @@ position = Vector2( 144, -1648 )
 [node name="StaticBody2D13" parent="YSort" instance=ExtResource( 13 )]
 position = Vector2( 240, -1648 )
 
+[node name="LootablePlantA2" parent="YSort" instance=ExtResource( 14 )]
+position = Vector2( 2544, -1424 )
+
+[node name="LootablePlantA3" parent="YSort" instance=ExtResource( 14 )]
+position = Vector2( 2672, -1584 )
+
+[node name="LootablePlantA4" parent="YSort" instance=ExtResource( 14 )]
+position = Vector2( 2480, -1648 )
+
+[node name="LootablePlantA5" parent="YSort" instance=ExtResource( 14 )]
+position = Vector2( 2640, -1744 )
+
+[node name="LootablePlantA" parent="YSort" instance=ExtResource( 14 )]
+position = Vector2( 112, -1488 )
+
 [node name="EnemyController2" parent="YSort" instance=ExtResource( 11 )]
 position = Vector2( 2544, -1552 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/EnemyController2"]
-position = Vector2( 64, -64 )
+position = Vector2( 64, -32 )
 shape = SubResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="Enemy2" parent="YSort/EnemyController2" instance=ExtResource( 3 )]
 position = Vector2( -96, 0 )
@@ -4121,5 +4276,41 @@ position = Vector2( 64, 64 )
 [node name="Enemy6" parent="YSort/EnemyController2" instance=ExtResource( 3 )]
 position = Vector2( 96, 224 )
 
-[node name="LootablePlantA" parent="." instance=ExtResource( 14 )]
-position = Vector2( 112, -1488 )
+[node name="LootablePlantB2" parent="YSort" instance=ExtResource( 15 )]
+position = Vector2( -912, -560 )
+
+[node name="LootablePlantB3" parent="YSort" instance=ExtResource( 15 )]
+position = Vector2( 304, -1200 )
+
+[node name="EnemyController3" parent="YSort" instance=ExtResource( 11 )]
+position = Vector2( 16, 400 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/EnemyController3"]
+shape = SubResource( 3 )
+
+[node name="Enemy" parent="YSort/EnemyController3" instance=ExtResource( 3 )]
+position = Vector2( 96, 64 )
+
+[node name="Enemy2" parent="YSort/EnemyController3" instance=ExtResource( 3 )]
+position = Vector2( -96, 64 )
+
+[node name="Enemy3" parent="YSort/EnemyController3" instance=ExtResource( 3 )]
+position = Vector2( 0, -64 )
+
+[node name="EnemyController4" parent="YSort" instance=ExtResource( 11 )]
+position = Vector2( -16, 176 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/EnemyController4"]
+shape = SubResource( 4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Enemy2" parent="YSort/EnemyController4" instance=ExtResource( 3 )]
+position = Vector2( -96, 96 )
+
+[node name="Enemy" parent="YSort/EnemyController4" instance=ExtResource( 3 )]
+position = Vector2( 96, 96 )
+
+[node name="Enemy" parent="YSort/EnemyController4/Enemy" instance=ExtResource( 3 )]
+position = Vector2( -96, -160 )

@@ -5,6 +5,7 @@ enum ItemType {
 	NONE,
 	FLOWER1,
 	FLOWER2,
+	FLOWER3,
 }
 
 static func type_str(item_type):

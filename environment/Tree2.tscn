@@ -10,6 +10,9 @@ extents = Vector2( 22, 24 )
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 0, -67.005 )
 texture = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 0, -3.005 )
