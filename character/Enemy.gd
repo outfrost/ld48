@@ -4,6 +4,10 @@ export var walk_sounds: Array
 export var walk_sound_interval: float = 0.5
 
 var health = 100.0
+export var resist_base: float = 0.00
+export var resist_fire: float = 0.00
+export var resist_ice: float = 0.00
+export var resist_wind: float = 0.00
 
 var attack_range: float = 30.0
 var basic_attack_dmg: float = 2.00
@@ -18,8 +22,13 @@ onready var home = self.position
 
 var walk_sound_timer: float = 0.0
 
-func take_damage(dmg: float):
-	health -= dmg
+func take_damage(dmg: float, fire_dmg: float, ice_dmg: float, wind_dmg: float):
+	
+	health -= (1.0 - resist_base) * dmg
+	health -= (1.0 - resist_fire) * fire_dmg
+	health -= (1.0 - resist_ice) * ice_dmg
+	health -= (1.0 - resist_wind) * wind_dmg	
+	
 	if health <= 0.0:
 		queue_free()
 
@@ -40,7 +49,7 @@ func _physics_process(delta:float):
 		var collision = move_and_collide((nearest_player.global_position - self.global_position).normalized() * self.attack_range,true,true,true)
 
 		if collision && collision.collider.has_method("take_damage") && attack_timer >= basic_attack_cooldown :
-			collision.collider.take_damage(basic_attack_dmg * basic_attack_multiplier)
+			collision.collider.take_damage(basic_attack_dmg * basic_attack_multiplier,0,0,0)
 			attack_timer = 0.00
 
 

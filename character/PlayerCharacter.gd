@@ -15,6 +15,10 @@ var last_movement_dir: Vector2 = Vector2.DOWN
 onready var home = self.position
 
 var health: float = 100.00
+var resist_base: float = 0.20
+var resist_fire: float = 0.20
+var resist_ice: float = 0.20
+var resist_wind: float = 0.20
 
 var basic_attack_dmg: float = 40.0
 
@@ -93,15 +97,20 @@ func _input(event: InputEvent) -> void:
 			true,
 			true)
 		if collision && collision.collider.has_method("take_damage"):
-			collision.collider.take_damage(basic_attack_dmg)
+			collision.collider.take_damage(basic_attack_dmg,0,0,0)
 		get_tree().set_input_as_handled()
 
 func entered_lootable_range(lootable):
 	print_debug(lootable)
 	current_lootable = lootable
 
-func take_damage(dmg: float):
-	health -= dmg
+func take_damage(dmg: float, fire_dmg: float, ice_dmg: float, wind_dmg: float):
+	
+	health -= (1.0 - resist_base) * dmg
+	health -= (1.0 - resist_fire) * fire_dmg
+	health -= (1.0 - resist_ice) * ice_dmg
+	health -= (1.0 - resist_wind) * wind_dmg	
+
 	if health <= 0.0:
 		self.position = home
 		self.health = 75

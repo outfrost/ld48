@@ -6799,11 +6799,11 @@ __meta__ = {
 [node name="Enemy2" parent="YSort/EnemyController4" instance=ExtResource( 3 )]
 position = Vector2( -96, 96 )
 
+[node name="Enemy3" parent="YSort/EnemyController4" instance=ExtResource( 3 )]
+position = Vector2( 0, -64 )
+
 [node name="Enemy" parent="YSort/EnemyController4" instance=ExtResource( 3 )]
 position = Vector2( 96, 96 )
-
-[node name="Enemy" parent="YSort/EnemyController4/Enemy" instance=ExtResource( 3 )]
-position = Vector2( -96, -160 )
 
 [node name="StaticBody2D67" parent="YSort" instance=ExtResource( 13 )]
 position = Vector2( -304, 1968 )
