@@ -1,6 +1,6 @@
 [gd_scene load_steps=19 format=2]
 
-[ext_resource path="res://character/Enemy_SpriteFrames.tres" type="SpriteFrames" id=1]
+[ext_resource path="res://character/EnemyRed_SpriteFrames.tres" type="SpriteFrames" id=1]
 [ext_resource path="res://character/Enemy.gd" type="Script" id=2]
 [ext_resource path="res://sound/positional/SFX_EnemyWalk_4.wav" type="AudioStream" id=3]
 [ext_resource path="res://sound/positional/SFX_EnemyWalk_1.wav" type="AudioStream" id=4]
@@ -33,7 +33,7 @@ shape = SubResource( 1 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = ExtResource( 1 )
-playing = true
+animation = "idle_down"
 offset = Vector2( 0, -16 )
 
 [node name="AudioStreamPlayer2DWalk1" type="AudioStreamPlayer2D" parent="."]
