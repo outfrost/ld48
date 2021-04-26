@@ -11,10 +11,10 @@ region_enabled = true
 region_rect = Rect2( 20, 5, 23, 23 )
 
 [node name="Lootable" parent="." instance=ExtResource( 1 )]
-loot1 = 0
-loot1_amount = 0
-loot2 = 2
-loot2_amount = 2
+loot1 = 2
+loot1_amount = 2
+loot2 = 5
+loot2_amount = 1
 
 [node name="Plant_Loot" type="Sprite" parent="Lootable"]
 position = Vector2( 0, -14.75 )
