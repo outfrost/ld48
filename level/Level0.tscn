@@ -4714,7 +4714,7 @@ position = Vector2( 240, -48 )
 position = Vector2( 496, 208 )
 
 [node name="StaticBody2D1415" parent="YSort" instance=ExtResource( 4 )]
-position = Vector2( 272, 432 )
+position = Vector2( 272, 464 )
 
 [node name="StaticBody2D1416" parent="YSort" instance=ExtResource( 4 )]
 position = Vector2( -48, 592 )
