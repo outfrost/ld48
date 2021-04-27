@@ -1,4 +1,4 @@
-[gd_resource type="Theme" load_steps=10 format=2]
+[gd_resource type="Theme" load_steps=11 format=2]
 
 [ext_resource path="res://game/ui-theme/button_style_empty.tres" type="StyleBox" id=1]
 [ext_resource path="res://game/ui-theme/button_style_pressed.tres" type="StyleBox" id=2]
@@ -6,9 +6,17 @@
 [ext_resource path="res://game/ui-theme/progress_bar_fg.tres" type="StyleBox" id=4]
 [ext_resource path="res://game/ui-theme/progress_bar_bg.tres" type="StyleBox" id=5]
 [ext_resource path="res://game/ui-theme/button_style_base.tres" type="StyleBox" id=6]
-[ext_resource path="res://game/ui-theme/panel_style_base.tres" type="StyleBox" id=7]
+[ext_resource path="res://game/ui-theme/text.png" type="Texture" id=7]
 [ext_resource path="res://game/ui-theme/panel_style_popup.tres" type="StyleBox" id=8]
 [ext_resource path="res://game/ui-theme/font_tiny.tres" type="DynamicFont" id=9]
+
+[sub_resource type="StyleBoxTexture" id=1]
+texture = ExtResource( 7 )
+region_rect = Rect2( 10, 94, 32, 32 )
+margin_left = 6.0
+margin_right = 6.0
+margin_top = 6.0
+margin_bottom = 6.0
 
 [resource]
 default_font = ExtResource( 3 )
@@ -223,7 +231,7 @@ OptionButton/styles/focus = null
 OptionButton/styles/hover = null
 OptionButton/styles/normal = null
 OptionButton/styles/pressed = null
-Panel/styles/panel = ExtResource( 7 )
+Panel/styles/panel = SubResource( 1 )
 PanelContainer/styles/panel = null
 PopupDialog/styles/panel = null
 PopupMenu/colors/font_color = Color( 0, 0, 0, 1 )
