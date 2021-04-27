@@ -1,6 +1,6 @@
 extends Label
 
-func _show_value(value, travel, duration, spread):
+func _show_value(value, travel, duration, spread, size=12):
 	
 	text = value
 	var movement = travel.rotated(rand_range(-spread/2, spread/2))

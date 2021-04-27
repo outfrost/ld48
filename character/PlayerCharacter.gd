@@ -96,12 +96,18 @@ func _input(event: InputEvent) -> void:
 				return
 			if !inventory.has(current_lootable.loot1):
 				inventory[current_lootable.loot1] = 0
+			if current_lootable.loot1_amount != 0:
+				$FCTManager._show_value(str(Item.type_str(current_lootable.loot1)) + " (" + str(current_lootable.loot1_amount) + ")", 16)
 			inventory[current_lootable.loot1] += current_lootable.loot1_amount
 			if !inventory.has(current_lootable.loot2):
 				inventory[current_lootable.loot2] = 0
+			if current_lootable.loot2_amount != 0:
+				$FCTManager._show_value(str(Item.type_str(current_lootable.loot2)) + " (" + str(current_lootable.loot2_amount) + ")", 16)
 			inventory[current_lootable.loot2] += current_lootable.loot2_amount
 			if !inventory.has(current_lootable.loot3):
 				inventory[current_lootable.loot3] = 0
+			if current_lootable.loot3_amount != 0:
+				$FCTManager._show_value(str(Item.type_str(current_lootable.loot3)) + " (" + str(current_lootable.loot3_amount) + ")", 16)
 			inventory[current_lootable.loot3] += current_lootable.loot3_amount
 #			print("%s (%d)" % [Item.type_str(current_lootable.loot1), current_lootable.loot1_amount])
 #			print("%s (%d)" % [Item.type_str(current_lootable.loot2), current_lootable.loot2_amount])
