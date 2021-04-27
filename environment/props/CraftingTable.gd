@@ -98,6 +98,7 @@ func on_confirm():
 		if !character.inventory.has(current_recipe):
 			character.inventory[current_recipe] = 0
 		character.inventory[current_recipe] += 1
+		character.update_selector()
 	update_inventory_view()
 	done_button.disabled = false
 

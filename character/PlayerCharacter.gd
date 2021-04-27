@@ -36,8 +36,41 @@ export var wind_attack_dmg: float = 0.00
 var walk_sound_timer: float = 0.0
 var playing_action: bool = false
 
+onready var attack_selector = $CanvasLayer/AttackSelector
+onready var attack_icon = $CanvasLayer/AttackSelector/SelectorRect/Icon
+
+const ATTACK_MAP: Dictionary = {
+	Item.ItemType.NONE: {
+		basic_attack_dmg = 40.0,
+		fire_attack_dmg = 0.0,
+		ice_attack_dmg = 0.0,
+		wind_attack_dmg = 0.0,
+	},
+	Item.ItemType.BOTTLE_RED: {
+		basic_attack_dmg = 40.0,
+		fire_attack_dmg = 40.0,
+		ice_attack_dmg = 0.0,
+		wind_attack_dmg = 0.0,
+	},
+Item.ItemType.BOTTLE_BLUE: {
+		basic_attack_dmg = 40.0,
+		fire_attack_dmg = 0.0,
+		ice_attack_dmg = 40.0,
+		wind_attack_dmg = 0.0,
+	},
+Item.ItemType.BOTTLE_YELLOW: {
+		basic_attack_dmg = 40.0,
+		fire_attack_dmg = 0.0,
+		ice_attack_dmg = 0.0,
+		wind_attack_dmg = 40.0,
+	},
+}
+
+var current_attack_mod = Item.ItemType.NONE
+
 func _ready() -> void:
 	$AnimatedSprite.playing = true
+	update_selector()
 
 func _physics_process(delta: float) -> void:
 	walk_sound_timer += delta
@@ -125,6 +158,78 @@ func _input(event: InputEvent) -> void:
 			true)
 		if collision && collision.collider.has_method("take_damage"):
 			hit(collision.collider)
+	elif event.is_action_pressed("next_attack_mod"):
+		get_tree().set_input_as_handled()
+		var available_mods = []
+		for mod in ATTACK_MAP:
+			if mod == Item.ItemType.NONE:
+				continue
+			if inventory.has(mod) && inventory[mod] > 0:
+				available_mods.append(mod)
+		if available_mods.size() == 0:
+			current_attack_mod = Item.ItemType.NONE
+		else:
+			match(current_attack_mod):
+				Item.ItemType.NONE:
+					current_attack_mod = Item.ItemType.BOTTLE_RED
+				Item.ItemType.BOTTLE_RED:
+					current_attack_mod = Item.ItemType.BOTTLE_BLUE
+				Item.ItemType.BOTTLE_BLUE:
+					current_attack_mod = Item.ItemType.BOTTLE_YELLOW
+				Item.ItemType.BOTTLE_YELLOW:
+					current_attack_mod = Item.ItemType.BOTTLE_RED
+			while !(current_attack_mod in available_mods):
+				match(current_attack_mod):
+					Item.ItemType.NONE:
+						current_attack_mod = Item.ItemType.BOTTLE_RED
+					Item.ItemType.BOTTLE_RED:
+						current_attack_mod = Item.ItemType.BOTTLE_BLUE
+					Item.ItemType.BOTTLE_BLUE:
+						current_attack_mod = Item.ItemType.BOTTLE_YELLOW
+					Item.ItemType.BOTTLE_YELLOW:
+						current_attack_mod = Item.ItemType.BOTTLE_RED
+
+		basic_attack_dmg = ATTACK_MAP[current_attack_mod].basic_attack_dmg
+		fire_attack_dmg = ATTACK_MAP[current_attack_mod].fire_attack_dmg
+		ice_attack_dmg = ATTACK_MAP[current_attack_mod].ice_attack_dmg
+		wind_attack_dmg = ATTACK_MAP[current_attack_mod].wind_attack_dmg
+		update_selector()
+	elif event.is_action_pressed("prev_attack_mod"):
+		get_tree().set_input_as_handled()
+		var available_mods = []
+		for mod in ATTACK_MAP:
+			if mod == Item.ItemType.NONE:
+				continue
+			if inventory.has(mod) && inventory[mod] > 0:
+				available_mods.append(mod)
+		if available_mods.size() == 0:
+			current_attack_mod = Item.ItemType.NONE
+		else:
+			match(current_attack_mod):
+				Item.ItemType.NONE:
+					current_attack_mod = Item.ItemType.BOTTLE_YELLOW
+				Item.ItemType.BOTTLE_RED:
+					current_attack_mod = Item.ItemType.BOTTLE_YELLOW
+				Item.ItemType.BOTTLE_BLUE:
+					current_attack_mod = Item.ItemType.BOTTLE_RED
+				Item.ItemType.BOTTLE_YELLOW:
+					current_attack_mod = Item.ItemType.BOTTLE_BLUE
+			while !(current_attack_mod in available_mods):
+				match(current_attack_mod):
+					Item.ItemType.NONE:
+						current_attack_mod = Item.ItemType.BOTTLE_YELLOW
+					Item.ItemType.BOTTLE_RED:
+						current_attack_mod = Item.ItemType.BOTTLE_YELLOW
+					Item.ItemType.BOTTLE_BLUE:
+						current_attack_mod = Item.ItemType.BOTTLE_RED
+					Item.ItemType.BOTTLE_YELLOW:
+						current_attack_mod = Item.ItemType.BOTTLE_BLUE
+
+		basic_attack_dmg = ATTACK_MAP[current_attack_mod].basic_attack_dmg
+		fire_attack_dmg = ATTACK_MAP[current_attack_mod].fire_attack_dmg
+		ice_attack_dmg = ATTACK_MAP[current_attack_mod].ice_attack_dmg
+		wind_attack_dmg = ATTACK_MAP[current_attack_mod].wind_attack_dmg
+		update_selector()
 
 func hit(other: CollisionObject2D):
 	yield(get_tree().create_timer(attack_hit_delay), "timeout")
@@ -193,11 +298,25 @@ func _process(delta):
 	DebugLabel.display(self, self.health)
 
 func _update_health_display():
-	for heart in range($CanvasLayer.get_child_count()):
+	for heart in range($CanvasLayer/HealthBar.get_child_count()):
 		if health > heart * 20.0 + 10:
-			$CanvasLayer.get_child(heart).texture = heart_full
+			$CanvasLayer/HealthBar.get_child(heart).texture = heart_full
 		elif health > heart * 20.0:
-
-			$CanvasLayer.get_child(heart).texture = heart_half
+			$CanvasLayer/HealthBar.get_child(heart).texture = heart_half
 		else:
-			$CanvasLayer.get_child(heart).texture = heart_empty
+			$CanvasLayer/HealthBar.get_child(heart).texture = heart_empty
+
+func update_selector():
+	var has_thing: bool = false
+	attack_icon.texture = Item.ICONS[Item.ItemType.NONE]
+	for atk in ATTACK_MAP:
+		if atk == Item.ItemType.NONE:
+			continue
+		if inventory.has(atk) && inventory[atk] > 0:
+			has_thing = true
+		if atk == current_attack_mod:
+			if inventory.has(atk) && inventory[atk] > 0:
+				attack_icon.texture = Item.ICONS[atk]
+			else:
+				current_attack_mod = Item.ItemType.NONE
+	attack_selector.visible = has_thing
