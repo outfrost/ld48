@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=2]
+[gd_scene load_steps=40 format=2]
 
 [ext_resource path="res://level/Level0Floor.tscn" type="PackedScene" id=1]
 [ext_resource path="res://environment/Tree1.tscn" type="PackedScene" id=2]
@@ -28,6 +28,7 @@
 [ext_resource path="res://environment/Breakable_WindBush.tscn" type="PackedScene" id=26]
 [ext_resource path="res://character/EnemyYellow.tscn" type="PackedScene" id=27]
 [ext_resource path="res://character/EnemyBlue.tscn" type="PackedScene" id=28]
+[ext_resource path="res://character/AngeryBoosh.tscn" type="PackedScene" id=29]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 288, 128 )
@@ -8146,3 +8147,6 @@ position = Vector2( 0, 32 )
 
 [node name="EnemyBlue4" parent="YSort/EnemyController10" instance=ExtResource( 28 )]
 position = Vector2( 32, -96 )
+
+[node name="Area2D" parent="YSort" instance=ExtResource( 29 )]
+position = Vector2( -784, 2736 )
