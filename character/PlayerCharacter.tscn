@@ -42,6 +42,7 @@ animation = "idle_down"
 offset = Vector2( 0, -16 )
 
 [node name="FxSprite" type="AnimatedSprite" parent="."]
+visible = false
 frames = ExtResource( 18 )
 animation = "idle"
 offset = Vector2( 0, -16 )

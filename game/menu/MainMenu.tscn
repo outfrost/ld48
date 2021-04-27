@@ -1,5 +1,6 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
+[ext_resource path="res://game/ui-theme/font_large.tres" type="DynamicFont" id=1]
 [ext_resource path="res://game/menu/CreditsPopup.gd" type="Script" id=2]
 [ext_resource path="res://game/ui-theme/ui_theme.tres" type="Theme" id=3]
 [ext_resource path="res://game/menu/MainMenu.gd" type="Script" id=4]
@@ -76,12 +77,11 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="OptionsButton" type="Button" parent="VBoxContainer"]
+[node name="ControlsButton" type="Button" parent="VBoxContainer"]
 margin_top = 45.0
 margin_right = 240.0
 margin_bottom = 80.0
-disabled = true
-text = "Options"
+text = "Controls"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -156,6 +156,76 @@ __meta__ = {
 }
 
 [node name="CloseButton" type="Button" parent="CreditsPopup/Panel"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -176.0
+margin_top = -50.0
+margin_right = -16.0
+margin_bottom = -16.0
+text = "Close"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ControlsPopup" type="Popup" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="ControlsPopup"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -430.0
+margin_top = -286.0
+margin_right = 430.0
+margin_bottom = 286.0
+grow_horizontal = 2
+grow_vertical = 2
+custom_styles/panel = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="ControlsPopup/Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 16.0
+margin_top = 16.0
+margin_right = -16.0
+margin_bottom = -66.0
+custom_fonts/normal_font = ExtResource( 1 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 0 )
+bbcode_enabled = true
+text = "Controls:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="ControlsPopup/Panel"]
+visible = false
+anchor_left = 0.5
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 8.0
+margin_top = 16.0
+margin_right = -16.0
+margin_bottom = -66.0
+bbcode_enabled = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CloseButton" type="Button" parent="ControlsPopup/Panel"]
 anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
