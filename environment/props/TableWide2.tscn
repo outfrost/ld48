@@ -7,8 +7,8 @@
 [ext_resource path="res://game/ui-theme/font_large.tres" type="DynamicFont" id=6]
 [ext_resource path="res://game/ui-theme/oinventoryitembackground.png" type="Texture" id=7]
 
-[sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 30, 5 )
+[sub_resource type="CircleShape2D" id=3]
+radius = 40.0
 
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 30, 5 )
@@ -18,7 +18,7 @@ script = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 0, 8 )
-shape = SubResource( 1 )
+shape = SubResource( 3 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 

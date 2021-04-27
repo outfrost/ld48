@@ -37,7 +37,7 @@ margin_top = -64.0
 margin_right = 512.0
 margin_bottom = -8.0
 grow_vertical = 0
-text = "v0.1.4"
+text = "v0.1.5"
 valign = 2
 __meta__ = {
 "_edit_use_anchors_": false
@@ -137,7 +137,38 @@ margin_left = 16.0
 margin_top = 16.0
 margin_right = -8.0
 margin_bottom = -66.0
+custom_fonts/normal_font = ExtResource( 1 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 0 )
 bbcode_enabled = true
+bbcode_text = "[center]A Ludum Dare 48 game
+
+Art, animation
+Zoe Anslow Gwilliam
+
+Music, sound design
+Marek Domagała
+
+Programming, creative direction
+Outfrost
+
+Level design, programming
+666Savior
+[/center]"
+text = "A Ludum Dare 48 game
+
+Art, animation
+Zoe Anslow Gwilliam
+
+Music, sound design
+Marek Domagała
+
+Programming, creative direction
+Outfrost
+
+Level design, programming
+666Savior
+"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -150,7 +181,42 @@ margin_left = 8.0
 margin_top = 16.0
 margin_right = -16.0
 margin_bottom = -66.0
+custom_fonts/normal_font = ExtResource( 1 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 0 )
 bbcode_enabled = true
+bbcode_text = "[center]
+
+
+
+
+
+
+
+
+
+
+Font by
+Poppy Works
+CC BY 4.0
+
+Godot Engine 3.3[/center]"
+text = "
+
+
+
+
+
+
+
+
+
+
+Font by
+Poppy Works
+CC BY 4.0
+
+Godot Engine 3.3"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -206,7 +272,21 @@ custom_fonts/normal_font = ExtResource( 1 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 0 )
 bbcode_enabled = true
-text = "Controls:"
+text = "Keyboard and mouse controls:
+
+W A S D   ↑ ← ↓ →   Move
+Space Enter Mouse1   Attack
+F L   Use
+Q E   [ ]   Cycle attack modifiers
+
+Backspace   Reset game and go back to menu
+
+Gamepad controls:
+
+Left stick   Move
+L2 R2   Attack
+A   Use
+L1 R1   Cycle attack modifiers"
 __meta__ = {
 "_edit_use_anchors_": false
 }

@@ -280,7 +280,6 @@ func take_damage(dmg: float, fire_dmg: float, ice_dmg: float, wind_dmg: float):
 		self.health = 75.0
 
 func entered_lootable_range(lootable):
-	print_debug(lootable)
 	current_lootable = lootable
 
 func exited_lootable_range(lootable):
@@ -288,7 +287,6 @@ func exited_lootable_range(lootable):
 		current_lootable = null
 
 func entered_interactive_range(interactive):
-	print_debug(interactive)
 	current_interactive = interactive
 
 func exited_interactive_range(interactive):
@@ -301,7 +299,8 @@ func print_inventory():
 		print("%s (%d)" % [Item.type_str(entry), inventory[entry]])
 
 func _process(delta):
-	DebugLabel.display(self, self.health)
+#	DebugLabel.display(self, self.health)
+	pass
 
 func _update_health_display():
 	for heart in range($CanvasLayer/HealthBar.get_child_count()):
