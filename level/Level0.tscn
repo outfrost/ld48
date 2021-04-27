@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=2]
+[gd_scene load_steps=42 format=2]
 
 [ext_resource path="res://level/Level0Floor.tscn" type="PackedScene" id=1]
 [ext_resource path="res://environment/Tree1.tscn" type="PackedScene" id=2]
@@ -29,6 +29,10 @@
 [ext_resource path="res://character/EnemyYellow.tscn" type="PackedScene" id=27]
 [ext_resource path="res://character/EnemyBlue.tscn" type="PackedScene" id=28]
 [ext_resource path="res://character/AngeryBoosh.tscn" type="PackedScene" id=29]
+[ext_resource path="res://level/CampMusicArea.gd" type="Script" id=30]
+
+[sub_resource type="RectangleShape2D" id=11]
+extents = Vector2( 610, 350 )
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 288, 128 )
@@ -64,6 +68,13 @@ extents = Vector2( 288, 160 )
 radius = 257.992
 
 [node name="Level0" type="Node2D"]
+
+[node name="CampMusicArea" type="Area2D" parent="."]
+position = Vector2( 200, -2020 )
+script = ExtResource( 30 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CampMusicArea"]
+shape = SubResource( 11 )
 
 [node name="SpawnPoint" type="Position2D" parent="."]
 position = Vector2( 165.668, -2051.97 )

@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://game/ui-theme/ui_theme.tres" type="Theme" id=1]
 [ext_resource path="res://game/DebugLabel.gd" type="Script" id=2]
@@ -10,6 +10,10 @@
 [ext_resource path="res://fx/menu_vignette.tres" type="Material" id=8]
 [ext_resource path="res://game/menu/MenuBackground.tscn" type="PackedScene" id=9]
 [ext_resource path="res://game/MainCamera.gd" type="Script" id=10]
+[ext_resource path="res://sound/music/Music_Menu1_v1.ogg" type="AudioStream" id=11]
+[ext_resource path="res://sound/music/Music_Camp1_v1.ogg" type="AudioStream" id=12]
+[ext_resource path="res://sound/music/Music_Exploration1_v2.ogg" type="AudioStream" id=13]
+[ext_resource path="res://sound/music/Music_Combat1_v3.ogg" type="AudioStream" id=14]
 
 [node name="Game" type="Node"]
 script = ExtResource( 5 )
@@ -26,7 +30,25 @@ position = Vector2( 640, 360 )
 current = true
 script = ExtResource( 10 )
 
-[node name="MusicPlayer" type="AudioStreamPlayer" parent="."]
+[node name="MusicPlayerMenu" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 11 )
+autoplay = true
+bus = "MusicMenu"
+
+[node name="MusicPlayerCamp" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 12 )
+autoplay = true
+bus = "MusicCamp"
+
+[node name="MusicPlayerExploration" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 13 )
+autoplay = true
+bus = "MusicExpl"
+
+[node name="MusicPlayerCombat" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 14 )
+autoplay = true
+bus = "MusicCombat"
 
 [node name="UILayer" type="CanvasLayer" parent="."]
 layer = 99
