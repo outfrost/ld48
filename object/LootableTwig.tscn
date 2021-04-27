@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://object/Lootable.tscn" type="PackedScene" id=1]
+[ext_resource path="res://environment/orbflorbflowersandcollectibles.png" type="Texture" id=2]
+
+[node name="LootableTwig" type="Node2D"]
+
+[node name="Lootable" parent="." instance=ExtResource( 1 )]
+loot1 = 6
+loot1_amount = 1
+
+[node name="Sprite" type="Sprite" parent="Lootable"]
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 64, 16, 16, 16 )

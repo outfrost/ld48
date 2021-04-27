@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://character/PlayerCharacter.gd" type="Script" id=1]
 [ext_resource path="res://character/PlayerCharacter_SpriteFrames.tres" type="SpriteFrames" id=2]
@@ -18,8 +18,9 @@
 [ext_resource path="res://sound/positional/SFX_SwordHit_5.wav" type="AudioStream" id=16]
 [ext_resource path="res://sound/positional/SFX_SwordHit_1.wav" type="AudioStream" id=17]
 [ext_resource path="res://character/AttackFx_SpriteFrames.tres" type="SpriteFrames" id=18]
-[ext_resource path="res://game/ui-theme/oinventoryitembackground.png" type="Texture" id=19]
+[ext_resource path="res://character/FCTManager.tscn" type="PackedScene" id=19]
 [ext_resource path="res://game/ui-theme/ui_theme.tres" type="Theme" id=20]
+[ext_resource path="res://game/ui-theme/oinventoryitembackground.png" type="Texture" id=21]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 16.0
@@ -44,6 +45,9 @@ offset = Vector2( 0, -16 )
 frames = ExtResource( 18 )
 animation = "idle"
 offset = Vector2( 0, -16 )
+
+[node name="FCTManager" parent="." instance=ExtResource( 19 )]
+position = Vector2( 0, -45 )
 
 [node name="AudioStreamPlayerWalk1" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 7 )
@@ -235,7 +239,7 @@ margin_left = -30.0
 margin_top = -110.0
 margin_right = 30.0
 margin_bottom = -50.0
-texture = ExtResource( 19 )
+texture = ExtResource( 21 )
 patch_margin_left = 12
 patch_margin_top = 12
 patch_margin_right = 12
