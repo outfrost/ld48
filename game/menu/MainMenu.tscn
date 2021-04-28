@@ -37,7 +37,7 @@ margin_top = -64.0
 margin_right = 512.0
 margin_bottom = -8.0
 grow_vertical = 0
-text = "v0.1.5"
+text = "v0.2.0"
 valign = 2
 __meta__ = {
 "_edit_use_anchors_": false
