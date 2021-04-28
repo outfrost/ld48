@@ -141,7 +141,7 @@ custom_fonts/normal_font = ExtResource( 1 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 0 )
 bbcode_enabled = true
-bbcode_text = "[center]A Ludum Dare 48 game
+bbcode_text = "[center]A [url=https://ldjam.com/events/ludum-dare/48/planet-ld48b]Ludum Dare 48[/url] game
 
 Art, animation
 Zoe Anslow Gwilliam
