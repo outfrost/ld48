@@ -272,21 +272,36 @@ custom_fonts/normal_font = ExtResource( 1 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 0 )
 bbcode_enabled = true
-text = "Keyboard and mouse controls:
+bbcode_text = "Keyboard and mouse controls:
 
-W A S D   ↑ ← ↓ →   Move
-Space Enter Mouse1   Attack
-F L   Use
-Q E   [ ]   Cycle attack modifiers
+Move                           W A S D   ↑ ← ↓ →
+Attack                        Space Enter Mouse1
+Use                            F L
+Cycle attack modifiers      Q E   [ ]
 
-Backspace   Reset game and go back to menu
+Reset game and go back to menu     Backspace
 
 Gamepad controls:
 
-Left stick   Move
-L2 R2   Attack
-A   Use
-L1 R1   Cycle attack modifiers"
+Move                           Left stick
+Attack                        L2 R2
+Use                            A
+Cycle attack modifiers      L1 R1"
+text = "Keyboard and mouse controls:
+
+Move                           W A S D   ↑ ← ↓ →
+Attack                        Space Enter Mouse1
+Use                            F L
+Cycle attack modifiers      Q E   [ ]
+
+Reset game and go back to menu     Backspace
+
+Gamepad controls:
+
+Move                           Left stick
+Attack                        L2 R2
+Use                            A
+Cycle attack modifiers      L1 R1"
 __meta__ = {
 "_edit_use_anchors_": false
 }
