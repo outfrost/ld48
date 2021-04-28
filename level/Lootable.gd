@@ -13,6 +13,7 @@ var character
 func _ready() -> void:
 	connect("body_entered", self, "on_body_entered")
 	connect("body_exited", self, "on_body_exited")
+	connect("tree_exiting", self, "on_tree_exiting")
 
 func on_body_entered(body):
 	if body.has_method("entered_lootable_range"):
@@ -21,3 +22,8 @@ func on_body_entered(body):
 func on_body_exited(body):
 	if body.has_method("exited_lootable_range"):
 		body.exited_lootable_range(self)
+
+func on_tree_exiting():
+	var highlight = get_node(@"../Highlight")
+	if highlight:
+		highlight.queue_free()

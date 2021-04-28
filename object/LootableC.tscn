@@ -1,9 +1,15 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://object/Lootable.tscn" type="PackedScene" id=1]
 [ext_resource path="res://environment/orbflorbflowersandcollectibles.png" type="Texture" id=2]
+[ext_resource path="res://fx/light.png" type="Texture" id=3]
 
 [node name="LootablePlantC" type="Node2D"]
+
+[node name="Highlight" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0.752941 )
+position = Vector2( 0, -15 )
+texture = ExtResource( 3 )
 
 [node name="Plant_Base" type="Sprite" parent="."]
 texture = ExtResource( 2 )
