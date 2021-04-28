@@ -27,9 +27,9 @@ radius = 16.0
 
 [node name="PlayerCharacter" type="KinematicBody2D"]
 script = ExtResource( 1 )
-run_speed = 70.0
+run_speed = 90.0
 walk_sounds = [ NodePath("AudioStreamPlayerWalk1"), NodePath("AudioStreamPlayerWalk2"), NodePath("AudioStreamPlayerWalk3"), NodePath("AudioStreamPlayerWalk4") ]
-walk_sound_interval = 0.32
+walk_sound_interval = 0.267
 swing_sounds = [ NodePath("AudioStreamPlayer2DSwing1"), NodePath("AudioStreamPlayer2DSwing2"), NodePath("AudioStreamPlayer2DSwing3"), NodePath("AudioStreamPlayer2DSwing4") ]
 hit_sounds = [ NodePath("AudioStreamPlayer2DHit1"), NodePath("AudioStreamPlayer2DHit2"), NodePath("AudioStreamPlayer2DHit3"), NodePath("AudioStreamPlayer2DHit4"), NodePath("AudioStreamPlayer2DHit5"), NodePath("AudioStreamPlayer2DHit6"), NodePath("AudioStreamPlayer2DHit7") ]
 
@@ -39,6 +39,7 @@ shape = SubResource( 1 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = ExtResource( 2 )
 animation = "idle_down"
+speed_scale = 1.2
 offset = Vector2( 0, -16 )
 
 [node name="FxSprite" type="AnimatedSprite" parent="."]

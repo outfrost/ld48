@@ -18,7 +18,7 @@ var basic_attack_multiplier: float = 3.00
 var basic_attack_cooldown: float = 2.50
 var attack_timer: float = 0.00
 
-var run_speed: float = 50.0
+var run_speed: float = 70.0
 
 var nearest_player = null
 onready var home = self.position
