@@ -31,37 +31,37 @@
 [ext_resource path="res://character/AngeryBoosh.tscn" type="PackedScene" id=29]
 [ext_resource path="res://level/CampMusicArea.gd" type="Script" id=30]
 
-[sub_resource type="RectangleShape2D" id=12]
+[sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 610, 350 )
 
-[sub_resource type="RectangleShape2D" id=13]
+[sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 288, 128 )
 
-[sub_resource type="CapsuleShape2D" id=14]
+[sub_resource type="CapsuleShape2D" id=3]
 radius = 192.0
 height = 256.0
 
-[sub_resource type="RectangleShape2D" id=15]
+[sub_resource type="RectangleShape2D" id=4]
 extents = Vector2( 160, 96 )
 
-[sub_resource type="RectangleShape2D" id=16]
+[sub_resource type="RectangleShape2D" id=5]
 extents = Vector2( 128, 128 )
 
-[sub_resource type="RectangleShape2D" id=17]
+[sub_resource type="RectangleShape2D" id=6]
 extents = Vector2( 288, 160 )
 
-[sub_resource type="RectangleShape2D" id=18]
+[sub_resource type="RectangleShape2D" id=7]
 extents = Vector2( 320, 224 )
 
-[sub_resource type="CapsuleShape2D" id=19]
+[sub_resource type="CapsuleShape2D" id=8]
 radius = 192.0
 height = 364.0
 
-[sub_resource type="CapsuleShape2D" id=20]
+[sub_resource type="CapsuleShape2D" id=9]
 radius = 288.0
 height = 64.0
 
-[sub_resource type="RectangleShape2D" id=21]
+[sub_resource type="RectangleShape2D" id=10]
 extents = Vector2( 288, 160 )
 
 [sub_resource type="CircleShape2D" id=11]
@@ -74,7 +74,7 @@ position = Vector2( 200, -2020 )
 script = ExtResource( 30 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CampMusicArea"]
-shape = SubResource( 12 )
+shape = SubResource( 1 )
 
 [node name="SpawnPoint" type="Position2D" parent="."]
 position = Vector2( 165.668, -2051.97 )
@@ -4116,7 +4116,7 @@ position = Vector2( -592, -464 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/EnemyController"]
 position = Vector2( -64, -96 )
-shape = SubResource( 13 )
+shape = SubResource( 2 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -4159,9 +4159,6 @@ position = Vector2( 432, -1840 )
 
 [node name="StaticBody2D211" parent="YSort" instance=ExtResource( 4 )]
 position = Vector2( 400, -1872 )
-
-[node name="StaticBody2D192" parent="YSort" instance=ExtResource( 4 )]
-position = Vector2( 112, -1648 )
 
 [node name="StaticBody2D193" parent="YSort" instance=ExtResource( 4 )]
 position = Vector2( 80, -1616 )
@@ -6707,12 +6704,6 @@ position = Vector2( 624, -1392 )
 [node name="StaticBody2D254" parent="YSort" instance=ExtResource( 4 )]
 position = Vector2( 656, -1360 )
 
-[node name="StaticBody2D195" parent="YSort" instance=ExtResource( 4 )]
-position = Vector2( 176, -1648 )
-
-[node name="StaticBody2D196" parent="YSort" instance=ExtResource( 4 )]
-position = Vector2( 208, -1648 )
-
 [node name="StaticBody2D197" parent="YSort" instance=ExtResource( 4 )]
 position = Vector2( 272, -1584 )
 
@@ -7086,10 +7077,22 @@ position = Vector2( 178, -2161 )
 [node name="StaticBody2D65" parent="YSort" instance=ExtResource( 10 )]
 position = Vector2( 368, -2256 )
 
+[node name="StaticBody2D203" parent="YSort" instance=ExtResource( 13 )]
+position = Vector2( 176, -1936 )
+
+[node name="StaticBody2D192" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 112, -1648 )
+
 [node name="StaticBody2D5" parent="YSort" instance=ExtResource( 13 )]
 position = Vector2( 144, -1648 )
 
+[node name="StaticBody2D195" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 176, -1648 )
+
 [node name="StaticBody2D13" parent="YSort" instance=ExtResource( 13 )]
+position = Vector2( 208, -1648 )
+
+[node name="StaticBody2D196" parent="YSort" instance=ExtResource( 4 )]
 position = Vector2( 240, -1648 )
 
 [node name="LootablePlantA11" parent="YSort" instance=ExtResource( 14 )]
@@ -7133,7 +7136,7 @@ position = Vector2( 2544, -1552 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/EnemyController2"]
 position = Vector2( 64, -32 )
-shape = SubResource( 14 )
+shape = SubResource( 3 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -7160,7 +7163,7 @@ position = Vector2( 96, 224 )
 position = Vector2( 16, 400 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/EnemyController3"]
-shape = SubResource( 15 )
+shape = SubResource( 4 )
 
 [node name="Enemy" parent="YSort/EnemyController3" instance=ExtResource( 3 )]
 position = Vector2( 96, 64 )
@@ -7178,7 +7181,7 @@ position = Vector2( 32, 0 )
 position = Vector2( -16, 176 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/EnemyController4"]
-shape = SubResource( 16 )
+shape = SubResource( 5 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -7896,7 +7899,7 @@ position = Vector2( -1488, 976 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/EnemyController6"]
 position = Vector2( -128, -64 )
-shape = SubResource( 17 )
+shape = SubResource( 6 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -7917,7 +7920,7 @@ position = Vector2( -192, -160 )
 position = Vector2( -1584, 1680 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/EnemyController5"]
-shape = SubResource( 18 )
+shape = SubResource( 7 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -7945,7 +7948,7 @@ position = Vector2( -112, 1232 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/EnemyController8"]
 position = Vector2( 32, -160 )
-shape = SubResource( 19 )
+shape = SubResource( 8 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -8075,7 +8078,7 @@ position = Vector2( -176, 1872 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/EnemyController7"]
 position = Vector2( 64, -160 )
-shape = SubResource( 20 )
+shape = SubResource( 9 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -8121,7 +8124,7 @@ position = Vector2( 1136, -1264 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/EnemyController9"]
 position = Vector2( -32, 0 )
-shape = SubResource( 21 )
+shape = SubResource( 10 )
 __meta__ = {
 "_edit_lock_": true
 }
