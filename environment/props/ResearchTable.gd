@@ -1,6 +1,14 @@
 extends Area2D
 
 const PROGRESS_TIME: float = 3.0
+const RESEARCHABLE: Array = [
+	Item.ItemType.ORB_RED,
+	Item.ItemType.ORB_BLUE,
+	Item.ItemType.ORB_YELLOW,
+	Item.ItemType.ORB_GREEN,
+	Item.ItemType.LEAVES,
+	Item.ItemType.TWIG,
+]
 
 onready var panel: Panel = $CanvasLayer/ResearchPanel
 onready var confirm_button: Button = $CanvasLayer/ResearchPanel/ConfirmButton
@@ -61,6 +69,8 @@ func on_confirm():
 		return
 	if !character.inventory.has(current_item_type) || character.inventory[current_item_type] < 1:
 		return
+	if !(current_item_type in RESEARCHABLE):
+		return
 	confirm_button.disabled = true
 	done_button.disabled = true
 	for btn in inventory_buttons:
@@ -95,6 +105,8 @@ func update_inventory_view():
 		if button_idx >= inventory_buttons.size():
 			break
 		if character.inventory[item_type] <= 0:
+			continue
+		if !(item_type in RESEARCHABLE):
 			continue
 		inventory_buttons[button_idx].icon = Item.ICONS[item_type]
 		inv_item_types[button_idx] = item_type
