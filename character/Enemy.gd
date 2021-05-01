@@ -69,7 +69,7 @@ func _physics_process(delta:float):
 
 		var collision = move_and_collide((nearest_player.global_position - self.global_position).normalized() * self.attack_range,true,true,true)
 
-		if collision && collision.collider.has_method("take_damage") && attack_timer >= basic_attack_cooldown :
+		if collision && collision.collider.has_method("take_damage") && collision.collider.name.begins_with("PlayerCharacter") && attack_timer >= basic_attack_cooldown :
 			attack_timer = 0.0
 			play_attack_anim(last_movement_dir)
 			if swing_sounds.size() > 0:
