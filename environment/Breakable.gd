@@ -9,8 +9,8 @@ onready var home = self.position
 var sticky = preload("res://object/LootableTwig.tscn")
 
 func take_damage(dmg: float, fire_dmg: float, ice_dmg: float, wind_dmg: float):
-	
-	
+
+
 	health -= (1.0 - resist_base) * dmg
 	$FCTManager._show_value((1.0 - resist_base) * dmg)
 	health -= (1.0 - resist_fire) * fire_dmg
@@ -22,7 +22,7 @@ func take_damage(dmg: float, fire_dmg: float, ice_dmg: float, wind_dmg: float):
 	health -= (1.0 - resist_wind) * wind_dmg
 	if ((1.0 - resist_wind) * wind_dmg) != 0:
 		$FCTManager._show_value((1.0 - resist_wind) * wind_dmg)
-	
+
 	if health <= 0.0:
 		var stickmast = sticky.instance()
 		self.get_parent().add_child(stickmast)
