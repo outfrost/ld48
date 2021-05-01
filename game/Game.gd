@@ -21,14 +21,23 @@ enum MusicTrack {
 	COMBAT = 5,
 }
 
-var prev_music_track = MusicTrack.COMBAT
+var prev_music_track = MusicTrack.MENU
 var current_music_track = MusicTrack.MENU
 var music_time: float = 50.0
 const CROSSFADE_TIME: float = 2.0
 
-onready var base_vol: float = db2linear(AudioServer.get_bus_volume_db(2))
+onready var base_vol: Dictionary = {
+	MusicTrack.MENU: db2linear(AudioServer.get_bus_volume_db(MusicTrack.MENU)),
+	MusicTrack.CAMP: db2linear(AudioServer.get_bus_volume_db(MusicTrack.CAMP)),
+	MusicTrack.EXPL: db2linear(AudioServer.get_bus_volume_db(MusicTrack.EXPL)),
+	MusicTrack.COMBAT: db2linear(AudioServer.get_bus_volume_db(MusicTrack.COMBAT)),
+}
 
 func _ready() -> void:
+	for track in MusicTrack.values():
+		if track != current_music_track:
+			AudioServer.set_bus_volume_db(track, linear2db(0.0))
+
 	if OS.has_feature("debug"):
 		var debug_script = load("res://debug.gd")
 		if debug_script:
@@ -39,12 +48,20 @@ func _ready() -> void:
 
 func _process(delta: float) -> void:
 	DebugLabel.display(self, "fps %d" % Performance.get_monitor(Performance.TIME_FPS))
+#	DebugLabel.display(self, "menu %f" % AudioServer.get_bus_volume_db(MusicTrack.MENU))
+#	DebugLabel.display(self, "camp %f" % AudioServer.get_bus_volume_db(MusicTrack.CAMP))
+#	DebugLabel.display(self, "expl %f" % AudioServer.get_bus_volume_db(MusicTrack.EXPL))
+#	DebugLabel.display(self, "combat %f" % AudioServer.get_bus_volume_db(MusicTrack.COMBAT))
+
+	for track in MusicTrack.values():
+		if track != prev_music_track && track != current_music_track:
+			AudioServer.set_bus_volume_db(track, linear2db(0.0))
 
 	music_time += delta
 	if prev_music_track != current_music_track:
 		var crossfade_t = clamp(music_time, 0.0, CROSSFADE_TIME) / CROSSFADE_TIME
-		AudioServer.set_bus_volume_db(prev_music_track, linear2db((1.0 - crossfade_t) * base_vol))
-		AudioServer.set_bus_volume_db(current_music_track, linear2db((crossfade_t) * base_vol))
+		AudioServer.set_bus_volume_db(prev_music_track, linear2db((1.0 - crossfade_t) * base_vol[prev_music_track]))
+		AudioServer.set_bus_volume_db(current_music_track, linear2db((crossfade_t) * base_vol[current_music_track]))
 		if crossfade_t >= 1.0:
 			prev_music_track = current_music_track
 
@@ -82,5 +99,9 @@ func spawn_player() -> void:
 
 func set_music_track(track):
 	if track != current_music_track:
+		if track == prev_music_track:
+			prev_music_track = current_music_track
+			music_time = CROSSFADE_TIME - music_time
+		else:
+			music_time = 0.0
 		current_music_track = track
-		music_time = 0.0
