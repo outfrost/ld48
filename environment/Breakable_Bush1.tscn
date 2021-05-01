@@ -11,6 +11,7 @@ script = ExtResource( 2 )
 
 [node name="FCTManager" parent="." instance=ExtResource( 3 )]
 position = Vector2( 0, -15 )
+z_index = 10
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 1 )

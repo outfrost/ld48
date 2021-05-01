@@ -50,6 +50,7 @@ offset = Vector2( 0, -16 )
 
 [node name="FCTManager" parent="." instance=ExtResource( 19 )]
 position = Vector2( 0, -45 )
+z_index = 10
 
 [node name="AudioStreamPlayerWalk1" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 7 )

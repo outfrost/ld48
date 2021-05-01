@@ -10,11 +10,11 @@ func _show_value(value, travel, duration, spread, size=12, red=false):
 			rect_position, rect_position + movement,
 			duration, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
 	$Tween.interpolate_property(self, "modulate:a",
-			1.0, 0.0, duration,Tween.TRANS_BACK,
+			1.0, 0.0, duration,
 			Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
 	
 	if red:
-		modulate = Color(1,0,0)
+		modulate = Color(0.8,0,0)
 	
 	$Tween.start()
 	yield($Tween, "tween_all_completed")

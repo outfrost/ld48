@@ -35,6 +35,7 @@ resist_ice = 1.0
 
 [node name="FCTManager" parent="." instance=ExtResource( 19 )]
 position = Vector2( 0, -40 )
+z_index = 10
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )

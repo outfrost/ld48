@@ -4,7 +4,7 @@ var FCT = preload("res://character/FCT.tscn")
 
 export var travel = Vector2(0, -80)
 export var duration = 2
-export var spread = PI/2
+export var spread = PI/4
 
 func _show_value(value, size=12, red=false):
 	var fct = FCT.instance()
