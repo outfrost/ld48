@@ -298,8 +298,15 @@ func print_inventory():
 	for entry in inventory:
 		print("%s (%d)" % [Item.type_str(entry), inventory[entry]])
 
+func inventory_str() -> String:
+	var s = "Inventory:\n"
+	for entry in inventory:
+		s += "%s (%d)\n" % [Item.type_str(entry), inventory[entry]]
+	return s
+
 func _process(delta):
 #	DebugLabel.display(self, self.health)
+#	DebugLabel.display(self, inventory_str())
 	pass
 
 func _update_health_display():
