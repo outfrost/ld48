@@ -14,7 +14,7 @@ func _show_value(value, travel, duration, spread, size=12, red=false):
 			Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
 
 	if red:
-		modulate = Color(0.8,0,0)
+		modulate = Color(1.0,0.2,0.4)
 
 	$Tween.start()
 	yield($Tween, "tween_all_completed")

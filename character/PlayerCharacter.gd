@@ -271,7 +271,7 @@ func play_attack_anim(direction: Vector2):
 func take_damage(dmg: float, fire_dmg: float, ice_dmg: float, wind_dmg: float):
 
 	health -= (1.0 - resist_base) * dmg
-	$FCTManager._show_value(str((1.0 - resist_base) * dmg),16,true)
+	$FCTManager._show_value(str(round((1.0 - resist_base) * dmg)),16,true)
 	health -= (1.0 - resist_fire) * fire_dmg
 	health -= (1.0 - resist_ice) * ice_dmg
 	health -= (1.0 - resist_wind) * wind_dmg
