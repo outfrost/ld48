@@ -1,17 +1,17 @@
 [gd_resource type="Theme" load_steps=11 format=2]
 
-[ext_resource path="res://game/ui-theme/button_style_empty.tres" type="StyleBox" id=1]
-[ext_resource path="res://game/ui-theme/button_style_pressed.tres" type="StyleBox" id=2]
-[ext_resource path="res://game/ui-theme/font_default.tres" type="DynamicFont" id=3]
-[ext_resource path="res://game/ui-theme/progress_bar_fg.tres" type="StyleBox" id=4]
-[ext_resource path="res://game/ui-theme/progress_bar_bg.tres" type="StyleBox" id=5]
-[ext_resource path="res://game/ui-theme/button_style_base.tres" type="StyleBox" id=6]
-[ext_resource path="res://game/ui-theme/text.png" type="Texture" id=7]
-[ext_resource path="res://game/ui-theme/panel_style_popup.tres" type="StyleBox" id=8]
-[ext_resource path="res://game/ui-theme/font_tiny.tres" type="DynamicFont" id=9]
+[ext_resource path="res://ui/ui-theme/font_default.tres" type="DynamicFont" id=1]
+[ext_resource path="res://ui/ui-theme/font_tiny.tres" type="DynamicFont" id=2]
+[ext_resource path="res://ui/ui-theme/text.png" type="Texture" id=3]
+[ext_resource path="res://ui/ui-theme/button_style_empty.tres" type="StyleBox" id=4]
+[ext_resource path="res://ui/ui-theme/button_style_pressed.tres" type="StyleBox" id=5]
+[ext_resource path="res://ui/ui-theme/progress_bar_bg.tres" type="StyleBox" id=6]
+[ext_resource path="res://ui/ui-theme/progress_bar_fg.tres" type="StyleBox" id=7]
+[ext_resource path="res://ui/ui-theme/button_style_base.tres" type="StyleBox" id=8]
+[ext_resource path="res://ui/ui-theme/panel_style_popup.tres" type="StyleBox" id=9]
 
 [sub_resource type="StyleBoxTexture" id=1]
-texture = ExtResource( 7 )
+texture = ExtResource( 3 )
 region_rect = Rect2( 10, 94, 32, 32 )
 margin_left = 6.0
 margin_right = 6.0
@@ -19,18 +19,18 @@ margin_top = 6.0
 margin_bottom = 6.0
 
 [resource]
-default_font = ExtResource( 3 )
+default_font = ExtResource( 1 )
 Button/colors/font_color = Color( 1, 1, 1, 1 )
 Button/colors/font_color_disabled = Color( 0.188235, 0.188235, 0.188235, 1 )
 Button/colors/font_color_hover = Color( 1, 1, 1, 1 )
 Button/colors/font_color_pressed = Color( 1, 1, 1, 1 )
 Button/constants/hseparation = 2
 Button/fonts/font = null
-Button/styles/disabled = ExtResource( 6 )
-Button/styles/focus = ExtResource( 1 )
-Button/styles/hover = ExtResource( 6 )
-Button/styles/normal = ExtResource( 6 )
-Button/styles/pressed = ExtResource( 2 )
+Button/styles/disabled = ExtResource( 8 )
+Button/styles/focus = ExtResource( 4 )
+Button/styles/hover = ExtResource( 8 )
+Button/styles/normal = ExtResource( 8 )
+Button/styles/pressed = ExtResource( 5 )
 CheckBox/colors/font_color = Color( 0, 0, 0, 1 )
 CheckBox/colors/font_color_disabled = Color( 0, 0, 0, 1 )
 CheckBox/colors/font_color_hover = Color( 0, 0, 0, 1 )
@@ -101,7 +101,7 @@ FileDialog/icons/parent_folder = null
 FileDialog/icons/reload = null
 FileDialog/icons/toggle_hidden = null
 Fonts/fonts/large = null
-Fonts/fonts/normal = ExtResource( 3 )
+Fonts/fonts/normal = ExtResource( 1 )
 GraphEdit/colors/activity = Color( 0, 0, 0, 1 )
 GraphEdit/colors/grid_major = Color( 0, 0, 0, 1 )
 GraphEdit/colors/grid_minor = Color( 0, 0, 0, 1 )
@@ -252,12 +252,12 @@ PopupMenu/styles/labeled_separator_right = null
 PopupMenu/styles/panel = null
 PopupMenu/styles/panel_disabled = null
 PopupMenu/styles/separator = null
-PopupPanel/styles/panel = ExtResource( 8 )
+PopupPanel/styles/panel = ExtResource( 9 )
 ProgressBar/colors/font_color = Color( 1, 1, 1, 1 )
 ProgressBar/colors/font_color_shadow = Color( 0, 0, 0, 1 )
-ProgressBar/fonts/font = ExtResource( 9 )
-ProgressBar/styles/bg = ExtResource( 5 )
-ProgressBar/styles/fg = ExtResource( 4 )
+ProgressBar/fonts/font = ExtResource( 2 )
+ProgressBar/styles/bg = ExtResource( 6 )
+ProgressBar/styles/fg = ExtResource( 7 )
 RichTextLabel/colors/default_color = Color( 1, 1, 1, 1 )
 RichTextLabel/colors/font_color_selected = Color( 1, 1, 1, 1 )
 RichTextLabel/colors/font_color_shadow = Color( 0, 0, 0, 1 )

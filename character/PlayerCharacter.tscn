@@ -19,8 +19,8 @@
 [ext_resource path="res://sound/positional/SFX_SwordHit_1.wav" type="AudioStream" id=17]
 [ext_resource path="res://character/AttackFx_SpriteFrames.tres" type="SpriteFrames" id=18]
 [ext_resource path="res://character/FCTManager.tscn" type="PackedScene" id=19]
-[ext_resource path="res://game/ui-theme/ui_theme.tres" type="Theme" id=20]
-[ext_resource path="res://game/ui-theme/oinventoryitembackground.png" type="Texture" id=21]
+[ext_resource path="res://ui/ui-theme/ui_theme.tres" type="Theme" id=20]
+[ext_resource path="res://ui/ui-theme/oinventoryitembackground.png" type="Texture" id=21]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 16.0

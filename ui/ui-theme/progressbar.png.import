@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/text.png-0cbfc897d06ff34099b8a23e98a5cbe9.stex"
+path="res://.import/progressbar.png-e1b8dca6153f03f10807ee57c5ec19a8.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://game/ui-theme/text.png"
-dest_files=[ "res://.import/text.png-0cbfc897d06ff34099b8a23e98a5cbe9.stex" ]
+source_file="res://ui/ui-theme/progressbar.png"
+dest_files=[ "res://.import/progressbar.png-e1b8dca6153f03f10807ee57c5ec19a8.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

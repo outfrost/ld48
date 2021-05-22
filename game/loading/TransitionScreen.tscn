@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://game/ui-theme/ui_theme.tres" type="Theme" id=1]
+[ext_resource path="res://ui/ui-theme/ui_theme.tres" type="Theme" id=1]
 [ext_resource path="res://game/loading/TransitionScreen.gd" type="Script" id=2]
 
 [node name="TransitionScreen" type="Control"]

@@ -1,10 +1,10 @@
 [gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://game/ui-theme/font_large.tres" type="DynamicFont" id=1]
-[ext_resource path="res://game/menu/CreditsPopup.gd" type="Script" id=2]
-[ext_resource path="res://game/ui-theme/ui_theme.tres" type="Theme" id=3]
-[ext_resource path="res://game/menu/MainMenu.gd" type="Script" id=4]
-[ext_resource path="res://game/ui-theme/panel_style_popup.tres" type="StyleBox" id=5]
+[ext_resource path="res://ui/ui-theme/font_large.tres" type="DynamicFont" id=1]
+[ext_resource path="res://ui/menu/CreditsPopup.gd" type="Script" id=2]
+[ext_resource path="res://ui/ui-theme/ui_theme.tres" type="Theme" id=3]
+[ext_resource path="res://ui/menu/MainMenu.gd" type="Script" id=4]
+[ext_resource path="res://ui/ui-theme/panel_style_popup.tres" type="StyleBox" id=5]
 
 [node name="MainMenu" type="Control"]
 anchor_right = 1.0
@@ -37,7 +37,7 @@ margin_top = -64.0
 margin_right = 512.0
 margin_bottom = -8.0
 grow_vertical = 0
-text = "v0.2.2"
+text = "v0.3.0-alpha"
 valign = 2
 __meta__ = {
 "_edit_use_anchors_": false

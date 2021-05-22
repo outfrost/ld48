@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/oinventoryitembackground.png-89e73427a11fd93f5416dbf314dda87a.stex"
+path="res://.import/oinventoryitembackground.png-50d497720ab005065de0641ba58937c5.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://game/ui-theme/oinventoryitembackground.png"
-dest_files=[ "res://.import/oinventoryitembackground.png-89e73427a11fd93f5416dbf314dda87a.stex" ]
+source_file="res://ui/ui-theme/oinventoryitembackground.png"
+dest_files=[ "res://.import/oinventoryitembackground.png-50d497720ab005065de0641ba58937c5.stex" ]
 
 [params]
 
