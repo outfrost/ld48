@@ -29,10 +29,10 @@ texture = ExtResource( 1 )
 position = Vector2( 0.0883942, 10.0342 )
 shape = SubResource( 2 )
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-layer = 2
+[node name="InteractionLayer" type="CanvasLayer" parent="."]
+layer = 3
 
-[node name="ResearchPanel" type="Panel" parent="CanvasLayer"]
+[node name="ResearchPanel" type="Panel" parent="InteractionLayer"]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -48,86 +48,86 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="InventoryButtons" type="Control" parent="CanvasLayer/ResearchPanel"]
+[node name="InventoryButtons" type="Control" parent="InteractionLayer/ResearchPanel"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="InventoryButton1" parent="CanvasLayer/ResearchPanel/InventoryButtons" instance=ExtResource( 4 )]
+[node name="InventoryButton1" parent="InteractionLayer/ResearchPanel/InventoryButtons" instance=ExtResource( 4 )]
 margin_left = 60.0
 margin_top = 100.0
 margin_right = 100.0
 margin_bottom = 140.0
 
-[node name="InventoryButton2" parent="CanvasLayer/ResearchPanel/InventoryButtons" instance=ExtResource( 4 )]
+[node name="InventoryButton2" parent="InteractionLayer/ResearchPanel/InventoryButtons" instance=ExtResource( 4 )]
 margin_left = 110.0
 margin_top = 100.0
 margin_right = 150.0
 margin_bottom = 140.0
 
-[node name="InventoryButton3" parent="CanvasLayer/ResearchPanel/InventoryButtons" instance=ExtResource( 4 )]
+[node name="InventoryButton3" parent="InteractionLayer/ResearchPanel/InventoryButtons" instance=ExtResource( 4 )]
 margin_left = 160.0
 margin_top = 100.0
 margin_right = 200.0
 margin_bottom = 140.0
 
-[node name="InventoryButton4" parent="CanvasLayer/ResearchPanel/InventoryButtons" instance=ExtResource( 4 )]
+[node name="InventoryButton4" parent="InteractionLayer/ResearchPanel/InventoryButtons" instance=ExtResource( 4 )]
 margin_left = 210.0
 margin_top = 100.0
 margin_right = 250.0
 margin_bottom = 140.0
 
-[node name="InventoryButton5" parent="CanvasLayer/ResearchPanel/InventoryButtons" instance=ExtResource( 4 )]
+[node name="InventoryButton5" parent="InteractionLayer/ResearchPanel/InventoryButtons" instance=ExtResource( 4 )]
 margin_left = 60.0
 margin_top = 150.0
 margin_right = 100.0
 margin_bottom = 190.0
 
-[node name="InventoryButton6" parent="CanvasLayer/ResearchPanel/InventoryButtons" instance=ExtResource( 4 )]
+[node name="InventoryButton6" parent="InteractionLayer/ResearchPanel/InventoryButtons" instance=ExtResource( 4 )]
 margin_left = 110.0
 margin_top = 150.0
 margin_right = 150.0
 margin_bottom = 190.0
 
-[node name="InventoryButton7" parent="CanvasLayer/ResearchPanel/InventoryButtons" instance=ExtResource( 4 )]
+[node name="InventoryButton7" parent="InteractionLayer/ResearchPanel/InventoryButtons" instance=ExtResource( 4 )]
 margin_left = 160.0
 margin_top = 150.0
 margin_right = 200.0
 margin_bottom = 190.0
 
-[node name="InventoryButton8" parent="CanvasLayer/ResearchPanel/InventoryButtons" instance=ExtResource( 4 )]
+[node name="InventoryButton8" parent="InteractionLayer/ResearchPanel/InventoryButtons" instance=ExtResource( 4 )]
 margin_left = 210.0
 margin_top = 150.0
 margin_right = 250.0
 margin_bottom = 190.0
 
-[node name="InventoryButton9" parent="CanvasLayer/ResearchPanel/InventoryButtons" instance=ExtResource( 4 )]
+[node name="InventoryButton9" parent="InteractionLayer/ResearchPanel/InventoryButtons" instance=ExtResource( 4 )]
 margin_left = 60.0
 margin_top = 200.0
 margin_right = 100.0
 margin_bottom = 240.0
 
-[node name="InventoryButton10" parent="CanvasLayer/ResearchPanel/InventoryButtons" instance=ExtResource( 4 )]
+[node name="InventoryButton10" parent="InteractionLayer/ResearchPanel/InventoryButtons" instance=ExtResource( 4 )]
 margin_left = 110.0
 margin_top = 200.0
 margin_right = 150.0
 margin_bottom = 240.0
 
-[node name="InventoryButton11" parent="CanvasLayer/ResearchPanel/InventoryButtons" instance=ExtResource( 4 )]
+[node name="InventoryButton11" parent="InteractionLayer/ResearchPanel/InventoryButtons" instance=ExtResource( 4 )]
 margin_left = 160.0
 margin_top = 200.0
 margin_right = 200.0
 margin_bottom = 240.0
 
-[node name="InventoryButton12" parent="CanvasLayer/ResearchPanel/InventoryButtons" instance=ExtResource( 4 )]
+[node name="InventoryButton12" parent="InteractionLayer/ResearchPanel/InventoryButtons" instance=ExtResource( 4 )]
 margin_left = 210.0
 margin_top = 200.0
 margin_right = 250.0
 margin_bottom = 240.0
 
-[node name="NinePatchRect" type="NinePatchRect" parent="CanvasLayer/ResearchPanel"]
+[node name="NinePatchRect" type="NinePatchRect" parent="InteractionLayer/ResearchPanel"]
 margin_left = 380.0
 margin_top = 80.0
 margin_right = 432.0
@@ -141,7 +141,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="ChosenItemIconRect" type="TextureRect" parent="CanvasLayer/ResearchPanel"]
+[node name="ChosenItemIconRect" type="TextureRect" parent="InteractionLayer/ResearchPanel"]
 margin_left = 390.0
 margin_top = 90.0
 margin_right = 422.0
@@ -151,7 +151,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/ResearchPanel"]
+[node name="ProgressBar" type="ProgressBar" parent="InteractionLayer/ResearchPanel"]
 margin_left = 320.0
 margin_top = 260.0
 margin_right = 490.0
@@ -161,7 +161,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="ConfirmButton" type="Button" parent="CanvasLayer/ResearchPanel"]
+[node name="ConfirmButton" type="Button" parent="InteractionLayer/ResearchPanel"]
 margin_left = 200.0
 margin_top = 300.0
 margin_right = 360.0
@@ -171,7 +171,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="DoneButton" type="Button" parent="CanvasLayer/ResearchPanel"]
+[node name="DoneButton" type="Button" parent="InteractionLayer/ResearchPanel"]
 margin_left = 200.0
 margin_top = 350.0
 margin_right = 360.0
@@ -181,7 +181,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="TitleLabel" type="Label" parent="CanvasLayer/ResearchPanel"]
+[node name="TitleLabel" type="Label" parent="InteractionLayer/ResearchPanel"]
 anchor_right = 1.0
 margin_bottom = 80.0
 custom_fonts/font = ExtResource( 6 )

@@ -36,8 +36,10 @@ export var wind_attack_dmg: float = 0.00
 var walk_sound_timer: float = 0.0
 var playing_action: bool = false
 
-onready var attack_selector = $CanvasLayer/AttackSelector
-onready var attack_icon = $CanvasLayer/AttackSelector/SelectorRect/Icon
+onready var attack_selector = $HUDLayer/AttackSelector
+onready var attack_icon = $HUDLayer/AttackSelector/SelectorRect/Icon
+
+onready var inventory_view = $HUDLayer/InventoryView
 
 const ATTACK_MAP: Dictionary = {
 	Item.ItemType.NONE: {
@@ -145,6 +147,7 @@ func _input(event: InputEvent) -> void:
 #			print("%s (%d)" % [Item.type_str(current_lootable.loot1), current_lootable.loot1_amount])
 #			print("%s (%d)" % [Item.type_str(current_lootable.loot2), current_lootable.loot2_amount])
 			current_lootable.queue_free()
+			update_inventory_view()
 			print_inventory()
 		elif current_interactive:
 			if !is_instance_valid(current_interactive):
@@ -294,6 +297,9 @@ func exited_interactive_range(interactive):
 	if interactive == current_interactive:
 		current_interactive = null
 
+func update_inventory_view():
+	inventory_view.update_view(inventory)
+
 func print_inventory():
 	print("Inventory:")
 	for entry in inventory:
@@ -311,13 +317,13 @@ func _process(delta):
 	pass
 
 func _update_health_display():
-	for heart in range($CanvasLayer/HealthBar.get_child_count()):
+	for heart in range($HUDLayer/HealthBar.get_child_count()):
 		if health > heart * 20.0 + 10:
-			$CanvasLayer/HealthBar.get_child(heart).texture = heart_full
+			$HUDLayer/HealthBar.get_child(heart).texture = heart_full
 		elif health > heart * 20.0:
-			$CanvasLayer/HealthBar.get_child(heart).texture = heart_half
+			$HUDLayer/HealthBar.get_child(heart).texture = heart_half
 		else:
-			$CanvasLayer/HealthBar.get_child(heart).texture = heart_empty
+			$HUDLayer/HealthBar.get_child(heart).texture = heart_empty
 
 func update_selector():
 	var has_thing: bool = false

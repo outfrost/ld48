@@ -50,10 +50,9 @@ stream = ExtResource( 14 )
 autoplay = true
 bus = "MusicCombat"
 
-[node name="UILayer" type="CanvasLayer" parent="."]
-layer = 99
+[node name="PostprocessLayer" type="CanvasLayer" parent="."]
 
-[node name="Vignette" type="ColorRect" parent="UILayer"]
+[node name="Vignette" type="ColorRect" parent="PostprocessLayer"]
 material = ExtResource( 8 )
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -62,7 +61,10 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="UI" type="Control" parent="UILayer"]
+[node name="MenuLayer" type="CanvasLayer" parent="."]
+layer = 99
+
+[node name="UI" type="Control" parent="MenuLayer"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 mouse_filter = 2
@@ -71,12 +73,12 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="MainMenu" parent="UILayer/UI" instance=ExtResource( 3 )]
+[node name="MainMenu" parent="MenuLayer/UI" instance=ExtResource( 3 )]
 
-[node name="TransitionScreen" parent="UILayer/UI" instance=ExtResource( 4 )]
+[node name="TransitionScreen" parent="MenuLayer/UI" instance=ExtResource( 4 )]
 visible = false
 
-[node name="DebugLabel" type="Label" parent="UILayer"]
+[node name="DebugLabel" type="Label" parent="MenuLayer"]
 margin_right = 75.0
 margin_bottom = 14.0
 theme = ExtResource( 1 )

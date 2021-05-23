@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://character/PlayerCharacter.gd" type="Script" id=1]
 [ext_resource path="res://character/PlayerCharacter_SpriteFrames.tres" type="SpriteFrames" id=2]
@@ -21,6 +21,8 @@
 [ext_resource path="res://character/FCTManager.tscn" type="PackedScene" id=19]
 [ext_resource path="res://ui/ui-theme/ui_theme.tres" type="Theme" id=20]
 [ext_resource path="res://ui/ui-theme/oinventoryitembackground.png" type="Texture" id=21]
+[ext_resource path="res://character/InventoryView.gd" type="Script" id=22]
+[ext_resource path="res://ui/menu/InventoryIconView.tscn" type="PackedScene" id=23]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 16.0
@@ -138,9 +140,10 @@ volume_db = 3.0
 max_distance = 200.0
 bus = "Effects"
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="HUDLayer" type="CanvasLayer" parent="."]
+layer = 2
 
-[node name="HealthBar" type="Control" parent="CanvasLayer"]
+[node name="HealthBar" type="Control" parent="HUDLayer"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 mouse_filter = 2
@@ -148,7 +151,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="TextureRect" type="TextureRect" parent="CanvasLayer/HealthBar"]
+[node name="TextureRect" type="TextureRect" parent="HUDLayer/HealthBar"]
 anchor_top = 1.0
 anchor_bottom = 1.0
 margin_left = 60.0
@@ -160,7 +163,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="TextureRect2" type="TextureRect" parent="CanvasLayer/HealthBar"]
+[node name="TextureRect2" type="TextureRect" parent="HUDLayer/HealthBar"]
 anchor_top = 1.0
 anchor_bottom = 1.0
 margin_left = 124.0
@@ -172,7 +175,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="TextureRect3" type="TextureRect" parent="CanvasLayer/HealthBar"]
+[node name="TextureRect3" type="TextureRect" parent="HUDLayer/HealthBar"]
 anchor_top = 1.0
 anchor_bottom = 1.0
 margin_left = 188.0
@@ -184,7 +187,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="TextureRect4" type="TextureRect" parent="CanvasLayer/HealthBar"]
+[node name="TextureRect4" type="TextureRect" parent="HUDLayer/HealthBar"]
 anchor_top = 1.0
 anchor_bottom = 1.0
 margin_left = 252.0
@@ -196,7 +199,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="TextureRect5" type="TextureRect" parent="CanvasLayer/HealthBar"]
+[node name="TextureRect5" type="TextureRect" parent="HUDLayer/HealthBar"]
 anchor_top = 1.0
 anchor_bottom = 1.0
 margin_left = 316.0
@@ -208,7 +211,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="AttackSelector" type="Control" parent="CanvasLayer"]
+[node name="AttackSelector" type="Control" parent="HUDLayer"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 mouse_filter = 2
@@ -217,7 +220,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label" type="Label" parent="CanvasLayer/AttackSelector"]
+[node name="Label" type="Label" parent="HUDLayer/AttackSelector"]
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
@@ -233,7 +236,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="SelectorRect" type="NinePatchRect" parent="CanvasLayer/AttackSelector"]
+[node name="SelectorRect" type="NinePatchRect" parent="HUDLayer/AttackSelector"]
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
@@ -251,7 +254,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Icon" type="TextureRect" parent="CanvasLayer/AttackSelector/SelectorRect"]
+[node name="Icon" type="TextureRect" parent="HUDLayer/AttackSelector/SelectorRect"]
 margin_left = 12.0
 margin_top = 12.0
 margin_right = 48.0
@@ -261,7 +264,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label2" type="Label" parent="CanvasLayer/AttackSelector"]
+[node name="Label2" type="Label" parent="HUDLayer/AttackSelector"]
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
@@ -273,6 +276,35 @@ margin_bottom = -60.0
 text = "E >"
 align = 1
 valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="InventoryView" type="Control" parent="HUDLayer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+theme = ExtResource( 20 )
+script = ExtResource( 22 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+icon_view = ExtResource( 23 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HUDLayer/InventoryView"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -90.0
+margin_top = -50.0
+margin_right = -50.0
+margin_bottom = -50.0
+grow_horizontal = 0
+grow_vertical = 0
+mouse_filter = 2
+custom_constants/separation = 10
+alignment = 2
 __meta__ = {
 "_edit_use_anchors_": false
 }

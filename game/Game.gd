@@ -4,8 +4,8 @@ extends Node
 export var starting_level: PackedScene
 export var player_character: PackedScene
 
-onready var main_menu: Control = $UILayer/UI/MainMenu
-onready var transition_screen: TransitionScreen = $UILayer/UI/TransitionScreen
+onready var main_menu: Control = $MenuLayer/UI/MainMenu
+onready var transition_screen: TransitionScreen = $MenuLayer/UI/TransitionScreen
 onready var main_camera = $MainCamera
 onready var level_container = $LevelContainer
 

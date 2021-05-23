@@ -1,0 +1,51 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://ui/ui-theme/ui_theme.tres" type="Theme" id=1]
+[ext_resource path="res://ui/ui-theme/oinventoryitembackground.png" type="Texture" id=2]
+[ext_resource path="res://ui/menu/InventoryIconView.gd" type="Script" id=3]
+[ext_resource path="res://ui/ui-theme/font_default_outline.tres" type="DynamicFont" id=4]
+
+[node name="InventoryIconView" type="NinePatchRect"]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 40, 40 )
+mouse_filter = 0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme = ExtResource( 1 )
+texture = ExtResource( 2 )
+patch_margin_left = 12
+patch_margin_top = 12
+patch_margin_right = 12
+patch_margin_bottom = 12
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="IconRect" type="TextureRect" parent="."]
+margin_left = 12.0
+margin_top = 12.0
+margin_right = 28.0
+margin_bottom = 28.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -7.0
+margin_bottom = -7.0
+grow_horizontal = 0
+grow_vertical = 0
+theme = ExtResource( 1 )
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 0 )
+align = 2
+valign = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}

@@ -23,13 +23,13 @@ const RECIPES: Dictionary = {
 export var research_table_path: NodePath
 onready var research_table = get_node(research_table_path)
 
-onready var panel: Panel = $CanvasLayer/CraftingPanel
-onready var confirm_button: Button = $CanvasLayer/CraftingPanel/ConfirmButton
-onready var done_button: Button = $CanvasLayer/CraftingPanel/DoneButton
-onready var progress_bar: ProgressBar = $CanvasLayer/CraftingPanel/ProgressBar
+onready var panel: Panel = $InteractionLayer/CraftingPanel
+onready var confirm_button: Button = $InteractionLayer/CraftingPanel/ConfirmButton
+onready var done_button: Button = $InteractionLayer/CraftingPanel/DoneButton
+onready var progress_bar: ProgressBar = $InteractionLayer/CraftingPanel/ProgressBar
 
-onready var recipe_buttons = $CanvasLayer/CraftingPanel/RecipeButtons.get_children()
-onready var recipe_ingr_icons = $CanvasLayer/CraftingPanel/RecipeIngrIcons.get_children()
+onready var recipe_buttons = $InteractionLayer/CraftingPanel/RecipeButtons.get_children()
+onready var recipe_ingr_icons = $InteractionLayer/CraftingPanel/RecipeIngrIcons.get_children()
 
 var button_recipes: Dictionary
 
@@ -70,7 +70,7 @@ func interact():
 	panel.show()
 	update_inventory_view()
 	current_recipe = Item.ItemType.NONE
-	$CanvasLayer/CraftingPanel/ChosenRecipeIconRect.texture = (
+	$InteractionLayer/CraftingPanel/ChosenRecipeIconRect.texture = (
 		Item.ICONS[current_recipe])
 	progress_bar.value = 0.0
 	confirm_button.disabled = false
@@ -147,9 +147,11 @@ func update_inventory_view():
 		recipe_buttons[button_idx].disabled = true
 		button_idx += 1
 
+	character.update_inventory_view()
+
 func on_recipe_button_pressed(idx):
 	current_recipe = button_recipes[idx]
-	$CanvasLayer/CraftingPanel/ChosenRecipeIconRect.texture = (
+	$InteractionLayer/CraftingPanel/ChosenRecipeIconRect.texture = (
 		Item.ICONS[current_recipe])
 	for icon in recipe_ingr_icons:
 		icon.texture = Item.ICONS[Item.ItemType.NONE]

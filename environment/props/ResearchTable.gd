@@ -10,12 +10,12 @@ const RESEARCHABLE: Array = [
 	Item.ItemType.TWIG,
 ]
 
-onready var panel: Panel = $CanvasLayer/ResearchPanel
-onready var confirm_button: Button = $CanvasLayer/ResearchPanel/ConfirmButton
-onready var done_button: Button = $CanvasLayer/ResearchPanel/DoneButton
-onready var progress_bar: ProgressBar = $CanvasLayer/ResearchPanel/ProgressBar
+onready var panel: Panel = $InteractionLayer/ResearchPanel
+onready var confirm_button: Button = $InteractionLayer/ResearchPanel/ConfirmButton
+onready var done_button: Button = $InteractionLayer/ResearchPanel/DoneButton
+onready var progress_bar: ProgressBar = $InteractionLayer/ResearchPanel/ProgressBar
 
-onready var inventory_buttons = $CanvasLayer/ResearchPanel/InventoryButtons.get_children()
+onready var inventory_buttons = $InteractionLayer/ResearchPanel/InventoryButtons.get_children()
 
 var character: Node2D = null
 var inv_item_types: Dictionary
@@ -58,7 +58,7 @@ func interact():
 	panel.show()
 	update_inventory_view()
 	current_item_type = Item.ItemType.NONE
-	$CanvasLayer/ResearchPanel/ChosenItemIconRect.texture = (
+	$InteractionLayer/ResearchPanel/ChosenItemIconRect.texture = (
 		Item.ICONS[current_item_type])
 	progress_bar.value = 0.0
 	confirm_button.disabled = false
@@ -118,9 +118,11 @@ func update_inventory_view():
 		inventory_buttons[button_idx].disabled = true
 		button_idx += 1
 
+	character.update_inventory_view()
+
 func on_inventory_button_pressed(idx):
 	current_item_type = inv_item_types[idx]
-	$CanvasLayer/ResearchPanel/ChosenItemIconRect.texture = (
+	$InteractionLayer/ResearchPanel/ChosenItemIconRect.texture = (
 		Item.ICONS[current_item_type])
 	progress_bar.value = 0.0
 	confirm_button.disabled = false
