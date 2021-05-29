@@ -1,6 +1,6 @@
 extends Label
 
-func _show_value(value, travel, duration, spread, size=12, red=false):
+func _show_value(value, travel, duration, spread, size=12, color=null):
 
 	text = value
 	var movement = travel.rotated(rand_range(-spread/2, spread/2))
@@ -13,8 +13,17 @@ func _show_value(value, travel, duration, spread, size=12, red=false):
 			1.0, 0.0, duration,
 			Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
 
-	if red:
-		modulate = Color(1.0,0.2,0.4)
+	if color:
+		match color:
+			"RED":
+				modulate = Color(1.0,0.2,0.4)
+			"GREEN":
+				modulate = Color(0.2,1.0,0.4)
+			"YELLOW":
+				modulate = Color(1.0,1.0,0.4)
+			_:
+				modulate = Color(1.0,1.0,1.0)
+
 
 	$Tween.start()
 	yield($Tween, "tween_all_completed")

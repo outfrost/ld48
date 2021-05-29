@@ -23,6 +23,7 @@ var last_movement_dir: Vector2 = Vector2.DOWN
 onready var home = self.position
 
 var health: float = 100.00
+var health_max: float = 100.0
 var resist_base: float = 0.20
 var resist_fire: float = 0.20
 var resist_ice: float = 0.20
@@ -274,7 +275,7 @@ func play_attack_anim(direction: Vector2):
 func take_damage(dmg: float, fire_dmg: float, ice_dmg: float, wind_dmg: float):
 
 	health -= (1.0 - resist_base) * dmg
-	$FCTManager._show_value(str(round((1.0 - resist_base) * dmg)),16,true)
+	$FCTManager._show_value("- -",16,"RED")
 	health -= (1.0 - resist_fire) * fire_dmg
 	health -= (1.0 - resist_ice) * ice_dmg
 	health -= (1.0 - resist_wind) * wind_dmg
@@ -282,6 +283,14 @@ func take_damage(dmg: float, fire_dmg: float, ice_dmg: float, wind_dmg: float):
 	if health <= 0.0:
 		self.position = home
 		self.health = 75.0
+
+func recover_health(heal_amount:float):
+
+	if health < health_max:
+		health = (health + heal_amount)
+		$FCTManager._show_value("++",16,"GREEN")
+	if health > health_max:
+		health = health_max
 
 func entered_lootable_range(lootable):
 	current_lootable = lootable
