@@ -1,6 +1,6 @@
 extends Area2D
 
-var enemies_alive
+var enemies_alive: int = 0
 
 func _ready():
 	connect("body_entered", self, "on_body_entered")
