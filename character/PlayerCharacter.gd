@@ -267,10 +267,18 @@ func play_attack_anim(direction: Vector2):
 		anim = "slash_up"
 
 	sprite.play(anim)
-	$FxSprite.play(anim + "_red")
+	match current_attack_mod:
+		Item.ItemType.BOTTLE_RED:
+			$FxSprite.play(anim + "_red")
+		Item.ItemType.BOTTLE_BLUE:
+			$FxSprite.play(anim + "_blue")
+		Item.ItemType.BOTTLE_YELLOW:
+			$FxSprite.play(anim + "_yellow")
+		Item.ItemType.BOTTLE_GREEN:
+			$FxSprite.play(anim + "_green")
+
 	yield(sprite, "animation_finished")
 	playing_action = false
-	$FxSprite.play("idle")
 
 func take_damage(dmg: float, fire_dmg: float, ice_dmg: float, wind_dmg: float):
 

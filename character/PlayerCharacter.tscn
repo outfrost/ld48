@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://character/PlayerCharacter.gd" type="Script" id=1]
 [ext_resource path="res://character/PlayerCharacter_SpriteFrames.tres" type="SpriteFrames" id=2]
@@ -23,6 +23,7 @@
 [ext_resource path="res://ui/ui-theme/oinventoryitembackground.png" type="Texture" id=21]
 [ext_resource path="res://character/InventoryView.gd" type="Script" id=22]
 [ext_resource path="res://ui/menu/InventoryIconView.tscn" type="PackedScene" id=23]
+[ext_resource path="res://character/FxSprite.gd" type="Script" id=24]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 16.0
@@ -45,10 +46,10 @@ speed_scale = 1.2
 offset = Vector2( 0, -16 )
 
 [node name="FxSprite" type="AnimatedSprite" parent="."]
-visible = false
 frames = ExtResource( 18 )
 animation = "idle"
 offset = Vector2( 0, -16 )
+script = ExtResource( 24 )
 
 [node name="FCTManager" parent="." instance=ExtResource( 19 )]
 position = Vector2( 0, -45 )
