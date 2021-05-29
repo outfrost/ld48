@@ -52,7 +52,7 @@ func _process(delta: float) -> void:
 #	DebugLabel.display(self, "camp %f" % AudioServer.get_bus_volume_db(MusicTrack.CAMP))
 #	DebugLabel.display(self, "expl %f" % AudioServer.get_bus_volume_db(MusicTrack.EXPL))
 #	DebugLabel.display(self, "combat %f" % AudioServer.get_bus_volume_db(MusicTrack.COMBAT))
-	DebugLabel.display(self, "Track %s" % current_music_track)
+#	DebugLabel.display(self, "Track %s" % current_music_track)
 
 	for track in MusicTrack.values():
 		if track != prev_music_track && track != current_music_track:
@@ -80,6 +80,8 @@ func on_start_game() -> void:
 	level = starting_level.instance()
 	level_container.add_child(level)
 	spawn_player()
+	if debug:
+		debug.player_spawned()
 	set_music_track(MusicTrack.CAMP)
 
 func back_to_menu() -> void:

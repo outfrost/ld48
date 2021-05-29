@@ -22,6 +22,7 @@ var current_interactive: Node2D = null
 var last_movement_dir: Vector2 = Vector2.DOWN
 onready var home = self.position
 
+var god: bool = false
 var health: float = 100.00
 var health_max: float = 100.0
 var resist_base: float = 0.20
@@ -273,12 +274,12 @@ func play_attack_anim(direction: Vector2):
 	$FxSprite.play("idle")
 
 func take_damage(dmg: float, fire_dmg: float, ice_dmg: float, wind_dmg: float):
-
-	health -= (1.0 - resist_base) * dmg
-	$FCTManager._show_value("- -",16,"RED")
-	health -= (1.0 - resist_fire) * fire_dmg
-	health -= (1.0 - resist_ice) * ice_dmg
-	health -= (1.0 - resist_wind) * wind_dmg
+	if !god:
+		health -= (1.0 - resist_base) * dmg
+		$FCTManager._show_value("- -",16,"RED")
+		health -= (1.0 - resist_fire) * fire_dmg
+		health -= (1.0 - resist_ice) * ice_dmg
+		health -= (1.0 - resist_wind) * wind_dmg
 
 	if health <= 0.0:
 		self.position = home
