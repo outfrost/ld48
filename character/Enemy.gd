@@ -1,5 +1,7 @@
 extends KinematicBody2D
 
+signal died
+
 export var attack_hit_delay: float = 0.16
 export var walk_sounds: Array
 export var walk_sound_interval: float = 0.5
@@ -48,6 +50,7 @@ func take_damage(dmg: float, fire_dmg: float, ice_dmg: float, wind_dmg: float):
 		$FCTManager._show_value(round((1.0 - resist_wind) * wind_dmg))
 
 	if health <= 0.0:
+		emit_signal("died")
 		queue_free()
 
 func set_target(player: KinematicBody2D):

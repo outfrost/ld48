@@ -74,6 +74,7 @@ position = Vector2( 200, -2020 )
 script = ExtResource( 30 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CampMusicArea"]
+position = Vector2( 8, -12 )
 shape = SubResource( 1 )
 
 [node name="SpawnPoint" type="Position2D" parent="."]
@@ -6165,10 +6166,10 @@ position = Vector2( -496, -208 )
 position = Vector2( -496, -240 )
 
 [node name="StaticBody2D1219" parent="YSort" instance=ExtResource( 4 )]
-position = Vector2( -496, -272 )
+position = Vector2( -528, -272 )
 
 [node name="StaticBody2D1220" parent="YSort" instance=ExtResource( 4 )]
-position = Vector2( -496, -304 )
+position = Vector2( -528, -304 )
 
 [node name="StaticBody2D1221" parent="YSort" instance=ExtResource( 4 )]
 position = Vector2( -528, -304 )
@@ -6447,10 +6448,13 @@ position = Vector2( 2576, -1136 )
 position = Vector2( 2544, -1168 )
 
 [node name="StaticBody2D1079" parent="YSort" instance=ExtResource( 4 )]
-position = Vector2( 2512, -1200 )
+position = Vector2( 2512, -1168 )
 
 [node name="StaticBody2D1080" parent="YSort" instance=ExtResource( 4 )]
-position = Vector2( 2480, -1200 )
+position = Vector2( 2480, -1168 )
+
+[node name="StaticBody2D2476" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 2448, -1168 )
 
 [node name="StaticBody2D1081" parent="YSort" instance=ExtResource( 4 )]
 position = Vector2( 2416, -1200 )
@@ -6603,7 +6607,7 @@ position = Vector2( 2992, -1936 )
 position = Vector2( 2832, -1552 )
 
 [node name="StaticBody2D940" parent="YSort" instance=ExtResource( 4 )]
-position = Vector2( 2352, -1264 )
+position = Vector2( 2320, -1264 )
 
 [node name="StaticBody2D941" parent="YSort" instance=ExtResource( 4 )]
 position = Vector2( 2256, -1328 )
@@ -7012,6 +7016,12 @@ position = Vector2( 240, -2352 )
 
 [node name="StaticBody2D107" parent="YSort" instance=ExtResource( 4 )]
 position = Vector2( -16, -2288 )
+
+[node name="StaticBody2D244" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 16, -2320 )
+
+[node name="StaticBody2D2477" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -16, -2320 )
 
 [node name="StaticBody2D108" parent="YSort" instance=ExtResource( 4 )]
 position = Vector2( -80, -2256 )
@@ -8159,5 +8169,5 @@ position = Vector2( 0, 32 )
 [node name="EnemyBlue4" parent="YSort/EnemyController10" instance=ExtResource( 28 )]
 position = Vector2( 32, -96 )
 
-[node name="Area2D" parent="YSort" instance=ExtResource( 29 )]
-position = Vector2( -784, 2736 )
+[node name="AngeryBoosh" parent="YSort" instance=ExtResource( 29 )]
+position = Vector2( -816, 2704 )
