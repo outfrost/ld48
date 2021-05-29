@@ -5,3 +5,6 @@ func _init(game: Game) -> void:
 
 func startup() -> void:
 	pass
+
+func player_spawned() -> void:
+	pass
