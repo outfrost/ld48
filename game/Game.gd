@@ -52,6 +52,7 @@ func _process(delta: float) -> void:
 #	DebugLabel.display(self, "camp %f" % AudioServer.get_bus_volume_db(MusicTrack.CAMP))
 #	DebugLabel.display(self, "expl %f" % AudioServer.get_bus_volume_db(MusicTrack.EXPL))
 #	DebugLabel.display(self, "combat %f" % AudioServer.get_bus_volume_db(MusicTrack.COMBAT))
+	DebugLabel.display(self, "Track %s" % current_music_track)
 
 	for track in MusicTrack.values():
 		if track != prev_music_track && track != current_music_track:
