@@ -34,6 +34,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://level/Lootable.gd"
 }, {
+"base": "Node",
+"class": "Sequencer",
+"language": "GDScript",
+"path": "res://addons/sequencer/Sequencer.gd"
+}, {
 "base": "Control",
 "class": "TransitionScreen",
 "language": "GDScript",
@@ -45,6 +50,7 @@ _global_script_class_icons={
 "GroupMessenger": "",
 "Item": "",
 "Lootable": "",
+"Sequencer": "",
 "TransitionScreen": ""
 }
 
@@ -69,6 +75,10 @@ window/size/width=1280
 window/size/height=720
 window/stretch/mode="viewport"
 window/stretch/aspect="expand"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "res://addons/sequencer/plugin.cfg" )
 
 [importer_defaults]
 
