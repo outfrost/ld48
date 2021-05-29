@@ -1,11 +1,30 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=5 format=2]
 
-[sub_resource type="CircleShape2D" id=1]
+[ext_resource path="res://character/evilbush.png" type="Texture" id=1]
+
+[sub_resource type="AtlasTexture" id=1]
+atlas = ExtResource( 1 )
+region = Rect2( 3244, 0, 140, 137 )
+
+[sub_resource type="CircleShape2D" id=3]
+radius = 80.0
+
+[sub_resource type="CircleShape2D" id=2]
 radius = 240.533
 
-[node name="Area2D" type="Area2D"]
+[node name="AngeryBoosh" type="Area2D"]
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="StaticBody2D"]
+
+[node name="Sprite" type="Sprite" parent="StaticBody2D"]
+position = Vector2( -7.62939e-06, 0 )
+scale = Vector2( 1.25, 1.25 )
+texture = SubResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource( 1 )
+shape = SubResource( 2 )
